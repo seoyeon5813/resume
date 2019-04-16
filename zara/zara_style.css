@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300');
+
+/* reset area */
+*{margin:0;padding:0}
+li{list-style: none;}
+a{text-decoration: none;color: inherit}
+
+body, button{font-size: 12px;color:#7a7875;font-family: 'Noto Serif KR', serif;}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.on{display: none}
+.item_rotate{transform: rotate(-90deg)}
+
+
+/* design area */
+body{width:100%;text-align: center;}
+.wraper{width:100%}
+
+/* header */
+.header{display: flex;width:100%;align-items:center;height: 90px;background-color: #f3f0ea;position: fixed;z-index: 9999;}
+.header .menu{width:50%;text-align:left;margin-left:30px;}
+.header .menu span{display: block}
+.header h1 img{width:80px;vertical-align: middle}
+.header .panier{width:50%;text-align: right;margin-right:30px;align-items: center}
+.header .fa-shopping-bag{padding-left: 5px;}
+
+/* menu */
+.menu .btn_menu{border:none;background-color: transparent;cursor: pointer;outline: none;}
+.menu .btn_menu .menu_cancle{padding-right:5px;color:brown}
+.menu .navi{overflow: hidden;height: 35px;line-height: 35px;padding-left:30px;position: absolute;top:90px;left:0;right: 0;color:#fff;background-color:#b8cacb}
+.menu .navi li{float: left;margin-right:50px;transition: all .25s ease-in-out}
+.menu .navi li:hover{color:brown}
+
+/* main */
+.main{padding-top:90px;width:100%;min-height:calc(100vh - 90px);position: relative;background:url(img/main_img.jpg) 0 0 no-repeat;background-size: cover}
+.main .main_content{width:500px;padding:25px;box-sizing:border-box;text-align:left;background-color:rgba(255, 255, 255, 0.8);border-radius:2px;position: absolute;top:450px;right: 0}
+.main .fa-chevron-circle-right{font-size:15px;padding-left:5px}
+.main .main_content span{font-size: 11px}
+.main .main_content h2{margin:5px 0 15px;font-size: 30px}
+.main .main_content p{margin-bottom:20px}
+.main .main_content .main_link{display:block;text-align: right;}
+
+/* second section */
+.content_sec{padding:75px 0;background-color:rgb(241, 241, 241);}
+.content_sec .content_sec_wrapper{display: flex;margin:0 auto;min-width:1024px;width: 1024px;}
+.content_sec .content_img_F,
+.content_sec .content_sec_box{width:50%;}
+.content_sec .content_img_F{position:relative;height:700px;background:url(img/07_01.jpg) 0 0 no-repeat;background-size: cover}
+.content_sec .content_img_F::before{content:'10 . April 2019';position:absolute;top:35px;left:-50px;transform: rotate(-90deg);font-size: 10px;}
+.content_sec .content_sec_box{display:flex;text-align:left;padding:25px 0 25px 25px;box-sizing: border-box;align-items: center}
+.content_sec .content_sec_box span{font-size: 11px;}
+.content_sec .content_sec_box h3{font-size: 37px;margin: 5px 0 15px 0}
+.content_sec .content_sec_box p{line-height: 18px;margin-bottom:30px;}
+.content_sec .content_sec_box .content_sec_link .fa-chevron-circle-right{padding-left:5px}
+
+/* third section */
+.content_list{display:inline-flex;align-items:center;;padding:70px 0;}
+.content_list .content_list_img{display: flex;align-items: center}
+.content_list .content_list_img li{width:230px; height: 400px;padding: 0 10px;}
+.content_list .content_list_img li:nth-child(1){background:url() 0 0 no-repeat;}
+.content_list .content_list_img li:nth-child(2){background:url() 0 0 no-repeat;}
+.content_list .content_list_img li:nth-child(3){background:url() 0 0 no-repeat;}
+.content_list .content_list_img li:nth-child(4){background:url() 0 0 no-repeat;}
+.content_list .content_list_img li:nth-child(5){background:url() 0 0 no-repeat;}
+.content_list .content_link{padding-right:5px;font-size: 11px;}
+
+/* fourth section */
+.content_sec .content_img_B{width:480px;height:700px;background:url(img/07_01.jpg) 0 0 no-repeat;background-size: cover}
+.list_season{overflow: hidden;}
+.list_season li{float: left;margin-right: 10px; width:100px;height: 25px;line-height:25px;border-radius: 1px;background-color:peru;color:#fff;text-align: center}
+.list_season li:last-child{margin-right: 0}
+.list_season li a{display: block}
+
+/* e-mail submit */
+.content_submit{padding:75px 0;width:100%;text-align: center;height: auto;}
+.content_submit p{margin: 50px 0 30px;}
+.content_submit input{display:block;margin:50px auto 0;text-align:center;width:350px;height: 35px;background-color: transparent;border:none;border-bottom: 2px solid peru;outline: none}
+.content_submit button{margin:25px 0 100px;width:170px;height: 35px;background-color:peru;color:#fff;border-radius: 1px;border:none}
+.content_submit .list_icon{overflow: hidden;display: inline-block;}
+.content_submit .list_icon li{float: left;margin-right: 50px}
+.content_submit .list_icon li:last-child{margin-right: 0}
+
+/* footer */
+.footer{margin:0 auto;padding:30px 0 10px;width:1024px;position:relative;font-size:10px;color:#bdbdbd}
+.footer::before{content: '';position: absolute;top:0;left:0;width:1024px;height: 1px;background-color: #bdbdbd}
