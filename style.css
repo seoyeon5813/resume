@@ -56,8 +56,9 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .list_project_row {overflow: hidden;}
 .list_project_row li{float: left; width:425px;margin-right: 50px}
 .list_project_row li:last-child{margin-right: 0}
-.list_project_row li .project_no2{background: url(./img/bitpi.png) -228px 0 no-repeat;width: 100%;height: 450px;background-size: auto 450px}
-.list_project_row li .project_no3{background: url(./img/port.jpg) 0 0 no-repeat;width: 100%;height: 450px;background-size: cover}
+.list_project_row li .pro_img{border:1px solid #e4e4e4;box-sizing: border-box}
+.list_project_row li .project_no2{background: url(./img/bitpi.png) -228px 0 no-repeat;width: 100%;height: 450px;background-size: cover;}
+.list_project_row li .project_no3{background: url(./img/bitchain.png) -195px 5px no-repeat;width: 100%;height: 450px;background-size: cover;}
 
 /* portf */
 .content_port{width:900px;margin:0 auto}
