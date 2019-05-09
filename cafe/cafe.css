@@ -1,9 +1,93 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:500,700,800|Noto+Serif+KR:300,400,700|Nunito+Sans:400,700,800,900');
 
 /* reset area */
 *{margin:0;padding:0}
 li{list-style: none;}
 a{text-decoration: none;color: inherit}
 
-body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#7f7f7f}
+html{scroll-behavior: smooth;}
+body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#755e5e;letter-spacing:1px}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+
+
+/*** design area ***/
+
+
+/* header */
+.header_wrap{width:100%;position: fixed;z-index:9999;color:#fff}
+.header{display: flex;position: relative;height: 100px;transition:all .45s ease-in-out}
+.header_active{background-color: rgba(0, 0, 0, 0.8);}
+
+.header h1{position: absolute;left:6%;top:37%;;font-family: 'Nunito Sans', sans-serif;text-align: center;letter-spacing: 1px;line-height: 19px}
+.header h1 a{display: block}
+.header h1 p{font-size: 11px;font-weight: lighter;letter-spacing: 2px}
+
+.header .navi{width:33.33%;position: absolute;left:33.33%;top:45%;text-align: center}
+.header .navi li{display:inline-block;margin: 0 35px;}
+.header .navi li a{display: block}
+
+.header .sns{display: flex;position: absolute;right: 6%;top:45%;text-align: right;font-size: 15px}
+.header .sns li{margin: 0 20px;}
+.header .sns li a{display: block}
+
+/* main_section01 */
+.main_section01{display: flex;align-items: center;justify-content: center;height: 100vh;text-align: center;background:url(./img/main_coffee.jpg) 0 0 no-repeat;background-size: cover;background-attachment: fixed;}
+.main_section01 .main_slogan{margin-top:80px;color:#fff}
+.main_section01 h2{font-size: 80px;font-family: 'EB Garamond', serif;}
+.main_section01 span{font-size: 14px;letter-spacing: 2px}
+
+
+/* main_section02 */
+.main_section02{display:flex;height: 100vh}
+.main_section02 .sec02_txtW .sec02_illu{position:absolute;top:-10px;left:270px;width:150px;height:130px;background:url(./img/bean02.png) 0 0 no-repeat ;background-size: 140px;opacity: .85;}
+.main_section02 .sec02_txtW .sec02_illu_02{position:absolute;top:-50px;left:-60px;width:100px;height:100px;background:url(./img/leaf_03.png) 0 0 no-repeat ;background-size: 85px;}
+.main_section02 .sec02_txtW .sec02_illu_03{position:absolute;top:45px;left:-10px;width:320px;height:50px;background:url(./img/underline.png) 0 0 no-repeat ;background-size: 320px;opacity: .65;}
+
+.main_section02 .sec02_img{width:42.5%;height:100%;background:url(./img/3.jpg) 0 0 no-repeat;background-size: cover;}
+.main_section02 .sec02_txtW{display:flex;width: 57.5%;align-items: center;justify-content: center;background-color: #f8f5f1}
+.main_section02 .sec02_txt{position:relative;}
+.main_section02 .sec02_txt h3{font-size: 43px;color:#85ac83;font-family: 'EB Garamond', serif;}
+.main_section02 .sec02_txt p{margin-top:65px;line-height: 30px;text-align: center}
+
+/* main_section03 */
+.main_section03{height: 90vh;}
+.main_section03 .sec03_tit{display:flex;padding-top:100px;width:100%;height: calc(22.5% - 100px);position: relative;;align-items: center;justify-content: center;font-family: 'EB Garamond', serif;background-color:#e3dbd1;color:#fff;font-size: 30px;}
+.main_section03 .sec03_tit::after{content:'';margin-left:-100px;background:url(./img/underline.png) 0 0 no-repeat;background-size: 200px;position: absolute;bottom:20px;left:50%;width:200px;height: 10px;opacity: .75;}
+.main_section03 .sec03_list{width:100%;height: 70%;position: relative;}
+.main_section03 .sec03_tab{display: flex;height: 100%}
+.main_section03 .sec03_tab li{width:33.33%;position:relative;cursor: pointer;;transition:all .3s ease-in-out}
+.main_section03 .sec03_tab li:hover{filter: grayscale(80%);}
+.main_section03 .sec03_tab li:hover span{color:#00ff4e}
+.main_section03 .sec03_tab li span{display:block;width:100%;position:absolute;top:47%;font-size:35px;font-family: 'EB Garamond', serif;color:#fff;text-align: center;transition:all .3s ease-in-out}
+.main_section03 .sec03_tab li:nth-child(1){background:url(./img/coffee.jpg) 0 0 no-repeat;background-size: cover;}
+.main_section03 .sec03_tab li:nth-child(2){background:url(./img/croissant.jpg) 0 -20px no-repeat;background-size: cover}
+.main_section03 .sec03_tab li:nth-child(3){background:url(./img/mousse.jpg) 0 -50px no-repeat;background-size: cover}
+
+
+/* sec03_pane */
+.sec03_pane{height: 50vh;}
+.sec03_pane div{display: none;width:100%;background-color: #fff;box-sizing: border-box;}
+.sec03_pane .on{display: block;}
+.sec03_pane ul{text-align: center}
+.sec03_pane li{padding:2% 28%;line-height: 25px;}
+.sec03_pane li strong{font-size:15px;color:#85ac83}
+
+.sec03_pane .coffee{width:100%;overflow: hidden;}
+.sec03_pane .coffee ul{width:50%;float: left;}
+
+.sec03_pane .bakery{width:100%;}
+
+
+
+/* main_section04 */
+.main_section04{height: 100vh;display:flex;background:url(./img/4.jpg) 0 0 no-repeat;background-size:cover;background-attachment: fixed;justify-content: center;align-items: center;filter: grayscale(70%)}
+.main_section04 .sec04_wrap{width:500px;height: 350px;background-color: #fff;border-radius: 2px;text-align: center}
+.main_section04 .sec04_tit{margin:80px 0 35px 0;font-size: 27px;font-family: 'EB Garamond', serif;line-height: 25px;}
+.main_section04 .sec04_tit span{font-size: 17px;}
+.main_section04 .sec04_txt{line-height: 20px;}
+.main_section04 .sec04_txt span{color:#00ff4e}
+.main_section04 .sec04_txt .hours{display: block;margin-top:20px}
+
+/* footer */
+.footer{height:35px;font-size:11px;line-height: 35px;background-color: #e3dbd1;text-align: center}

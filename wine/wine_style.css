@@ -60,11 +60,10 @@ input{outline: none;}
 .cont_introduce .introduce_back{width:50%;height: 100%;background-color: #e5e0db;float: left;}
 .cont_introduce .introduce_img{position: absolute}
 
-
 /* submit */
 .submit{height: 500px;display: flex;align-items: center;justify-content: center}
 .submit .wrap_contSubmit p{font-size: 30px;letter-spacing: -2px;}
-.submit .wrap_contSubmit form{margin-top:20px;}
+.submit .wrap_contSubmit form{margin-top:30px;}
 .submit .wrap_contSubmit input{margin:70px 0 20px 0;padding: 5px 20px;width:300px;border:none;border-bottom:1px solid rosybrown;text-align: center}
 .submit .wrap_contSubmit button{width:170px;height: 35px;color:#fff; background-color:rosybrown;;border-radius: 2px;transition: all .3s ease-in-out}
 .submit .wrap_contSubmit button:hover{background-color: rgb(151, 118, 118);}
