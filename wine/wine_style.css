@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,500,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
 
 /* reset area */
 *{margin:0;padding:0}
@@ -8,70 +11,93 @@ li{list-style: none;}
 a{text-decoration: none;color: inherit}
 fieldset{border: 0}
 
-body{font-family: 'Noto Sans KR Medium', sans-serif;font-size: 12px;color:#807c71;text-align: center}
-p{line-height: 18px;letter-spacing: -1px}
+body{font-family: 'Noto Sans KR Medium', sans-serif;font-size: 12px;color:#90826c;text-align: center}
+p{line-height: 20px;letter-spacing: -1px}
 button{border:none;background:none;cursor: pointer;}
 input{outline: none;}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 
 /* design area */
+html{scroll-behavior: smooth}
 .wrapper{width:100%;position: relative;}
 
 /* header */
-.header{display:flex;width:100%;height: 120px;position: fixed;top:0;background-color: transparent;z-index: 9999;}
-.header .logo{display:flex;margin:0 45px;align-items:center;width:120px;font-family: 'Abril Fatface', cursive, sans-serif;line-height: 20px;}
+.header{display:flex;width:100%;height: 120px;position: fixed;top:0;background-color: transparent;z-index: 9999;transition:all 0.45s ease-in-out}
+.header_active{background-color:rgba(198, 213, 211, 0.65)}
+.header .logo{display:flex;margin:0 115px;align-items:center;width:120px;font-family: 'Abril Fatface', cursive, sans-serif;line-height: 20px;}
 .header .navi{display:flex;width:50%;align-items: center}
 .header .navi li{position:relative;line-height: 25x;transition: all .3s ease-in-out}
-.header .navi li::after{content: '';position: absolute;bottom:0;right:100%;width:0;height: 1px;background-color: orange;}
-.header .navi li:hover{color:orange}
+.header .navi li::after{content: '';position: absolute;bottom:0;right:100%;width:0;height: 2px;background-color: #40a798}
+.header .navi li:hover{color:#40a798}
 .header .navi li:hover::after{width:100%;left:0;transition:all .3s ease-in-out}
-.header .navi li:first-child{margin-right: 50px;}
+.header .navi li:first-child{margin-right: 115px;}
 .header .navi li a{line-height: 25px}
 .header .navi_l{justify-content: flex-end}
 .header .navi_r{justify-content: flex-start}
 
 /* main */
 .main{position: relative;height: 100vh;overflow: hidden;}
-.main .main_img{position:absolute;top:22%;left:50%;margin-left:-185px;background:url(./img/wine_01.png) 0 0 no-repeat;width:400px;height: 650px;}
-.main .main_back{width:50%;height: 100%;background:url(./img/back.png) 0 0 repeat;opacity:.1;float: left;background-color: #f9f8f4}
-.main .main_txt{display: flex;padding:50px;width:50%;height:100%;justify-content:center;align-items: center;float: left;box-sizing: border-box}
-
-.main .wrap_mainTxt span{color:orange;font-size: 13px;letter-spacing: 1px}
-.main .wrap_mainTxt h2{margin:10px 0 35px 0;font-size: 35px;letter-spacing: 2px;line-height: 37px}
-.main .wrap_mainTxt p{margin:0 auto 30px;width:305px;word-break: keep-all;font-size: 11px;line-height: 20px;}
-.main .wrap_mainTxt a{display:inline-block;transition:all .3s ease-in-out;position: relative;line-height:20px;}
-.main .wrap_mainTxt a::after{content:'';position: absolute;bottom:0;right:100%;width:0;height: 1px;background-color: orange;}
-.main .wrap_mainTxt a:hover{color:orange;}
+.main .main_back{position: relative;;width:50%;height: 100%;float: left;background-color: #f6efec}
+.main .main_back .main_backImg_left{position:absolute;right:0;top:17%;width:550px;height: 560px;;background:url(./img/grape_left_02.png) 0 0 no-repeat;background-size: 570px;opacity: .9;}
+.main .main_txt{display: flex;padding:50px;position: relative;width:50%;height:100%;justify-content:center;align-items: center;float: left;box-sizing: border-box}
+.main .main_txt .main_backImg_right{position:absolute;top:25%;left:0;width:200px;height: 560px;;background:url(./img/grape_right.png) 0 0 no-repeat;background-size: 200px;transform: rotate(15deg);opacity: .9;}
+.main .wrap_mainTxt{margin-top:65px}
+.main .wrap_mainTxt span{color:#ff9470;font-size: 15px;letter-spacing: 0px;font-weight: bold;}
+.main .wrap_mainTxt h2{margin:15px 0 20px 0;font-size: 37px;font-weight: inherit;letter-spacing: 0;color:#40a798;line-height: 35px;font-family: 'Noto Serif', serif;}
+.main .wrap_mainTxt p{margin:0 auto 55px;width:305px;word-break: keep-all;font-size: 11px;color:#476269}
+.main .wrap_mainTxt a{display:inline-block;position: relative;width:185px;height: 40px;border:2px solid #40a7a5;border-radius: 2px;line-height:40px;color: #40a7a5;transition:all .3s ease-in-out;}
+.main .wrap_mainTxt a::after{content:'';position: absolute;bottom:0;right:100%;width:0;height: 3px;background-color: #40a798}
 .main .wrap_mainTxt a:hover::after{width:100%;left:0;transition:all .3s ease-in-out}
+
+.main .main_img{position:absolute;top:30%;left:50%;margin-left:-185px;background:url(./img/wine_01.png) 0 0 no-repeat;width:400px;height: 650px;}
+
+/* product */
+.cont_product{width:100%;height: calc(100vh - 100px);padding-top:100px}
+.cont_product .product_slide{overflow: hidden;margin:9.5% auto;width:75%}
+.cont_product .slides{width:100%;}
+.cont_product .slide{float: left;width:33.33%;}
+.cont_product .slide .product_img_01{background:url(./img/Riesling_01.png) 0 0 no-repeat;background-size: cover;width:111px;height: 450px;margin:0 auto} 
+.cont_product .slide .product_img_02{background:url(./img/Riesling_02.png) 0 0 no-repeat;background-size: cover;width:111px;height: 450px;margin:0 auto} 
+.cont_product .slide .product_img_03{background:url(./img/Riesling_03.png) 0 0 no-repeat;background-size: cover;width:111px;height: 450px;margin:0 auto} 
+.cont_product .slide .product_txt{margin-top:35px;color:#476269}
+.cont_product .slide .product_txt strong{font-size: 18px;}
+.cont_product .slide .product_txt p{margin-top:10px}
 
 /* horizon */
 .cont_horizon{height: 100vh;position: relative;}
-.cont_horizon .horizon_img{position: absolute;top:22%;left:50%;margin-left:-160px;padding-top:175px;background:url();width:320px;height: 350px;font-size: 60px;line-height: 50px;font-weight:bold;letter-spacing:2px;box-sizing: border-box}
+.cont_horizon .horizon_img{position: absolute;top:20%;left:50%;margin-left:-88px;width:176px;height: 400px;background:url(./img/wine_02.png) 0 0 no-repeat;background-size: 175px;}
+.cont_horizon .horizon_tit{position: absolute;top:22%;left:50%;margin-left:-160px;padding-top:175px;width:320px;height: 350px;font-size: 55px;line-height: 50px;font-family: 'Noto Serif', serif;font-weight:bold;color:#40a798;letter-spacing:2px;box-sizing: border-box}
 .cont_horizon .horizon_back{width:100%;height: 50%;background-color: #fff;}
-.cont_horizon .wrap_horizon{padding:150px;width: 100%;height: 50%;background-color: #eee5dc;box-sizing: border-box}
-.cont_horizon .wrap_horizon dl{margin:0 auto;width:600px;}
-.cont_horizon .wrap_horizon dt{margin-bottom:30px;font-size: 25px}
+.cont_horizon .wrap_horizon{padding:190px 150px 150px 150px;width: 100%;height: 50%;background-color: #f6efec;box-sizing: border-box}
+.cont_horizon .wrap_horizon dl{margin:0 auto;width:600px;color:#476269}
+.cont_horizon .wrap_horizon dt{margin-bottom:15px;font-size: 18px;font-weight: bold;font-family: 'Noto Serif KR', serif;}
 .cont_horizon .wrap_horizon dd{font-size:11px;line-height: 20px;letter-spacing: -1px}
 
 /* introduce */
-.cont_introduce{width:100%;height: 100vh;position:relative;overflow: hidden;}
+.cont_introduce{width:100%;height: 100vh;position:relative;overflow: hidden;background-color:#f6efec}
 .cont_introduce .introduce_txt{display:flex;align-items:center;justify-content: center;width:50%;height: 100%;float: left;}
-.cont_introduce .introduce_txt .wrap_introTxt h3{margin:5px 0 30px;font-size: 30px;letter-spacing: -4px}
-.cont_introduce .introduce_back{width:50%;height: 100%;background-color: #e5e0db;float: left;}
+.cont_introduce .introduce_txt .wrap_introTxt strong{font-size:15px;color:#ff9470}
+.cont_introduce .introduce_txt .wrap_introTxt h3{margin:15px 0 35px;font-size: 38px;font-family:'Noto Serif KR', serif;color:#40a798}
+.cont_introduce .introduce_txt .wrap_introTxt .list_introduce{color:#476269}
+.cont_introduce .introduce_txt .wrap_introTxt .list_introduce li{position: relative;margin-bottom:35px;padding-top:30px}
+.cont_introduce .introduce_txt .wrap_introTxt .list_introduce li:last-child{margin-bottom: 0}
+.cont_introduce .introduce_txt .wrap_introTxt .list_introduce span{position: absolute;top:0;left:-70px;font-size:75px;font-family: 'Pinyon Script', cursive;color:#476269}
+.cont_introduce .introduce_back{width:50%;height: 100%;background:url(./img/progress.png) 0 0 no-repeat;background-size:cover;float: left;}
 .cont_introduce .introduce_img{position: absolute}
 
-/* submit */
-.submit{height: 500px;display: flex;align-items: center;justify-content: center}
-.submit .wrap_contSubmit p{font-size: 30px;letter-spacing: -2px;}
-.submit .wrap_contSubmit form{margin-top:30px;}
-.submit .wrap_contSubmit input{margin:70px 0 20px 0;padding: 5px 20px;width:300px;border:none;border-bottom:1px solid rosybrown;text-align: center}
-.submit .wrap_contSubmit button{width:170px;height: 35px;color:#fff; background-color:rosybrown;;border-radius: 2px;transition: all .3s ease-in-out}
-.submit .wrap_contSubmit button:hover{background-color: rgb(151, 118, 118);}
-
 /* footer */
-.footer{display:flex;padding-top:80px;align-items:center;justify-content: center;height: 350px;background-color: #eee5dc;box-sizing: border-box}
-.footer span{display: block;margin-bottom:30px;font-size: 35px;font-weight: bold;letter-spacing: 15px;color:#fff;}
-.footer .list_fab{display:inline-block;overflow: hidden;}
-.footer .list_fab li{float: left;margin-right: 50px;cursor: pointer;}
-.footer .list_fab li:last-child{margin-right: 0}
-.footer p{margin-top:120px;font-size:11px;letter-spacing: 1px}
+.footer{width:100%;height: calc(100vh - 100px);padding-top:100px}
+.footer .submit{width:100%;height: 50%;display: flex;align-items: center;justify-content: center}
+.footer .submit .wrap_contSubmit p{font-size: 30px;letter-spacing: -2px;}
+.footer .submit .wrap_contSubmit form{margin-top:30px;}
+.footer .submit .wrap_contSubmit input{margin:70px 0 20px 0;padding: 5px 20px;width:300px;border:none;border-bottom:1px solid #90826c;text-align: center}
+.footer .submit .wrap_contSubmit button{position:relative;width:170px;height: 35px;color:#40a798; border:2px solid #40a798;;border-radius: 2px;transition: all .3s ease-in-out}
+.footer .submit .wrap_contSubmit button::after{content:'';position: absolute;bottom:0;right:100%;width:0;height: 2px;background-color: #40a798}
+.footer .submit .wrap_contSubmit button:hover::after{width:100%;left:0;transition:all .3s ease-in-out}
+
+.footer .wrap_contFooter{display:flex;justify-content: center;align-items: center;width:100%;height: 50%;background-color: #f6efec}
+.footer .wrap_contFooter span{display: block;margin-bottom:30px;font-size: 35px;font-weight: bold;letter-spacing: 15px;color:#fff;}
+.footer .wrap_contFooter .list_fab{display:inline-block;overflow: hidden;}
+.footer .wrap_contFooter .list_fab li{float: left;margin-right: 50px;cursor: pointer;}
+.footer .wrap_contFooter .list_fab li:last-child{margin-right: 0}
+.footer .wrap_contFooter p{margin-top:120px;font-size:11px;letter-spacing: 1px}
