@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300,500,700');
+
+/* reset area */
+*{margin:0;padding:0}
+li{list-style: none;}
+a{text-decoration: none;color: inherit}
+
+body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#7f7f7f}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+
+/* design area */
+body{width:100%;text-align: center;background-color:#f1edec}
+.wraper{min-width:950px;width:95%;margin: 0 auto;background-color:#fff}
+.header{padding-top:150px}
+h1{margin:0 auto;width:80px;line-height: 20px;letter-spacing: 5px;}
+h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width: 80px; height: 65px;animation-name: title;animation-duration: 3s;animation-iteration-count: infinite;}
+@keyframes title{0%{color:plum;}40%{color:#6d6e70}70%{color:burlywood;}100%{color:plum;}}
+
+/* navi */
+.list_navi{overflow: hidden;display: inline-block;margin:100px 0}
+.list_navi li{float: left;margin-right:70px;letter-spacing: -1px;font-weight: 300;}
+.list_navi li:last-child{margin-right:0}
+.list_navi li:hover a{color:burlywood;}
+.list_navi li a{display:inline-block;font-size: 23px;transition: all .2s ease-in-out}
+
+/* CV */
+.content_cv{width:900px;margin:0 auto}
+.content_cv ul{overflow: hidden;position: relative;margin-bottom: 60px;}
+.content_cv li span{position: relative;padding-left: 15px}
+.content_cv li span::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
+.list_cv_first li{float: left;text-align: left;font-weight: 300;}
+.list_cv_first li:last-child{position: absolute;top:0;right: 0;}
+.list_cv_first li span{font-weight: bold}
+
+.list_cv_sec li{float: left;text-align: left;margin-right:50px}
+.list_cv_sec li:nth-child(1){width:450px;height:550px;background:url(./img/port.jpg) 0 0 no-repeat;background-size: cover}
+.list_cv_sec li:nth-child(2){width:230px}
+.list_cv_sec li:nth-child(3){width:120px;margin-right: 0}
+.list_cv_sec li span{font-weight: bold}
+
+/* project */
+.content_project{width:900px;margin:0 auto;}
+.content_project .project_no1{background: url(./img/port.jpg) 0 0 no-repeat;width:100%;height: 500px;background-size: cover;}
+.content_project .project_no4{background: url(./img/bitchain.png) 0 0 no-repeat;width:100%;height: 500px;background-size: cover;}
+
+.content_project .list_port{overflow: hidden;position: relative;margin-bottom:60px}
+.content_project .list_port li{float: left;text-align: left}
+.content_project .list_port li:first-child{position: relative;padding-left:15px}
+.content_project .list_port li:first-child::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
+.content_project .list_port li:last-child{position: absolute;top:0;right:0;text-align: right}
+.content_project .pro_img{filter:grayscale(100%);transition:all .45s ease-in-out}
+.content_project .pro_img:hover{filter: none}
+.content_project .pro_img a{display:block;width:100%;height: 100%;}
+
+.list_project_row {overflow: hidden;}
+.list_project_row li{float: left; width:425px;margin-right: 50px}
+.list_project_row li:last-child{margin-right: 0}
+.list_project_row li .pro_img{border:1px solid #e4e4e4;box-sizing: border-box}
+.list_project_row li .project_no2{background: url(./img/bitpi.png) -228px 0 no-repeat;width: 100%;height: 450px;background-size: cover;}
+.list_project_row li .project_no3{background: url(./img/port_03.jpg) -195px 5px no-repeat;width: 100%;height: 450px;background-size: cover;}
+
+
+
+/* portf */
+.content_port{width:900px;margin:0 auto}
+.content_port .port_no1,
+.content_port .port_no2,
+.content_port .port_no3{width: 100%;height: 350px;}
+.content_port .port_no1{background: url(./img/preseason.png) 0 -95px no-repeat;background-size: cover}
+.content_port .port_no2{border:1px solid #e4e4e4;box-sizing: border-box;background: url(./img/wine.png) 0 -85px no-repeat;background-size: cover}
+.content_port .port_no3{background: url(./img/port_03.jpg) 0 -250px no-repeat;background-size: cover}
+.content_port .list_port{overflow: hidden;position: relative;margin-bottom:60px}
+.content_port .list_port li{float: left;}
+.content_port .list_port li:last-child{position: absolute;top:0;right: 0;}
+.content_port .list_port li:first-child{position: relative;padding-left:15px}
+.content_port .list_port li:first-child::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
+.content_port .port_img{filter:grayscale(70%);transition:all .4s ease-in-out}
+.content_port .port_img:hover{filter: none}
+.content_port .port_img a{display:block;width:100%;height: 100%;}
+
+
+/* footer */
+.footer{width:100%;position: relative;width:55%;margin:0 auto;padding:50px 0;font-size: 10px;letter-spacing: 3px}
+.footer::before{content:'';position: absolute;top:0;left:0;width:100%;height: 1px;background-color: #aaa}
+
+
+@media only screen and (max-width: 650px)

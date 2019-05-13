@@ -38,9 +38,9 @@ html{scroll-behavior: smooth}
 /* main */
 .main{position: relative;height: 100vh;overflow: hidden;}
 .main .main_back{position: relative;;width:50%;height: 100%;float: left;background-color: #f6efec}
-.main .main_back .main_backImg_left{position:absolute;right:0;top:17%;width:550px;height: 560px;;background:url(./img/grape_left_02.png) 0 0 no-repeat;background-size: 570px;opacity: .9;}
+.main .main_back .main_backImg_left{position:absolute;right:0;top:20%;width:550px;height: 560px;;background:url(./img/grape_left_02.png) 0 0 no-repeat;background-size: 570px;opacity: .9;}
 .main .main_txt{display: flex;padding:50px;position: relative;width:50%;height:100%;justify-content:center;align-items: center;float: left;box-sizing: border-box}
-.main .main_txt .main_backImg_right{position:absolute;top:25%;left:0;width:200px;height: 560px;;background:url(./img/grape_right.png) 0 0 no-repeat;background-size: 200px;transform: rotate(15deg);opacity: .9;}
+.main .main_txt .main_backImg_right{position:absolute;top:28%;left:0;width:200px;height: 560px;;background:url(./img/grape_right.png) 0 0 no-repeat;background-size: 200px;transform: rotate(15deg);opacity: .9;}
 .main .wrap_mainTxt{margin-top:65px}
 .main .wrap_mainTxt span{color:#ff9470;font-size: 15px;letter-spacing: 0px;font-weight: bold;}
 .main .wrap_mainTxt h2{margin:15px 0 20px 0;font-size: 37px;font-weight: inherit;letter-spacing: 0;color:#40a798;line-height: 35px;font-family: 'Noto Serif', serif;}
@@ -49,7 +49,7 @@ html{scroll-behavior: smooth}
 .main .wrap_mainTxt a::after{content:'';position: absolute;bottom:0;right:100%;width:0;height: 3px;background-color: #40a798}
 .main .wrap_mainTxt a:hover::after{width:100%;left:0;transition:all .3s ease-in-out}
 
-.main .main_img{position:absolute;top:30%;left:50%;margin-left:-185px;background:url(./img/wine_01.png) 0 0 no-repeat;width:400px;height: 650px;}
+.main .main_img{position:absolute;top:32%;left:50%;margin-left:-185px;background:url(./img/wine_01.png) 0 0 no-repeat;width:400px;height: 650px;}
 
 /* product */
 .cont_product{width:100%;height: calc(100vh - 100px);padding-top:100px}
