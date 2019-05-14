@@ -29,6 +29,7 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .content_cv ul{overflow: hidden;position: relative;margin-bottom: 60px;}
 .content_cv li span{position: relative;padding-left: 15px}
 .content_cv li span::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
+.content_cv .list_cv_first{height: 85px;}
 .list_cv_first li{float: left;text-align: left;font-weight: 300;}
 .list_cv_first li:last-child{position: absolute;top:0;right: 0;}
 .list_cv_first li span{font-weight: bold}
@@ -61,14 +62,13 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .list_project_row li .project_no3{background: url(./img/port_03.jpg) -195px 5px no-repeat;width: 100%;height: 450px;background-size: cover;}
 
 
-
 /* portf */
 .content_port{width:900px;margin:0 auto}
 .content_port .port_no1,
 .content_port .port_no2,
 .content_port .port_no3{width: 100%;height: 350px;}
-.content_port .port_no1{background: url(./img/preseason.png) 0 -95px no-repeat;background-size: cover}
-.content_port .port_no2{border:1px solid #e4e4e4;box-sizing: border-box;background: url(./img/wine.png) 0 -85px no-repeat;background-size: cover}
+.content_port .port_no1{border:1px solid #e4e4e4;box-sizing: border-box;background: url(./img/wine.png) 0 -85px no-repeat;background-size: cover}
+.content_port .port_no2{background: url(./img/preseason.png) 0 -95px no-repeat;background-size: cover}
 .content_port .port_no3{background: url(./img/port_03.jpg) 0 -250px no-repeat;background-size: cover}
 .content_port .list_port{overflow: hidden;position: relative;margin-bottom:60px}
 .content_port .list_port li{float: left;}

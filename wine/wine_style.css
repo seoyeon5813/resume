@@ -22,18 +22,17 @@ html{scroll-behavior: smooth}
 .wrapper{width:100%;position: relative;}
 
 /* header */
-.header{display:flex;width:100%;height: 120px;position: fixed;top:0;background-color: transparent;z-index: 9999;transition:all 0.45s ease-in-out}
+.header{width:100%;height: 120px;position: fixed;top:0;background-color: transparent;z-index: 9999;transition:all 0.45s ease-in-out}
 .header_active{background-color:rgba(198, 213, 211, 0.65)}
-.header .logo{display:flex;margin:0 115px;align-items:center;width:120px;font-family: 'Abril Fatface', cursive, sans-serif;line-height: 20px;}
-.header .navi{display:flex;width:50%;align-items: center}
-.header .navi li{position:relative;line-height: 25x;transition: all .3s ease-in-out}
+.header .logo{position:absolute;margin-left:-60px;left:50%;top:27%;align-items:center;width:120px;font-family: 'Abril Fatface', cursive, sans-serif;line-height: 20px;}
+.header .navi{display:inline-block;overflow: hidden;margin-top:50px}
+.header .navi li{margin-right:100px;width:90px;position:relative;float: left;transition: all .3s ease-in-out;}
+.header .navi li:nth-child(2){margin-right:230px}
 .header .navi li::after{content: '';position: absolute;bottom:0;right:100%;width:0;height: 2px;background-color: #40a798}
 .header .navi li:hover{color:#40a798}
 .header .navi li:hover::after{width:100%;left:0;transition:all .3s ease-in-out}
-.header .navi li:first-child{margin-right: 115px;}
+.header .navi li:last-child{margin-right:0}
 .header .navi li a{line-height: 25px}
-.header .navi_l{justify-content: flex-end}
-.header .navi_r{justify-content: flex-start}
 
 /* main */
 .main{position: relative;height: 100vh;overflow: hidden;}
@@ -42,7 +41,7 @@ html{scroll-behavior: smooth}
 .main .main_txt{display: flex;padding:50px;position: relative;width:50%;height:100%;justify-content:center;align-items: center;float: left;box-sizing: border-box}
 .main .main_txt .main_backImg_right{position:absolute;top:28%;left:0;width:200px;height: 560px;;background:url(./img/grape_right.png) 0 0 no-repeat;background-size: 200px;transform: rotate(15deg);opacity: .9;}
 .main .wrap_mainTxt{margin-top:65px}
-.main .wrap_mainTxt span{color:#ff9470;font-size: 15px;letter-spacing: 0px;font-weight: bold;}
+.main .wrap_mainTxt em{color:#ff9470;font-size: 15px;letter-spacing: 0px;font-weight: bold;}
 .main .wrap_mainTxt h2{margin:15px 0 20px 0;font-size: 37px;font-weight: inherit;letter-spacing: 0;color:#40a798;line-height: 35px;font-family: 'Noto Serif', serif;}
 .main .wrap_mainTxt p{margin:0 auto 55px;width:305px;word-break: keep-all;font-size: 11px;color:#476269}
 .main .wrap_mainTxt a{display:inline-block;position: relative;width:185px;height: 40px;border:2px solid #40a7a5;border-radius: 2px;line-height:40px;color: #40a7a5;transition:all .3s ease-in-out;}
@@ -51,39 +50,37 @@ html{scroll-behavior: smooth}
 
 .main .main_img{position:absolute;top:32%;left:50%;margin-left:-185px;background:url(./img/wine_01.png) 0 0 no-repeat;width:400px;height: 650px;}
 
-/* product */
-.cont_product{width:100%;height: calc(100vh - 100px);padding-top:100px}
-.cont_product .product_slide{overflow: hidden;margin:9.5% auto;width:75%}
-.cont_product .slides{width:100%;}
-.cont_product .slide{float: left;width:33.33%;}
-.cont_product .slide .product_img_01{background:url(./img/Riesling_01.png) 0 0 no-repeat;background-size: cover;width:111px;height: 450px;margin:0 auto} 
-.cont_product .slide .product_img_02{background:url(./img/Riesling_02.png) 0 0 no-repeat;background-size: cover;width:111px;height: 450px;margin:0 auto} 
-.cont_product .slide .product_img_03{background:url(./img/Riesling_03.png) 0 0 no-repeat;background-size: cover;width:111px;height: 450px;margin:0 auto} 
-.cont_product .slide .product_txt{margin-top:35px;color:#476269}
-.cont_product .slide .product_txt strong{font-size: 18px;}
-.cont_product .slide .product_txt p{margin-top:10px}
-
 /* horizon */
-.cont_horizon{height: 100vh;position: relative;}
-.cont_horizon .horizon_img{position: absolute;top:20%;left:50%;margin-left:-88px;width:176px;height: 400px;background:url(./img/wine_02.png) 0 0 no-repeat;background-size: 175px;}
-.cont_horizon .horizon_tit{position: absolute;top:22%;left:50%;margin-left:-160px;padding-top:175px;width:320px;height: 350px;font-size: 55px;line-height: 50px;font-family: 'Noto Serif', serif;font-weight:bold;color:#40a798;letter-spacing:2px;box-sizing: border-box}
-.cont_horizon .horizon_back{width:100%;height: 50%;background-color: #fff;}
-.cont_horizon .wrap_horizon{padding:190px 150px 150px 150px;width: 100%;height: 50%;background-color: #f6efec;box-sizing: border-box}
+.cont_horizon{width:100%;height: 100vh;position: relative;background-color: #fff;}
+.cont_horizon .horizon_img{position: absolute;top:20%;left:50%;z-index: 2;margin-left:-88px;width:176px;height: 400px;background:url(./img/wine_02.png) 0 0 no-repeat;background-size: 175px;}
+.cont_horizon .horizon_tit{position: absolute;top:22%;left:50%;z-index: 3;margin-left:-160px;padding-top:175px;width:320px;height: 350px;font-size: 55px;line-height: 50px;font-family: 'Noto Serif', serif;font-weight:bold;color:#40a798;letter-spacing:2px;box-sizing: border-box}
+.cont_horizon .wrap_horizon{position:absolute;bottom:0;z-index: 1;padding:190px 150px 150px 150px;width: 100%;height: 50%;background-color: #f6efec;box-sizing: border-box}
 .cont_horizon .wrap_horizon dl{margin:0 auto;width:600px;color:#476269}
 .cont_horizon .wrap_horizon dt{margin-bottom:15px;font-size: 18px;font-weight: bold;font-family: 'Noto Serif KR', serif;}
 .cont_horizon .wrap_horizon dd{font-size:11px;line-height: 20px;letter-spacing: -1px}
 
+/* product */
+.cont_product{width:100%;height: calc(100vh - 100px);}
+.cont_product .slide{float: left;width:33.33%;}
+.cont_product .slide span[class^='product_img_0']{display:block;background-size: cover;width:111px;height: 450px;margin:0 auto}
+.cont_product .slide .product_img_01{background:url(./img/Riesling_01.png) 0 0 no-repeat;} 
+.cont_product .slide .product_img_02{background:url(./img/Riesling_02.png) 0 0 no-repeat;} 
+.cont_product .slide .product_img_03{background:url(./img/Riesling_03.png) 0 0 no-repeat;} 
+.cont_product .slide .product_txt{margin-top:35px;color:#476269}
+
+.cont_product .slide .product_txt strong{font-size: 18px;}
+.cont_product .slide .product_txt p{margin-top:10px}
+
 /* introduce */
 .cont_introduce{width:100%;height: 100vh;position:relative;overflow: hidden;background-color:#f6efec}
 .cont_introduce .introduce_txt{display:flex;align-items:center;justify-content: center;width:50%;height: 100%;float: left;}
-.cont_introduce .introduce_txt .wrap_introTxt strong{font-size:15px;color:#ff9470}
+.cont_introduce .introduce_txt .wrap_introTxt em{font-size:15px;color:#ff9470}
 .cont_introduce .introduce_txt .wrap_introTxt h3{margin:15px 0 35px;font-size: 38px;font-family:'Noto Serif KR', serif;color:#40a798}
 .cont_introduce .introduce_txt .wrap_introTxt .list_introduce{color:#476269}
 .cont_introduce .introduce_txt .wrap_introTxt .list_introduce li{position: relative;margin-bottom:35px;padding-top:30px}
 .cont_introduce .introduce_txt .wrap_introTxt .list_introduce li:last-child{margin-bottom: 0}
 .cont_introduce .introduce_txt .wrap_introTxt .list_introduce span{position: absolute;top:0;left:-70px;font-size:75px;font-family: 'Pinyon Script', cursive;color:#476269}
 .cont_introduce .introduce_back{width:50%;height: 100%;background:url(./img/progress.png) 0 0 no-repeat;background-size:cover;float: left;}
-.cont_introduce .introduce_img{position: absolute}
 
 /* footer */
 .footer{width:100%;height: calc(100vh - 100px);padding-top:100px}
@@ -91,7 +88,7 @@ html{scroll-behavior: smooth}
 .footer .submit .wrap_contSubmit p{font-size: 30px;letter-spacing: -2px;}
 .footer .submit .wrap_contSubmit form{margin-top:30px;}
 .footer .submit .wrap_contSubmit input{margin:70px 0 20px 0;padding: 5px 20px;width:300px;border:none;border-bottom:1px solid #90826c;text-align: center}
-.footer .submit .wrap_contSubmit button{position:relative;width:170px;height: 35px;color:#40a798; border:2px solid #40a798;;border-radius: 2px;transition: all .3s ease-in-out}
+.footer .submit .wrap_contSubmit button{display:block;margin:0 auto;position:relative;width:170px;height: 35px;color:#40a798; border:2px solid #40a798;;border-radius: 2px;transition: all .3s ease-in-out}
 .footer .submit .wrap_contSubmit button::after{content:'';position: absolute;bottom:0;right:100%;width:0;height: 2px;background-color: #40a798}
 .footer .submit .wrap_contSubmit button:hover::after{width:100%;left:0;transition:all .3s ease-in-out}
 

@@ -8,31 +8,50 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="wine_style.css">
 
+
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+    <script src="vendors/easings.min.js"></script>
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
     <script src="./fullpage.min.js"></script>
-
+    <style>
+    /*!
+ * fullPage 3.0.4
+ * https://github.com/alvarotrigo/fullPage.js
+ *
+ * @license GPLv3 for open source use only
+ * or Fullpage Commercial License for commercial use
+ * http://alvarotrigo.com/fullPage/pricing/
+ *
+ * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
+ */
+.fp-enabled body,html.fp-enabled{margin:0;padding:0;overflow:hidden;-webkit-tap-highlight-color:transparent}.fp-section{position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.fp-slide{float:left}.fp-slide,.fp-slidesContainer{height:100%;display:block}.fp-slides{z-index:1;height:100%;overflow:hidden;position:relative;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.fp-section.fp-table,.fp-slide.fp-table{display:table;table-layout:fixed;width:100%}.fp-tableCell{display:table-cell;vertical-align:middle;width:100%;height:100%}.fp-slidesContainer{float:left;position:relative}.fp-controlArrow{-webkit-user-select:none;-moz-user-select:none;-khtml-user-select:none;-ms-user-select:none;position:absolute;z-index:4;top:50%;cursor:pointer;width:0;height:0;border-style:solid;margin-top:-38px;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.fp-controlArrow.fp-prev{left:200px;width:0;border-width:38.5px 34px 38.5px 0;border-color:transparent #c7b8ae transparent transparent}.fp-controlArrow.fp-next{right:200px;border-width:38.5px 0 38.5px 34px;border-color:transparent transparent transparent #c7b8ae}.fp-scrollable{position:relative}.fp-scrollable,.fp-scroller{overflow:hidden}.iScrollIndicator{border:0!important}.fp-notransition{-webkit-transition:none!important;transition:none!important}#fp-nav,.fp-slidesNav{opacity:1;-webkit-transform:translate3d(0,0,0)}#fp-nav{margin-top:-32px;top:50%;position:fixed;z-index:100}#fp-nav.fp-right{right:17px}#fp-nav.fp-left{left:17px}.fp-slidesNav{position:absolute;z-index:4;-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);left:0!important;right:0;margin:0 auto!important}.fp-slidesNav.fp-bottom{bottom:17px}.fp-slidesNav.fp-top{top:17px}#fp-nav ul,.fp-slidesNav ul{margin:0;padding:0}#fp-nav ul li,.fp-slidesNav ul li{display:block;width:14px;height:13px;margin:7px;position:relative}.fp-slidesNav ul li{display:inline-block}#fp-nav ul li a,.fp-slidesNav ul li a{display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer;text-decoration:none}#fp-nav ul li a.active span,#fp-nav ul li:hover a.active span,.fp-slidesNav ul li a.active span,.fp-slidesNav ul li:hover a.active span{height:12px;width:12px;margin:-6px 0 0 -6px;border-radius:100%}#fp-nav ul li a span,.fp-slidesNav ul li a span{border-radius:50%;position:absolute;z-index:1;height:4px;width:4px;border:0;background:#c7b8ae;left:50%;top:50%;margin:-2px 0 0 -2px;-webkit-transition:all .1s ease-in-out;-moz-transition:all .1s ease-in-out;-o-transition:all .1s ease-in-out;transition:all .1s ease-in-out}#fp-nav ul li:hover a span,.fp-slidesNav ul li:hover a span{width:10px;height:10px;margin:-5px 0 0 -5px}#fp-nav ul li .fp-tooltip,.fp-sr-only{position:absolute;overflow:hidden;white-space:nowrap}#fp-nav ul li .fp-tooltip{top:-2px;color:#fff;font-size:14px;font-family:arial,helvetica,sans-serif;max-width:220px;display:block;opacity:0;cursor:pointer;width:0}#fp-nav ul li:hover .fp-tooltip,#fp-nav.fp-show-active a.active+.fp-tooltip{-webkit-transition:opacity .2s ease-in;transition:opacity .2s ease-in;width:auto;opacity:1}#fp-nav ul li .fp-tooltip.fp-right{right:20px}#fp-nav ul li .fp-tooltip.fp-left{left:20px}.fp-auto-height .fp-slide,.fp-auto-height .fp-tableCell,.fp-auto-height.fp-section,.fp-responsive .fp-auto-height-responsive .fp-slide,.fp-responsive .fp-auto-height-responsive .fp-tableCell,.fp-responsive .fp-auto-height-responsive.fp-section{height:auto!important}.fp-sr-only{width:1px;height:1px;padding:0;clip:rect(0,0,0,0);border:0}
+</style>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <ul class="navi navi_l">
-                <li><a href="#about">About Sancerre</a></li>
-                <li><a href="#product">제품보기</a></li>
-            </ul>
-            <h1 class="logo"><a href="#">Le Glacier<br> des<br> Etoiles</a></h1>
-            <ul class="navi navi_r">
-                <li><a href="#progress">제조과정</a></li>
-                <li><a href="#footer">고객지원</a></li>
-            </ul>
-        </div>
-        <div class="main">            
+    <div class="header">
+        <h1 class="logo"  data-menuanchor="1"><a href="#main">Le Glacier<br> des<br> Etoiles</a></h1>
+        <ul class="navi" id="myMenu">
+            <li data-menuanchor="2"><a href="#about">About Sancerre</a></li>
+            <li data-menuanchor="3"><a href="#product">제품보기</a></li>
+            <li data-menuanchor="4"><a href="#progress">제조과정</a></li>
+            <li data-menuanchor="5"><a href="#footer">고객지원</a></li>
+        </ul>
+    </div>
+    <div class="wrapper" id="fullpage">
+        <div class="main section" id="main">            
             <div class="main_back">
                 <div class="main_backImg_left"></div>
             </div>
             <div class="main_txt">
                 <div class="main_backImg_right"></div>
                 <div class="wrap_mainTxt">
-                    <span>Pacific Rim From France</span>
+                    <em>Pacific Rim From France</em>
                     <h2>SWEET RIESLING<br>COLUMBIA VALLEY</h2>
                     <p>
                         덮어 이 별 흙으로 소녀들의 계십니다. 별 오는 강아지, 옥 계십니다.
@@ -47,8 +66,7 @@
             </div>
             <div class="main_img"></div>
         </div>
-        <div class="cont_horizon" id="about">
-            <div class="horizon_back"></div>
+        <div class="cont_horizon section" id="about">
             <div class="horizon_img"></div>
             <div class="horizon_tit">SANCERRE<br>DES<br>ETOILES</div>
             <div class="wrap_horizon">
@@ -64,43 +82,36 @@
                 </dl>
             </div>
         </div>
-        <div class="cont_product" id="product">
-            <div class="product_slide">
-                <div class="slides">
-                    <div class="slide">
-
-                        <div class="product_img_01"></div>
-                        <div class="product_txt">
-                            <strong>2017 DRY RIESLING</strong>
-                            <p>$59.00 / 375mL</p>
-                        </div>
-
-                    </div>
-                    <div class="slide">
-
-                        <div class="product_img_02"></div>
-                        <div class="product_txt">
-                            <strong>2017 RIESLING J</strong>
-                            <p>$39.00 / 375mL</p>
-                        </div>
-
-                    </div>
-                    <div class="slide">
-
-                        <div class="product_img_03"></div>
-                        <div class="product_txt">
-                            <strong>2017 SWEET RIESLING</strong>
-                            <p>$49.00 / 375mL</p>
-                        </div>
-
-                    </div>
+        <div class="cont_product section" id="product">
+            <div class="slide" data-anchor="slide1">
+                <span></span>
+                <span class="product_img_01"></span>
+                <div class="product_txt">
+                    <strong>2017 DRY RIESLING</strong>
+                    <p>$59.00 / 375mL</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <span></span>
+                <span class="product_img_02"></span>
+                <div class="product_txt">
+                    <strong>2017 RIESLING J</strong>
+                    <p>$39.00 / 375mL</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide3">
+                <span></span>
+                <span class="product_img_03"></span>
+                <div class="product_txt">
+                    <strong>2017 SWEET RIESLING</strong>
+                    <p>$49.00 / 375mL</p>
                 </div>
             </div>
         </div>
-        <div class="cont_introduce" id="progress">
+        <div class="cont_introduce section" id="progress">
             <div class="introduce_txt">
                 <div class="wrap_introTxt">
-                    <strong>SANCERRE DES ETOILES</strong>
+                    <em>SANCERRE DES ETOILES</em>
                     <h3>좋은 와인의 이유</h3>
                     <ul class="list_introduce">
                         <li><span>1.</span> 오아이스도 목숨이 석가는 것이다.<br>좋은 밑바탕의 토양이 있음으로써 미묘한 약동하다.</li>
@@ -110,19 +121,19 @@
                 </div>
             </div>
             <div class="introduce_back"></div>
-            <div class="introduce_img"></div>
         </div>
-        <div class="footer" id="footer">
+        <div class="footer section" id="footer">
             <div class="submit">
                 <div class="wrap_contSubmit">
                     <p>더 많은 정보를 알고 싶은신가요?</p>
                     <form>
                         <fieldset>
                             <legend>이메일을 통해 받아보세요</legend>
-                            <input placeholder="이메일을 적어주세요">
+                            <input type="text" name="" value="" placeholder="이메일을 적어주세요">
+                            <button type="submit">구독</button>
                         </fieldset>
                     </form>
-                    <button>구독</button>
+                    
                 </div>
             </div>
             <div class="wrap_contFooter">
@@ -139,16 +150,46 @@
             </div>
         </div>
     </div>
-    <script>
+<script>
+
+// $(window).on("scroll", function(){
+//     if($('.fullpage-wrapper').scrollTop() > 120){
+//         console.log(2);
+//         $(".header").addClass("header_active");
+//     } else {
+//         $(".header").removeClass("header_active");
+//     }
+// });
+
+$(document).ready(function() {
     
-    $(window).on("scroll", function(){
-                if($(window).scrollTop() > 120){
-                    $(".header").addClass("header_active");
-                } else {
-                    $(".header").removeClass("header_active");
-                }
-            });
-    
-    </script>
+
+    $('#fullpage').fullpage({
+        scrollHorizontally: true,
+        scrollingSpeed: 1000,
+        navigation: true,
+        navigationPosition: 'right',
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        onLeave: function(origin, destination, direction){
+            if(destination.index > 0){
+                $('.header').addClass('header_active');
+            }else{
+                $('.header').removeClass('header_active');
+            }
+        }
+    });
+
+    //methods
+    $.fn.fullpage.setAllowScrolling(true);
+
+    $('.navi li, h1').on('click', function(e){
+        var dataIdx = $(this).attr('data-menuanchor');
+        fullpage_api.moveTo(dataIdx);
+        return false;
+    });
+});
+
+</script>
 </body>
 </html>
