@@ -34,6 +34,8 @@ html{scroll-behavior: smooth}
 .header .navi li:last-child{margin-right:0}
 .header .navi li a{line-height: 25px}
 
+.fa-bars{display:none;}
+
 /* main */
 .main{position: relative;height: 100vh;overflow: hidden;}
 .main .main_back{position: relative;;width:50%;height: 100%;float: left;background-color: #f6efec}
@@ -62,6 +64,7 @@ html{scroll-behavior: smooth}
 /* product */
 .cont_product{width:100%;height: calc(100vh - 100px);}
 .cont_product .slide{float: left;width:33.33%;}
+.cont_product .slide em{display:block;width:300px;height:300px;border-radius:200px;background-color:pink}
 .cont_product .slide span[class^='product_img_0']{display:block;background-size: cover;width:111px;height: 450px;margin:0 auto}
 .cont_product .slide .product_img_01{background:url(./img/Riesling_01.png) 0 0 no-repeat;} 
 .cont_product .slide .product_img_02{background:url(./img/Riesling_02.png) 0 0 no-repeat;} 
@@ -98,3 +101,45 @@ html{scroll-behavior: smooth}
 .footer .wrap_contFooter .list_fab li{float: left;margin-right: 50px;cursor: pointer;}
 .footer .wrap_contFooter .list_fab li:last-child{margin-right: 0}
 .footer .wrap_contFooter p{margin-top:120px;font-size:11px;letter-spacing: 1px}
+
+
+@media only screen and (max-width: 1024px) {
+
+/* main */
+.header .navi li{margin-right:30px}
+
+.main .main_img{margin-left:-149px;width:300px;background-size: contain}
+.main .main_txt .main_backImg_right{background:none;}
+.main .wrap_mainTxt h2{font-size: 25px;line-height: 25px}
+.main .wrap_mainTxt p{margin-bottom:30px;width:240px}
+.main .wrap_mainTxt a{width:140px;height: 35px;line-height: 35px;}
+
+
+/* product */
+.fp-controlArrow.fp-prev{left:100px}
+.fp-controlArrow.fp-next{right: 100px;}
+
+/* introduce */
+.cont_introduce .introduce_txt{width:100%}
+.cont_introduce .introduce_back{background:none}
+
+
+
+}
+
+
+@media only screen and (max-width: 735px) {
+
+.fa-bars{display:block;position:absolute;top:30px;left:30px;font-size: 20px;cursor: pointer}
+.header{height: 0;}
+.header .logo{font-size: 22px;top:25px}
+.header .navi{display: none}
+
+
+.mobile{width:100%;height:100%}
+.mobile .mobile_navi{background-color: black}
+.mobile .mobile_navi li{color:#fff}
+
+
+}
+
