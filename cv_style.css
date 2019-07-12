@@ -41,35 +41,31 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .list_cv_sec li span{font-weight: bold}
 
 /* project */
-.content_project{width:900px;margin:0 auto;}
-.content_project .project_no1{background: url(./img/port.jpg) 0 0 no-repeat;width:100%;height: 500px;background-size: cover;}
-.content_project .project_no4{background: url(./img/bitchain.png) 0 0 no-repeat;width:100%;height: 500px;background-size: cover;}
+.project{width:900px;margin:0 auto;}
+.content_project > li{margin-bottom:60px;background-repeat: no-repeat;background-size: cover;background-position: center;border:1px solid #e4e4e4;box-sizing: border-box;filter:grayscale(100%);transition:all .45s ease-in-out}
+.content_project > li:hover{filter: none}
+.content_project > li a{display:block;width:100%;height: 100%;}
+.content_project > li:nth-child(1){width:100%;height:500px;background-image: url(./img/port.jpg)}
+.content_project > li:nth-child(2){width:100%;height:500px;background-image: url(./img/MV_login.png)}
+.content_project > li:nth-child(3){display:inline-block;float:left;width:440px;height:450px;background-image: url(./img/bitpi.png)}
+.content_project > li:nth-child(4){display:inline-block;margin-left:20px;width:440px;height:450px;background-image: url(./img/bitchain.png)}
 
 .content_project .list_port{overflow: hidden;position: relative;margin-bottom:60px}
 .content_project .list_port li{float: left;text-align: left}
 .content_project .list_port li:first-child{position: relative;padding-left:15px}
 .content_project .list_port li:first-child::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
 .content_project .list_port li:last-child{position: absolute;top:0;right:0;text-align: right}
-.content_project .pro_img{filter:grayscale(100%);transition:all .45s ease-in-out}
-.content_project .pro_img:hover{filter: none}
-.content_project .pro_img a{display:block;width:100%;height: 100%;}
-
-.list_project_row {overflow: hidden;}
-.list_project_row li{float: left; width:425px;margin-right: 50px}
-.list_project_row li:last-child{margin-right: 0}
-.list_project_row li .pro_img{border:1px solid #e4e4e4;box-sizing: border-box}
-.list_project_row li .project_no2{background: url(./img/bitpi.png) -228px 0 no-repeat;width: 100%;height: 450px;background-size: cover;}
-.list_project_row li .project_no3{background: url(./img/port_03.jpg) -195px 5px no-repeat;width: 100%;height: 450px;background-size: cover;}
 
 
-/* portf */
-.content_port{width:900px;margin:0 auto}
-.content_port .port_no1,
-.content_port .port_no2,
-.content_port .port_no3{width: 100%;height: 350px;}
-.content_port .port_no1{border:1px solid #e4e4e4;box-sizing: border-box;background: url(./img/wine.png) 0 -85px no-repeat;background-size: cover}
-.content_port .port_no2{background: url(./img/preseason.png) 0 -95px no-repeat;background-size: cover}
-.content_port .port_no3{background: url(./img/port_03.jpg) 0 -250px no-repeat;background-size: cover}
+/* works */
+.work{width:900px;margin:0 auto}
+
+.content_work > li{margin-bottom:60px;width:100%; height:350px;background-repeat: no-repeat;background-size: cover;}
+.content_work > li:nth-child(1){background-image: url(./img/wine.png);background-position: 0 -85px}
+.content_work > li:nth-child(2){background-image: url(./img/preseason.png);background-position: 0 -95px}
+.content_work > li:nth-child(3){background-image: url(./img/port_03.jpg)}
+.content_work > li:nth-child(4){background-image: url(./img/port_03.jpg)}
+
 .content_port .list_port{overflow: hidden;position: relative;margin-bottom:60px}
 .content_port .list_port li{float: left;}
 .content_port .list_port li:last-child{position: absolute;top:0;right: 0;}
@@ -124,9 +120,7 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 /* footer */
 .footer{margin:80px auto 0}
 
-
 }
-
 
 @media only screen and (max-width: 370px) {
 
