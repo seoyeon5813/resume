@@ -10,6 +10,7 @@ body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#7f7f7f}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 
 /* design area */
+html{scroll-behavior: smooth;}
 body{width:100%;text-align: center;background-color:#f1edec}
 .wraper{min-width:950px;width:95%;margin: 0 auto;background-color:#fff}
 .header{padding-top:150px}
@@ -84,14 +85,20 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 
 /* admin */
 .admin{background-color: #fff}
-.admin_wraper{margin:0 auto;padding-top:150px;width:900px;min-width: 900px;}
-.admin_wraper a{display: block;position: fixed;margin-top:90px;top:50%;left:85px;transform: rotate(-90deg);transform-origin: 0 0;animation-name: admin;animation-duration: 3.5s;animation-iteration-count: infinite;}
+.admin_wraper{position:relative;margin:0 auto;padding:150px 0;width:900px;min-width: 900px;}
+.admin_wraper a{display: block;position: fixed}
+.admin_wraper .admin_back{margin-top:90px;top:50%;left:85px;transform: rotate(-90deg);transform-origin: 0 0;animation-name: admin;animation-duration: 3.5s;animation-iteration-count: infinite;}
 @keyframes admin{0%{color:plum;}40%{color:#6d6e70}70%{color:burlywood;}100%{color:plum;}}
 
-.admin_wraper button{background-color: burlywood;color:#fff;width:55px;height:55px;border-radius:30px;border:none;position: fixed;;bottom:80px;right: 85px;letter-spacing: 3px;outline: none;cursor: pointer;}
+.admin_wraper .btn_top{display: inline-block;width:55px;height: 55px;border-radius: 30px;background-color:burlywood;color:#fff;position: fixed;bottom:80px;right: 85px;transition: all .35s ease-in-out}
+.admin_wraper .admin_top{line-height: 55px;position: initial;transition:all .35s ease-in-out}
+.admin_wraper .admin_top::after{content: '^';position: absolute;top:35px;left:18px;font-size: 35px}
+.admin_wraper .btn_top:hover{background-color:plum}
+.admin_wraper .btn_top:hover .admin_top{transform: translateY(-35px)}
+
 .admin_wraper a i{padding-left:10px}
 .admin_wraper .admin_info{text-align: left;}
-.admin_wraper .admin_info li{margin-bottom: 60px}
+.admin_wraper .admin_info li{margin-bottom: 65px}
 .admin_wraper .admin_info li span{position:relative;display:block;margin-bottom:35px;padding-left:10px;font-size: 13px;}
 .admin_wraper .admin_info li span::after{content:'';position: absolute;top:3px;left:0;width:3px;height: 65%;background-color:plum;}
 .admin_wraper .admin_info li .admin_img{width:900px;background-repeat: no-repeat}
@@ -105,13 +112,15 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .admin_wraper .color .color_img{width:660px;height:10px;background-image: url(./img/admin_color.png);background-size: cover}
 
 .admin_wraper .list_admin{width:900px;}
-.admin_wraper .list_admin li{margin-bottom: 60px;text-align: left}
-.admin_wraper .list_admin li .admin_img{width:100%;height:500px;background-size: cover;box-shadow:10px 10px 55px -40px rgba(0,0,0,0.75)}
+.admin_wraper .list_admin li{margin-bottom: 65px;text-align: left}
+.admin_wraper .list_admin li:last-child{margin-bottom: 0}
+.admin_wraper .list_admin li .admin_img{margin-top:15px;width:100%;height:500px;background-size: cover;box-shadow:10px 10px 55px -40px rgba(0,0,0,0.75)}
 .admin_wraper .list_admin li:nth-child(1) .admin_img{background-image: url(./img/MV_login.png)}
 .admin_wraper .list_admin li:nth-child(2) .admin_img{background-image: url(./img/MV_main.png)}
 .admin_wraper .list_admin li:nth-child(3) .admin_img{background-image: url(./img/MV_sub.png)}
 .admin_wraper .list_admin li:nth-child(4) .admin_img{background-image: url(./img/MV_inquiry.png)}
 .admin_wraper .list_admin li:nth-child(5) .admin_img{background-image: url(./img/MV_inquiry_detail.png)}
+.admin_wraper .list_admin li:nth-child(6) .admin_img{background-image: url(./img/MV_employ.png)}
 .admin_wraper .list_admin li span{position:relative;padding-left:10px;width:3px;height: 10px;}
 .admin_wraper .list_admin li span::after{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
 

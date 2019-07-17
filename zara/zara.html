@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,124 +7,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="zara_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <div class="wraper">
-        <div class="header">
-            <div id="menu" class="menu">
-                <button class="btn_menu">
-                    <sapn id="menu_cancle" class="menu_cancle" style="display:none">X</sapn>menu
-                </button>
-                <ul id="navi" class="navi" style="display:none">
-                    <li><a href="#">NEW IN</a></li>
-                    <li><a href="#">BEDROON</a></li>
-                    <li><a href="#">BATHROOM</a></li>
-                    <li><a href="#">TABLEWARE</a></li>
-                    <li><a href="#">DECORATION</a></li>
-                </ul>
+    <div class="sns">
+        <ul class="list_sns">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <div class="wrap_header">
+            <ul id="navi" class="navi">
+                <li><a href="./new.html">NEW IN</a></li>
+                <li><a href="./bed.html">BEDROON</a></li>
+                <li><a href="./bath.html">BATHROOM</a></li>
+                <li><a href="./table.html">TABLEWARE</a></li>
+                <li><a href="./deco.html">DECORATION</a></li>
+            </ul>
+            <h1><a href="./zara.html"><img src="img/zara_logo.png" alt="logo"></a></h1>
+            <div class="navi_sub">
+                <a href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+                <a href="#none"><i class="fas fa-shopping-bag"></i></a>
             </div>
-            <h1><a href="#none"><img src="img/zara_logo.png" alt="logo"></a></h1>
-            <div class="panier"><a href="#none">장바구니<i class="fas fa-shopping-bag fa-sm"></i></a></div>
         </div>
-        <div class="main">
-            <div class="main_content">
-                <div class="main_txt">
+    </div>
+    <div class="main">
+        <div class="main_div"></div>
+        <ul class="list_main">
+            <li>
+                <div class="main_img"></div>
+            </li>
+            <li>
+                <div class="main_img"></div>
+                <div class="txt">
                     <span>Autumn/Winter November. 10</span>
-                    <h2>Quiet Mood</h2>
-                    <p>꽃이 관현악이며, 싹이 이것을 것이 그들의 찬미를 바이며, 그러므로 황금시대다. 실현에 하였으며, 시들어 하는 가치를 천자만홍이 그들은 듣는다. </p>
+                    <strong>Quiet Mood</strong>
+                    <p>꽃이 관현악이며, 싹이 이것을 것이 그들의 찬미를 바이며 시들어 하는 가치를 천자만홍이 그들은 듣는다. </p>
                     <a href="#none" class="main_link">자세히 보기<i class="fa fa-chevron-circle-right"></i></a>
                 </div>
+            </li>
+        </ul>
+    </div>
+    <div class="cont_sec">
+        <div class="cont_sec_wrapper">
+            <div class="txt">
+                <span>Spring/Summer April. 10</span>
+                <strong>Bright Day</strong>
+                <p>꽃이 관현악이며, 싹이 이것을 것이 그들의 찬미를 바이며, 그러므로 황금시대다. 실현에 하였으며, 시들어 하는 가치를 천자만홍이 그들은 듣는다.
+                    황금시대의 위하여서, 부패를 오직 그들을 설산에서 아니다. 천지는 별과 같지 가지에 그들에게 생의 것이다. 뛰노는 열락의 같이 있다. 
+                    그와 하여도 든 자신과 영원히 인생의 봄날의 그들은 보내는 것이다. 들어 붙잡아 찾아 싹이 타오르고 행복스럽고 얼마나 위하여서. 피가 그들은 물방아 것이다. </p>
+                <a href="#none" class="content_sec_link">새로운 콜렉션 보기<i class="fa fa-chevron-circle-right"></i></a>
             </div>
-            <div class="logo"></div>
-            <div class="main_img"></div>
-        </div>
-        <div class="content_sec">
-            <div class="content_sec_wrapper">
-                <div class="content_img_F"></div>
-                <div class="content_sec_box">
-                    <div>
-                    <span>Spring/Summer April. 10</span>
-                    <h3>Bright Day</h3>
-                    <p>꽃이 관현악이며, 싹이 이것을 것이 그들의 찬미를 바이며, 그러므로 황금시대다. 실현에 하였으며, 시들어 하는 가치를 천자만홍이 그들은 듣는다.
-                        황금시대의 위하여서, 부패를 오직 그들을 설산에서 아니다. 천지는 별과 같지 가지에 그들에게 생의 것이다. 뛰노는 열락의 같이 있다. 
-                        그와 하여도 든 자신과 영원히 인생의 봄날의 그들은 보내는 것이다. 들어 붙잡아 찾아 싹이 타오르고 행복스럽고 얼마나 위하여서. 피가 그들은 물방아 것이다. </p>
-                    <a href="#none" class="content_sec_link">새로운 콜렉션 보기<i class="fa fa-chevron-circle-right"></i></a>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <div class="content_list">
-            <div class="item_rotate">
-                <span>Autumn/Winter 2019</span>
-            </div>
-            <div>
-                <ul class="content_list_img">
-                    <li><a href="#none">element 1</a></li>
-                    <li><a href="#none">element 2</a></li>
-                    <li><a href="#none">element 3</a></li>
-                    <li><a href="#none">element 4</a></li>
-                    <li><a href="#none">element 5</a></li>
-                </ul>
-            </div>
-            <div class="item_rotate">
-                <a href="#none">더 알아보기<i class="fa fa-chevron-circle-right"></i></a>
-            </div>
-        </div>
-        <div class="content_sec">
-            <div class="content_sec_wrapper">
-                <div class="content_img_B"></div>
-                <div class="content_sec_box">
-                    <div>
-                        <span>Autumn/Winter November. 10</span>
-                        <h3>Quiet Season</h3>
-                        <p>꽃이 관현악이며, 싹이 이것을 것이 그들의 찬미를 바이며, 그러므로 황금시대다. 실현에 하였으며, 시들어 하는 가치를 천자만홍이 그들은 듣는다. 
-                            바로 싸인 유소년에게서 보배를 방지하는 아니다. 청춘에서만 사라지지 노년에게서 충분히 있는가? 듣기만 얼마나 많이 평화스러운 방황하였으며, 있는 이성은 인생에 봄바람이다. </p>
-                        <ul class="list_season">
-                            <li><a href="#none">Spring</li>
-                            <li><a href="#none">Summer</li>
-                            <li><a href="#none">Autumn</li>
-                            <li><a href="#none">Winter</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content_submit">
-            <span><i class="fas fa-certificate"></i></span>
-            <p>구독을 하시면 더 많은 정보를 이메일로 받아 보실 수 있습니다.</p>
-            <form>
-                <input type="text" name="mail" placeholder="your E-mail here">
-                <button type="submit">구독하기</button>
-            </form>
-            <ul class="list_icon">
-                <li><a href="#none"><i class="fab fa-twitter fa-2x"></i></a></li>
-                <li><a href="#none"><i class="fab fa-instagram fa-2x"></i></a></li>
-                <li><a href="#none"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <div class="cont_img_F"></div>
+        </div>  
+    </div>
+    <div class="cont_third">
+        <ul class="list_ele">
+            <li><a href="#none"></a></li>
+            <li><a href="#none"></a></li>
+            <li><a href="#none"></a></li>
+            <li><a href="#none"></a></li>
+            <li><a href="#none"></a></li>
+        </ul>
+        <a href="#none" class="third_link">더 알아보기<i class="fa fa-chevron-circle-right"></i></a>
+    </div>
+    <div class="cont_fourth">
+        <div class="cont_img_B"></div>
+        <div class="txt">
+            <span>Autumn/Winter November. 10</span>
+            <strong>Quiet Season</strong>
+            <p>꽃이 관현악이며, 싹이 이것을 것이 그들의 찬미를 바이며, 그러므로 황금시대다. 실현에 하였으며, 시들어 하는 가치를 천자만홍이 그들은 듣는다. 
+                바로 싸인 유소년에게서 보배를 방지하는 아니다. 청춘에서만 사라지지 노년에게서 충분히 있는가? 듣기만 얼마나 많이 평화스러운 방황하였으며, 있는 이성은 인생에 봄바람이다. </p>
+            <ul class="list_season">
+                <li><a href="#none">Spring</li>
+                <li><a href="#none">Summer</li>
+                <li><a href="#none">Autumn</li>
+                <li><a href="#none">Winter</li>
             </ul>
         </div>
-        <div class="footer">©2015 ZARA. All Rights Reserved.</div>
     </div>
+    <div class="content_submit">
+        <span><i class="fas fa-certificate"></i></span>
+        <p>구독을 하시면 더 많은 정보를 이메일로 받아 보실 수 있습니다.</p>
+        <form>
+            <input type="text" name="mail" placeholder="your E-mail here">
+            <button type="submit">구독하기</button>
+        </form>
+        <ul class="list_icon">
+            <li><a href="#none"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="#none"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="#none"><i class="fab fa-facebook fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer">©2015 ZARA. All Rights Reserved.</div>
+
 
 
     
 </body>
 <script type="text/javascript"> 
 
-function displayItem(evt,cancleEvt){
-    document.getElementById("navi").style.display=evt;
-    document.getElementById("menu_cancle").style.display=cancleEvt;
-}
+$(window).on("scroll", function(){
+        if($(window).scrollTop() > 80){
+            $(".header").addClass("header_active");
+        } else {
+            $(".header").removeClass("header_active");
+        }
+    });
 
-var flag = true;
-document.getElementsByClassName('btn_menu')[0].addEventListener('click', function(){
-    if(flag){
-        displayItem('block', 'inline-block');
-        flag=false;
-    }else{
-        displayItem('none', 'none');
-        flag=true;
-    }
-});
+
+
+// function displayItem(evt,cancleEvt){
+//     document.getElementById("navi").style.display=evt;
+//     document.getElementById("menu_cancle").style.display=cancleEvt;
+// }
+
+// var flag = true;
+// document.getElementsByClassName('btn_menu')[0].addEventListener('click', function(){
+//     if(flag){
+//         displayItem('block', 'inline-block');
+//         flag=false;
+//     }else{
+//         displayItem('none', 'none');
+//         flag=true;
+//     }
+// });
 
 
 
