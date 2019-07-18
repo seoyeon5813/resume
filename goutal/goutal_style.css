@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+/* reset area */
+*{margin:0;padding:0}
+li{list-style: none;}
+a{text-decoration: none;color: inherit}
+
+body, button{font-size: 13px;color:#5d5353;font-family: 'Playfair Display', serif;font-weight: 400;}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.on{display: none}
+
+body{width:100%;background-color:lightgray}
+
+/* main */
+.wrap_main{width:100%;height: auto;}
+
+.menu{display:none;position: absolute;top:0;left:0;bottom:0;right:0;background-color:gray;z-index: 999;}
+.menu .list_navi{position: absolute;top:50%;left:25%;margin-top:-165px}
+.menu .list_navi > li{position:relative;margin-bottom: 20px;font-size: 40px;}
+.menu .list_navi > li:last-child{margin-bottom: 0}
+.menu .list_navi li a{display: block}
+
+.menu .list_sNavi{position: absolute;top:0;left:350px;width:180px;}
+.menu .list_sNavi li{font-size: 17px;color:#fff;margin-bottom: 10px;}
+.menu .list_sNavi li:last-child{margin-bottom: 0}
+
+.header{}
+.header button{position:absolute;top:0;left:0;margin:30px 45px;font-size:15px;border:none;outline: none;background-color: transparent;cursor: pointer;letter-spacing: 3px;font-weight: bold}
+.header button:hover i{animation:spin 1.1s infinite linear;}
+@keyframes spin{from{transform: rotateZ(0deg)}to{transform: rotateZ(360deg)}}
+.header button i{padding-right: 5px}
+.active{display: block}
+.deactive{display: none;}
+.header .logo{margin:0 auto;padding-top:80px;width:380px;}
+.header .logo img{width:100%}
+
+
+
+.wrap_main .cont_main{position:relative;display:flex;width:1250px;margin:200px auto;align-items: center}
+.wrap_main .cont_main strong{position:relative;width:50%;text-align: center;font-size: 35px;}
+.wrap_main .cont_main strong::after{content:'Eau de Pafum';position: absolute;top:-20px;left:145px;font-size: 12px}
+.wrap_main .cont_main .cont_img{position:absolute;top:0px;left:550px;width:360px;height: 500px;background:url(./img/main_p_01.png) 0 0 no-repeat}
+.wrap_main .cont_main p{width:50%;padding:150px 50px 150px 235px;box-sizing: border-box;word-break: keep-all}
+
+

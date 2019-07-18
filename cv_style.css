@@ -39,43 +39,39 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 
 
 /* CV */
-.content_cv{width:900px;margin:0 auto}
-.content_cv ul{overflow: hidden;position: relative;margin-bottom: 60px;}
-.content_cv li span{position: relative;padding-left: 15px}
-.content_cv li span::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
-.content_cv .list_cv_first{height: 85px;}
-.list_cv_first li{float: left;text-align: left;font-weight: 300;}
-.list_cv_first li:last-child{position: absolute;top:0;right: 0;}
+.cont_cv{width:900px;margin:0 auto;overflow: hidden;}
+.cont_cv ul{margin-bottom: 60px;}
+.cont_cv li span{position: relative;padding-left: 15px}
+.cont_cv li span::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
+.cont_cv .list_cv_first{width:27%;float: left;}
+.list_cv_first li{margin-bottom: 45px;text-align: left;font-weight: 300;}
+.list_cv_first li:last-child{width:100%;height:300px;background:url(./img/port.jpg) 0 0 no-repeat;background-size: cover}
 .list_cv_first li span,
 .list_cv_sec li span{font-weight: bold}
-
-.list_cv_sec li{float: left;text-align: left;margin-right:50px}
-.list_cv_sec li:nth-child(1){width:450px;height:550px;background:url(./img/port.jpg) 0 0 no-repeat;background-size: cover}
-.list_cv_sec li:nth-child(2),
-.list_cv_sec li:nth-child(3){margin-bottom:45px;width:350px}
-
+.list_cv_sec{width:63%;float: right}
+.list_cv_sec li{margin-bottom:45px;text-align: left;line-height: 18px;font-weight: lighter}
 
 /* project */
 .project{width:900px;margin:0 auto;}
-.content_project > li{margin-bottom:60px;background-repeat: no-repeat;background-size: cover;background-position: center;border:1px solid #e4e4e4;box-sizing: border-box;filter:grayscale(100%);transition:all .45s ease-in-out}
-.content_project > li:hover{filter: none}
-.content_project > li a{display:block;width:100%;height: 100%;}
-.content_project > li:nth-child(1){width:100%;height:500px;background-image: url(./img/port.jpg)}
-.content_project > li:nth-child(2){width:100%;height:500px;background-image: url(./img/MV_login.png)}
-.content_project > li:nth-child(3){display:inline-block;float:left;width:440px;height:450px;background-image: url(./img/bitpi.png)}
-.content_project > li:nth-child(4){display:inline-block;margin-left:20px;width:440px;height:450px;background-image: url(./img/bitchain.png)}
+.cont_project > li{margin-bottom:60px;background-repeat: no-repeat;background-size: cover;background-position: center;border:1px solid #e4e4e4;box-sizing: border-box;filter:grayscale(100%);transition:all .45s ease-in-out}
+.cont_project > li:hover{filter: none}
+.cont_project > li a{display:block;width:100%;height: 100%;}
+.cont_project > li:nth-child(1){width:100%;height:500px;background-image: url(./img/port.jpg)}
+.cont_project > li:nth-child(2){width:100%;height:500px;background-image: url(./img/MV_login.png)}
+.cont_project > li:nth-child(3){display:inline-block;float:left;width:440px;height:450px;background-image: url(./img/bitpi.png)}
+.cont_project > li:nth-child(4){display:inline-block;margin-left:20px;width:440px;height:450px;background-image: url(./img/bitchain.png)}
 
 
 /* works */
 .work{width:900px;margin:0 auto}
 
-.content_work > li{margin-bottom:60px;width:100%; height:350px;background-repeat: no-repeat;background-size: cover;border:1px solid #e4e4e4;filter:grayscale(70%);box-sizing: border-box;transition:all .4s ease-in-out}
-.content_work > li:hover{filter:none}
-.content_work > li:nth-child(1){background-image: url(./img/wine.png);background-position: 0 -85px}
-.content_work > li:nth-child(2){background-image: url(./img/preseason.png);background-position: 0 -95px}
-.content_work > li:nth-child(3){background-image: url(./img/port_03.jpg)}
-.content_work > li:nth-child(4){background-image: url(./img/port_03.jpg)}
-.content_work > li a{display:block;width:100%;height:100%;}
+.cont_work > li{margin-bottom:60px;width:100%; height:350px;background-repeat: no-repeat;background-size: cover;border:1px solid #e4e4e4;filter:grayscale(70%);box-sizing: border-box;transition:all .4s ease-in-out}
+.cont_work > li:hover{filter:none}
+.cont_work > li:nth-child(1){background-image: url(./img/wine.png);background-position: 0 -85px}
+.cont_work > li:nth-child(2){background-image: url(./img/preseason.png);background-position: 0 -95px}
+.cont_work > li:nth-child(3){background-image: url(./img/zara.png)}
+.cont_work > li:nth-child(4){background-image: url(./img/port_03.jpg)}
+.cont_work > li a{display:block;width:100%;height:100%;}
 
 
 /* footer */
@@ -138,37 +134,42 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .list_navi li a{font-size: 17px}
 
 /* cv */
-.content_cv{width:100%;padding:0 10%;box-sizing: border-box}
-.content_cv ul{margin-bottom:0;position: inherit;overflow: visible}
+.cont_cv{width:100%;padding:0 50px;box-sizing: border-box}
+.cont_cv ul{margin-bottom:0;width:100%}
+.cont_cv ul li{word-break: keep-all}
 
-.content_cv .list_cv_first{height: auto;}
-.list_cv_first li{margin-bottom:30px;float: none}
-.list_cv_first li:last-child{position: inherit}
+.cont_cv .list_cv_first{float:none;width:100%}
+.list_cv_first li{margin-bottom:35px;}
+.list_cv_first li:last-child{display: none}
 
-.list_cv_sec li{margin-bottom:30px;float: none}
-.list_cv_sec li:nth-child(1){background:none;width:0;height: 0;}
-.list_cv_sec li:nth-child(2), .list_cv_sec li:nth-child(3){width:100%;word-break: keep-all}
+.list_cv_sec li{margin-bottom:35px;}
 
 
 
 /* project */
 .project{width:auto}
-.project .content_project{padding:0 10px;width:100%;box-sizing: border-box}
-.project .content_project > li{height: 300px;}
-.project .content_project > li:nth-child(3),
-.project .content_project > li:nth-child(4){width:100%;}
-.project .content_project > li:nth-child(4){margin-left:0}
+.project .cont_project{padding:0 10px;width:100%;box-sizing: border-box}
+.project .cont_project > li{height: 300px;}
+.project .cont_project > li:nth-child(3),
+.project .cont_project > li:nth-child(4){width:100%;}
+.project .cont_project > li:nth-child(4){margin-left:0}
 
 
 /* works */
 .work{width:auto}
-.content_work{padding:0 10px;}
-.work .content_work > li{height: 300px;background-position: center}
+.cont_work{padding:0 10px;}
+.work .cont_work > li{height: 300px;background-position: center}
 
 /* footer */
 .footer{margin:80px auto 0}
 
 }
+
+@media only screen and (max-width: 440px) {
+.cont_cv{padding:0 25px;}
+
+}
+
 
 @media only screen and (max-width: 370px) {
 

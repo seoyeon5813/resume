@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Goutal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="goutal_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="wrap_main">
+            <div class="header">
+                <button class="btn_menu"><i class="fas fa-asterisk"></i>menu</button>
+                <div class="menu">
+                    <span class="btn_x">X</span>
+                    <ul class="list_navi">
+                        <li><a href="">Brand Story</a></li>
+                        <li>
+                            <a href="">Perfumes
+                                <ul class="list_sNavi">
+                                    <li><a href="">Bestseller</a></li>
+                                    <li><a href="">Perfumes for Women</a></li>
+                                    <li><a href="">Perfumes for men</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Bath & Beauty
+                                <ul class="list_sNavi">
+                                    <li><a href="">For Body</a></li>
+                                    <li><a href="">Oils</a></li>
+                                    <li><a href="">Hand Care</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">For HOME
+                                <ul class="list_sNavi">
+                                    <li><a href="">Candles</a></li>
+                                    <li><a href="">Scented Diffusers</a></li>
+                                    <li><a href="">Acceessories</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <img src="./img/goutal_logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="cont_main">
+                <strong>ÉTOILE D'UNE NUIT</strong>
+                <div class="cont_img">
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
+                </div>
+                <p>The Tiare flower smells of summer- its name, 
+                    both exotic and filled with promises of adventure. 
+                    Blooming along the Pacific coast of Polynesia drenched in sunshine, 
+                    the flower is both fresh and sunny. 
+                    Its essence has been celebrated in this new edition of Essences Insensées.
+                 </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    
+    $(document).ready(function(){
+        
+        $('.btn_menu').on('click', function(e){
+            $('.menu').removeClass('deactive');
+            $('.menu').addClass('active');
+        });
+
+        $('.btn_x').on('click', function(e){
+            $('.menu').removeClass('active');
+            $('.menu').addClass('deactive');
+        });
+    });
+
+
+    </script>
+</body>
+</html>
