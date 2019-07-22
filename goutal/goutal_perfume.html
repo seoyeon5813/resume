@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Goutal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="goutal_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+<div class="wrapper">
+    <div class="main_flower"></div>
+    <div class="menu">
+        <span class="btn_x">X</span>
+        <ul class="list_navi">
+            <li><a href="./goutal_brand.html">Brand Story</a></li>
+            <li>
+                <a href="./goutal_perfume.html">Perfumes
+                    <ul class="list_sNavi">
+                        <li><a href="./goutal_perfume.html">Bestseller</a></li>
+                        <li><a href="./goutal_perfume.html">Perfumes for Women</a></li>
+                        <li><a href="./goutal_perfume.html">Perfumes for men</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="./goutal_bath.html">Bath & Beauty
+                    <ul class="list_sNavi">
+                        <li><a href="./goutal_bath.html">For Body</a></li>
+                        <li><a href="./goutal_bath.html">Oils</a></li>
+                        <li><a href="./goutal_bath.html">Hand Care</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="./goutal_home.html">For HOME
+                    <ul class="list_sNavi">
+                        <li><a href="./goutal_home.html">Candles</a></li>
+                        <li><a href="./goutal_home.html">Scented Diffusers</a></li>
+                        <li><a href="./goutal_home.html">Acceessories</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="./goutal_contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="perfume">
+        <div class="wrap_perfume">
+            
+
+        </div>
+    </div>
+</div>
+    <script src="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+    
+    $(document).ready(function(){
+        $('.btn_menu').on('click', function(e){
+            
+            $('.menu').removeClass('deactive');
+            $('.menu').addClass('active');
+        });
+
+        $('.btn_x').on('click', function(e){
+            $('.menu').removeClass('active');
+            $('.menu').addClass('deactive');
+        });
+
+        $('.list_navi > li').mouseover(function(e){
+            $('.list_sNavi', this).addClass('active');
+        });
+
+        $('.list_navi > li').mouseleave(function(e){
+            $('.list_sNavi').removeClass('active');
+        });
+        
+    });
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            center:true,
+            nav:true,
+            navText:[],
+            dots:true,
+            items:1,
+            autoplay:true,
+            autoplayTimeout:4000,
+            smartSpeed:1250        
+        });
+    });
+
+    </script>
+</body>
+</html>

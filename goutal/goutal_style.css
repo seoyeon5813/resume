@@ -10,37 +10,79 @@ body, button{font-size: 13px;color:#5d5353;font-family: 'Playfair Display', seri
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 .on{display: none}
 
-body{width:100%;background-color:lightgray}
+body{width:100%;background-color:#dedfdf;position: relative;}
 
 /* main */
+.wrapper{position:fixed;width:100%;height:100%;background:url(./img/main_back.png) 0 0 no-repeat;background-size:cover}
+.wrapper .main_flower{position:absolute;bottom:-70px;left:0;width:100%;height: 450px;background:url(./img/main_flower.png) 0 0 no-repeat;background-size: cover}
 .wrap_main{width:100%;height: auto;}
 
-.menu{display:none;position: absolute;top:0;left:0;bottom:0;right:0;background-color:gray;z-index: 999;}
+.menu{display:none;position: fixed;width:100%;height:100%;top:0;left:0;bottom:0;right:0;background-color:gray;z-index: 99999;}
 .menu .list_navi{position: absolute;top:50%;left:25%;margin-top:-165px}
-.menu .list_navi > li{position:relative;margin-bottom: 20px;font-size: 40px;}
+.menu .list_navi > li{position:relative;margin-bottom: 20px;font-size: 40px;transition: all .3s ease-in-out}
 .menu .list_navi > li:last-child{margin-bottom: 0}
+.menu .list_navi > li:hover{color:#bc929a}
 .menu .list_navi li a{display: block}
 
-.menu .list_sNavi{position: absolute;top:0;left:350px;width:180px;}
-.menu .list_sNavi li{font-size: 17px;color:#fff;margin-bottom: 10px;}
+.menu .list_sNavi{display:none;position: absolute;top:0;left:350px;width:180px;}
+.menu .list_sNavi li{font-size: 17px;color:#fff;margin-bottom: 10px;transition: all .3s ease-in-out}
 .menu .list_sNavi li:last-child{margin-bottom: 0}
+.menu .list_sNavi li:hover{color:#e3d5d5}
 
-.header{}
+.header{position:fixed;width:100%;height: 90px;z-index: 9999;}
+.header_active{border-bottom: 1px solid #ccc3c4;background-color:#dedfdf}
 .header button{position:absolute;top:0;left:0;margin:30px 45px;font-size:15px;border:none;outline: none;background-color: transparent;cursor: pointer;letter-spacing: 3px;font-weight: bold}
 .header button:hover i{animation:spin 1.1s infinite linear;}
 @keyframes spin{from{transform: rotateZ(0deg)}to{transform: rotateZ(360deg)}}
 .header button i{padding-right: 5px}
-.active{display: block}
-.deactive{display: none;}
-.header .logo{margin:0 auto;padding-top:80px;width:380px;}
+.active{display: block!important}
+.deactive{display: none!important}
+.header .logo{margin:0 auto;padding-top:65px;width:310px;}
 .header .logo img{width:100%}
 
 
-
-.wrap_main .cont_main{position:relative;display:flex;width:1250px;margin:200px auto;align-items: center}
-.wrap_main .cont_main strong{position:relative;width:50%;text-align: center;font-size: 35px;}
-.wrap_main .cont_main strong::after{content:'Eau de Pafum';position: absolute;top:-20px;left:145px;font-size: 12px}
-.wrap_main .cont_main .cont_img{position:absolute;top:0px;left:550px;width:360px;height: 500px;background:url(./img/main_p_01.png) 0 0 no-repeat}
-.wrap_main .cont_main p{width:50%;padding:150px 50px 150px 235px;box-sizing: border-box;word-break: keep-all}
+.wrap_main .cont_main{position:relative;width:1250px;margin:0 auto;padding-top:275px}
+.wrap_main .cont_main strong{position:relative;width:50%;text-align: center;font-size: 35px;top:175px}
+.wrap_main .cont_main strong::after{content:'Eau de Pafum';position: absolute;top:-20px;left:2px;font-size: 12px}
+.wrap_main .cont_main p{position:absolute;top:0;right:0;width:50%;padding:150px 50px 150px 235px;box-sizing: border-box;word-break: keep-all}
 
 
+.owl-carousel .owl-item div{width:265px;height:375px;background-size:contain;background-position-x:20px;margin:0 auto;background-repeat: no-repeat}
+.owl-carousel .owl-item .main_img_01{background-image:url(./img/main_p_01.png)}
+.owl-carousel .owl-item .main_img_02{width:300px;background-image:url(./img/main_p_02.png)}
+.owl-carousel .owl-item .main_img_03{width:315px;background-image:url(./img/main_p_03.png)}
+.owl-carousel .owl-item .main_img_04{background-image:url(./img/main_p_04.png)}
+
+.owl-carousel .owl-nav button{position:absolute;top:180px;outline: none;border-top:30px solid black!important;border-left: 30px solid transparent!important;}
+.owl-carousel .owl-nav button.owl-prev{left:-100px;transform: rotate(-135deg)}
+.owl-carousel .owl-nav button.owl-next{right:-100px;transform:rotate(45deg)}
+
+
+/* brand */
+.brand{position: relative;}
+.wrap_brand{min-width: 1200px;padding-top:90px}
+
+.wrap_brand .brand_annick{width:1200px;margin:0 auto;display: flex}
+.wrap_brand .brand_annick .annick_img{width:500px;height: 500px;;background:url(./img/annick.png) 0 0 no-repeat;background-size: contain}
+.wrap_brand .brand_annick .annick_story{display:flex;width:50%;align-items: center}
+.wrap_brand .brand_annick .annick_story strong{display: block}
+.wrap_brand .brand_annick .annick_story em{display: block}
+
+.wrap_brand .brand_perfume{width:700px;margin:0 auto;padding-bottom:100px;}
+.wrap_brand .brand_perfume .perfume_img{margin:0 auto;width:100%;height: 250px; background:url(./img/perfumes.png) 0 0 no-repeat;background-size: contain}
+.wrap_brand .brand_perfume .perfume_story{text-align: center;}
+
+.wrap_brand .brand_quote{width:100%;height: 120px;background-color:#e9d7da;line-height: 120px;text-align: center}
+
+
+/* perfume */
+.wrap_perfume{width:1200px;min-width: 1200px}
+
+
+
+
+/* footer */
+.footer{margin-top:100px;;text-align: center}
+.footer .footer_sns li{display: inline-block;margin-right: 25px;}
+.footer .footer_sns li:last-child{margin-right: 0}
+.footer .footer_sns li a{display: block;}
