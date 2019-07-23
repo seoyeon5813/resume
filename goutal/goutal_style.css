@@ -128,7 +128,7 @@ body{width:100%;background-color:#efefef;position: relative;}
 
 /* contact */
 .wrap_contact{width:850px; margin:160px auto}
-.wrap_contact .contact_form{}
+
 .wrap_contact .contact_form .contact_tit{float: left;width:40%}
 .wrap_contact .contact_form .contact_tit strong{display: block;font-size: 32px;}
 .wrap_contact .contact_form .contact_tit span{display: block;margin:5px 0 0 5px;font-size: 12px}
