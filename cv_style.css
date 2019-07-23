@@ -39,7 +39,7 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 
 
 /* CV */
-.cont_cv{width:900px;margin:0 auto;overflow: hidden;}
+.cont_cv{width:900px;margin:0 auto;overflow: hidden;line-height: 18px}
 .cont_cv ul{margin-bottom: 60px;}
 .cont_cv li span{position: relative;padding-left: 15px}
 .cont_cv li span::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}

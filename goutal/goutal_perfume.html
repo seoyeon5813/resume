@@ -14,8 +14,6 @@
     
 </head>
 <body>
-<div class="wrapper">
-    <div class="main_flower"></div>
     <div class="menu">
         <span class="btn_x">X</span>
         <ul class="list_navi">
@@ -51,15 +49,165 @@
         </ul>
     </div>
     <div class="perfume">
-        <div class="wrap_perfume">
-            
-
+        <div class="header">
+            <button class="btn_menu"><i class="fas fa-asterisk"></i>menu</button>
+            <div class="logo">
+                <a href="./goutal.html">
+                    <img src="./img/goutal_logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="mypage">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</div>
+        
+        
+        <div class="wrap_perfume">
+            <div class="filter">
+                <div class="ava">
+                    <strong>AVAILABILITY</strong>
+                    <ul class="list_select">
+                        <li><a href="#">Not available</a></li>
+                        <li><a href="#">In stock</a></li>
+                    </ul>
+                </div>
+                <div class="scent">
+                    <strong>Sort by Scent</strong>
+                    <ul class="list_check">
+                        <li>
+                            <input type="checkbox" id="chk1">
+                            <span></span>
+                            <label for="chk1">Floral</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk2">
+                            <span></span>
+                            <label for="chk2">Woody</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk3">
+                            <span></span>
+                            <label for="chk3">Fruity</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk4">
+                            <span></span>
+                            <label for="chk4">Citrus</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="chk5">
+                            <span></span>
+                            <label for="chk5">Oriental</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="perfume_ele">
+                <ul class="list_perfume_ca">
+                    <li><a href="#">Bestseller</a></li>
+                    <li><a href="#">Perfumes for Women</a></li>
+                    <li><a href="#">Perfumes for men</a></li>
+                </ul>
+                <ul class="list_perfume">
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>SONGES</strong>
+                            <span>139,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>L'ILE AU THÉ</strong>
+                            <span>129,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>EAU D'HADRIEN</strong>
+                            <span>119,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>BOIS D'HADRIEN</strong>
+                            <span>139,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>BOIS D'HADRIEN</strong>
+                            <span>139,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>PETITE CHÉRIE</strong>
+                            <span>129,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>BOIS D'HADRIEN</strong>
+                            <span>139,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>BOIS D'HADRIEN</strong>
+                            <span>139,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p_img"></div>
+                            <strong>PETITE CHÉRIE</strong>
+                            <span>129,000원</span>
+                            <button>주문하기</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="footer_sns">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+            <span>© 2018 All rights reserved to Goutal</span>
+        </div>
+
     <script src="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
     <script src="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
     <script>
+
+    $(window).on("scroll", function(){
+        if($(window).scrollTop() > 85){
+            $(".header").addClass("header_active");
+        } else {
+            $(".header").removeClass("header_active");
+        }
+    });
     
     $(document).ready(function(){
         $('.btn_menu').on('click', function(e){
