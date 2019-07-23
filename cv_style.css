@@ -58,7 +58,7 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .cont_project > li a{display:block;width:100%;height: 100%;}
 .cont_project > li:nth-child(1){width:100%;height:500px;background-image: url(./img/port.jpg)}
 .cont_project > li:nth-child(2){width:100%;height:500px;background-image: url(./img/MV_login.png)}
-.cont_project > li:nth-child(3){display:inline-block;float:left;width:440px;height:450px;background-image: url(./img/bitpi.png)}
+.cont_project > li:nth-child(3){display:inline-block;width:440px;height:450px;background-image: url(./img/bitpi.png)}
 .cont_project > li:nth-child(4){display:inline-block;margin-left:20px;width:440px;height:450px;background-image: url(./img/bitchain.png)}
 
 
