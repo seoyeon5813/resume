@@ -16,7 +16,12 @@ body{width:100%;text-align: center;background-color:#f1edec}
 .header{padding-top:150px}
 h1{margin:0 auto;width:80px;line-height: 20px;letter-spacing: 5px;}
 h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width: 80px; height: 65px;animation-name: title;animation-duration: 3s;animation-iteration-count: infinite;}
-@keyframes title{0%{color:plum;}40%{color:#6d6e70}70%{color:burlywood;}100%{color:plum;}}
+@keyframes title{
+    0%{color:plum;}
+    40%{color:#6d6e70}
+    70%{color:burlywood;}
+    100%{color:plum;}
+}
 
 
 .list_port{overflow: hidden;position: relative;margin-bottom:60px}
@@ -85,7 +90,12 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 .admin_wraper{position:relative;margin:0 auto;padding:150px 0;width:900px;min-width: 900px;}
 .admin_wraper a{display: block;position: fixed}
 .admin_wraper .admin_back{margin-top:90px;top:50%;left:85px;transform: rotate(-90deg);transform-origin: 0 0;animation-name: admin;animation-duration: 3.5s;animation-iteration-count: infinite;}
-@keyframes admin{0%{color:plum;}40%{color:#6d6e70}70%{color:burlywood;}100%{color:plum;}}
+@keyframes admin{
+    0%{color:plum;}
+    40%{color:#6d6e70}
+    70%{color:burlywood;}
+    100%{color:plum;}
+}
 
 .admin_wraper .btn_top{display: inline-block;width:55px;height: 55px;border-radius: 30px;background-color:burlywood;color:#fff;position: fixed;bottom:80px;right: 85px;transition: all .35s ease-in-out}
 .admin_wraper .admin_top{line-height: 55px;position: initial;transition:all .35s ease-in-out}
