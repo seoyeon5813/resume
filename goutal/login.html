@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Goutal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="goutal_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="menu">
+        <span class="btn_x">X</span>
+        <ul class="list_navi">
+            <li><a href="./goutal_brand.html">Brand Story</a></li>
+            <li>
+                <a href="./goutal_perfume.html">Perfumes
+                    <ul class="list_sNavi">
+                        <li><a href="./goutal_perfume.html">Bestseller</a></li>
+                        <li><a href="./goutal_perfume.html">Perfumes for Women</a></li>
+                        <li><a href="./goutal_perfume.html">Perfumes for men</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="./goutal_bath.html">Bath & Beauty
+                    <ul class="list_sNavi">
+                        <li><a href="./goutal_bath.html">For Body</a></li>
+                        <li><a href="./goutal_bath.html">Oils</a></li>
+                        <li><a href="./goutal_bath.html">Hand Care</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="./goutal_home.html">For HOME
+                    <ul class="list_sNavi">
+                        <li><a href="./goutal_home.html">Candles</a></li>
+                        <li><a href="./goutal_home.html">Scented Diffusers</a></li>
+                        <li><a href="./goutal_home.html">Acceessories</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="./goutal_contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <div class="header">
+            <button class="btn_menu"><i class="fas fa-asterisk"></i>menu</button>
+            <div class="logo">
+                <a href="./goutal.html">
+                    <img src="./img/goutal_logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="mypage">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+            </div>
+        </div>
+        <div class="wrap_contact">
+            <div class="contact_form">
+                <div class="contact_tit">
+                    <strong>Contact Us</strong>
+                    <span>옆에 있는 폼을 완성해주세요</span>
+                </div>
+                <form>
+                    <fieldset>
+                        <legend class="screen_out">Contact Form</legend>
+                        <ul class="list_contact">
+                            <li>
+                                <label>이름</label>
+                                <input type="text" placeholder="Your Name">
+                            </li>
+                            <li>
+                                <label>연락처</label>
+                                <input type="text" placeholder="Your Phone Number">
+                            </li>
+                            <li>
+                                <label>이메일</label>
+                                <input type="text" placeholder="Your E-mail">
+                            </li>
+                            <li>
+                                <label>문의사항</label>
+                                <select name="" id="">
+                                    <option value="0">문의사항을 선택해 주세요</option>
+                                    <option value="1">상품문의</option>
+                                    <option value="2">배송문의</option>
+                                    <option value="3">상담요청</option>
+                                    <option value="4">기타</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <label></label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="자세한 문의 사항을 입력해주세요"></textarea>
+                        <button type="submit">보내기</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="main_flower">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    
+    $(document).ready(function(){
+        $('.btn_menu').on('click', function(e){
+            
+            $('.menu').removeClass('deactive');
+            $('.menu').addClass('active');
+        });
+
+        $('.btn_x').on('click', function(e){
+            $('.menu').removeClass('active');
+            $('.menu').addClass('deactive');
+        });
+
+        $('.list_navi > li').mouseover(function(e){
+            $('.list_sNavi', this).addClass('active');
+        });
+
+        $('.list_navi > li').mouseleave(function(e){
+            $('.list_sNavi').removeClass('active');
+        });
+        
+    });
+
+    </script>
+</body>
+</html>
