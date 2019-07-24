@@ -72,7 +72,7 @@
                         <div class="owl-stage">
                             <div class="owl-item">
                                 <strong>ÉTOILE D'UNE NUIT</strong>
-                                <div class="main_img_01"></div>
+                                <img class="main_img_01 owl-lazy" data-src="./img/main_p_01.png">
                                 <p>The Tiare flower smells of summer- its name, 
                                     both exotic and filled with promises of adventure. 
                                     Blooming along the Pacific coast of Polynesia drenched in sunshine, 
@@ -82,7 +82,7 @@
                             </div>
                             <div class="owl-item">
                                 <strong>ÉTOILE D'UNE NUIT</strong>
-                                <div class="main_img_02"></div>
+                                <img class="main_img_02 owl-lazy" data-src="./img/main_p_02.png">
                                 <p>The Tiare flower smells of summer- its name, 
                                     both exotic and filled with promises of adventure. 
                                     Blooming along the Pacific coast of Polynesia drenched in sunshine, 
@@ -92,7 +92,7 @@
                             </div>
                             <div class="owl-item">
                                 <strong>ÉTOILE D'UNE NUIT</strong>
-                                <div class="main_img_03"></div>
+                                <img class="main_img_03 owl-lazy" data-src="./img/main_p_03.png">
                                 <p>The Tiare flower smells of summer- its name, 
                                     both exotic and filled with promises of adventure. 
                                     Blooming along the Pacific coast of Polynesia drenched in sunshine, 
@@ -102,7 +102,7 @@
                             </div>
                             <div class="owl-item">
                                 <strong>ÉTOILE D'UNE NUIT</strong>
-                                <div class="main_img_04"></div>
+                                <img class="main_img_04 owl-lazy" data-src="./img/main_p_04.png">
                                 <p>The Tiare flower smells of summer- its name, 
                                     both exotic and filled with promises of adventure. 
                                     Blooming along the Pacific coast of Polynesia drenched in sunshine, 
@@ -155,6 +155,7 @@
 
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
+            lazyLoad:true,
             loop:true,
             center:true,
             nav:true,

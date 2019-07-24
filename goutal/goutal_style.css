@@ -62,11 +62,11 @@ body{width:100%;background-color:#efefef;position: relative;}
 .wrap_main .cont_main p{position:absolute;top:0;right:0;width:50%;padding:150px 50px 150px 235px;box-sizing: border-box;word-break: keep-all}
 
 .owl-carousel .owl-item div{width:265px;height:300px;background-size:contain;background-position-x:20px;margin:0 auto;background-repeat: no-repeat}
-.owl-carousel .owl-item .main_img_01{background-image:url(./img/main_p_01.png)}
-.owl-carousel .owl-item .main_img_02{width:300px;background-image:url(./img/main_p_02.png)}
-.owl-carousel .owl-item .main_img_03{width:315px;background-image:url(./img/main_p_03.png)}
-.owl-carousel .owl-item .main_img_04{background-image:url(./img/main_p_04.png)}
-
+.owl-carousel .owl-item .owl-lazy{margin:0 auto}
+.owl-carousel .owl-item .main_img_01{width:200px}
+.owl-carousel .owl-item .main_img_02{width:300px}
+.owl-carousel .owl-item .main_img_03{width:315px}
+.owl-carousel .owl-item .main_img_04{width:200px}
 .owl-carousel .owl-nav button{position:absolute;top:180px;outline: none;border-top:30px solid black!important;border-left: 30px solid transparent!important;}
 .owl-carousel .owl-nav button.owl-prev{left:-100px;transform: rotate(-135deg)}
 .owl-carousel .owl-nav button.owl-next{right:-100px;transform:rotate(45deg)}
