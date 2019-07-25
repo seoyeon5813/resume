@@ -16,19 +16,20 @@ body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#755e5e;l
 
 /* header */
 .header_wrap{width:100%;position: fixed;z-index:9999;color:#fff}
-.header{display: flex;position: relative;height: 100px;transition:all .45s ease-in-out}
+.header{display: flex;position: relative;height: 100px;transition:all .45s ease-in-out;align-items: center}
 .header_active{background-color: rgba(0, 0, 0, 0.8);}
 
-.header h1{position: absolute;left:6%;top:37%;;font-family: 'Nunito Sans', sans-serif;text-align: center;letter-spacing: 1px;line-height: 19px}
+.header h1{padding-left:50px;width:50%;font-family: 'Nunito Sans', sans-serif;letter-spacing: 1px;line-height: 19px}
 .header h1 a{display: block}
 .header h1 p{font-size: 11px;font-weight: lighter;letter-spacing: 2px}
 
-.header .navi{width:33.33%;position: absolute;left:33.33%;top:45%;text-align: center}
-.header .navi li{display:inline-block;margin: 0 35px;}
+.header .navi{position: absolute;left:50%;margin-left:-190px}
+.header .navi li{display:inline-block;margin-right:70px;}
+.header .navi li:last-child{margin-right: 0}
 .header .navi li a{display: block}
 
-.header .sns{display: flex;position: absolute;right: 6%;top:45%;text-align: right;font-size: 15px}
-.header .sns li{margin: 0 20px;}
+.header .sns{width:50%;padding-right:50px;text-align: right;font-size: 15px;}
+.header .sns li{display:inline-block;margin: 0 20px;}
 .header .sns li a{display: block}
 
 /* main_section01 */
@@ -49,6 +50,7 @@ body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#755e5e;l
 .main_section02 .sec02_txt{position:relative;}
 .main_section02 .sec02_txt h3{font-size: 43px;color:#85ac83;font-family: 'EB Garamond', serif;}
 .main_section02 .sec02_txt p{margin-top:65px;line-height: 30px;text-align: center}
+
 
 /* main_section03 */
 .main_section03{height: 90vh;}
