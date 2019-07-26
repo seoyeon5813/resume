@@ -160,6 +160,28 @@ body{text-align: center;}
 .wrap_login a:hover{color:brown}
 .wrap_login .account{margin-right: 35px;}
 
+/* product */
+.product{padding-top:200px;margin-bottom:150px}
+.wrap_product{display:flex;width:1200px;min-width: 1200px;margin:0 auto}
+.wrap_product .product_img{width:50%;}
+.wrap_product .product_img div{margin:0 auto;width:350px;height: 500px;background:url(./img/07_01.jpg) center no-repeat;background-size: contain}
+.wrap_product .product_txt{display: flex;align-items: center;text-align: left}
+.wrap_product .wrap_product_txt strong{font-size: 30px;font-weight: lighter;letter-spacing: -1px}
+.wrap_product .wrap_product_txt em{display:block;margin-top:5px;font-style: normal;font-size: 17px;font-weight: bold}
+.wrap_product .wrap_product_txt p{margin:10px 0 30px;}
+.list_product li:first-child{margin-bottom: 10px}
+.list_product li label{display:inline-block;width:50px}
+.list_product li select,
+.list_product li input{border:1px solid #88744d;height: 25px;box-sizing: border-box}
+.list_product li select{width:50%}
+.list_product li input{padding:0 10px;width:65px;height: 23px;}
+.wrap_product .wrap_product_txt .btn_check{position:relative;overflow:hidden;margin-top:45px;}
+.wrap_product .wrap_product_txt button{float:left;width:50%;height:20px;color:#fff;background-color:#e5c78b;border:none;cursor: pointer;transition:all .25s ease-in-out}
+.wrap_product .wrap_product_txt button:hover{background-color:brown}
+.wrap_product .wrap_product_txt a{position: absolute;top:0;right:0;text-align: right;transition: all .3s ease-in-out}
+.wrap_product .wrap_product_txt a:hover{color:brown}
+.wrap_product .wrap_product_txt a i{padding-right: 5px}
+
 
 /* footer */
 .footer{margin:0 auto;padding:30px 0;width:1200px;position:relative;font-size:10px;}
