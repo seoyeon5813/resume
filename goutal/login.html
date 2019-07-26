@@ -13,41 +13,19 @@
 </head>
 <body>
     <div class="menu">
-        <span class="btn_x">X</span>
+        <button class="btn_x">Close</button>
         <ul class="list_navi">
             <li><a href="./goutal_brand.html">Brand Story</a></li>
-            <li>
-                <a href="./goutal_perfume.html">Perfumes
-                    <ul class="list_sNavi">
-                        <li><a href="./goutal_perfume.html">Bestseller</a></li>
-                        <li><a href="./goutal_perfume.html">Perfumes for Women</a></li>
-                        <li><a href="./goutal_perfume.html">Perfumes for men</a></li>
-                    </ul>
-                </a>
-            </li>
-            <li>
-                <a href="./goutal_bath.html">Bath & Beauty
-                    <ul class="list_sNavi">
-                        <li><a href="./goutal_bath.html">For Body</a></li>
-                        <li><a href="./goutal_bath.html">Oils</a></li>
-                        <li><a href="./goutal_bath.html">Hand Care</a></li>
-                    </ul>
-                </a>
-            </li>
-            <li>
-                <a href="./goutal_home.html">For HOME
-                    <ul class="list_sNavi">
-                        <li><a href="./goutal_home.html">Candles</a></li>
-                        <li><a href="./goutal_home.html">Scented Diffusers</a></li>
-                        <li><a href="./goutal_home.html">Acceessories</a></li>
-                    </ul>
-                </a>
-            </li>
+            <li><a href="./goutal_perfume.html">Perfumes</a></li>
+            <li><a href="./goutal_bath.html">Bath & Beauty </a></li>
+            <li><a href="./goutal_home.html">For HOME</a></li>
             <li><a href="./goutal_contact.html">Contact</a></li>
         </ul>
     </div>
     <div class="header">
-        <button class="btn_menu"><i class="fas fa-asterisk"></i>menu</button>
+        <button class="btn_menu">
+            <i class="fas fa-asterisk"></i>
+            menu</button>
         <div class="logo">
             <a href="./goutal.html">
                 <img src="./img/goutal_logo.png" alt="logo">
@@ -93,26 +71,15 @@
 
     <script>
     
-    $(document).ready(function(){
-        $('.btn_menu').on('click', function(e){
-            
-            $('.menu').removeClass('deactive');
-            $('.menu').addClass('active');
-        });
+    $(function(){
+        var $menu = $('.menu');
 
-        $('.btn_x').on('click', function(e){
-            $('.menu').removeClass('active');
-            $('.menu').addClass('deactive');
+        $('.btn_menu').on('click', function(){
+            $menu.addClass('active visible');
         });
-
-        $('.list_navi > li').mouseover(function(e){
-            $('.list_sNavi', this).addClass('active');
+        $('.btn_x').on('click', function(){
+            $menu.removeClass('active visible');
         });
-
-        $('.list_navi > li').mouseleave(function(e){
-            $('.list_sNavi').removeClass('active');
-        });
-        
     });
 
     </script>

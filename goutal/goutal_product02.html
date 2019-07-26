@@ -13,35 +13,17 @@
 </head>
 <body>
     <div class="menu">
-        <span class="btn_x">X</span>
+        <button class="btn_x">Close</button>
         <ul class="list_navi">
             <li><a href="./goutal_brand.html">Brand Story</a></li>
             <li>
-                <a href="./goutal_perfume.html">Perfumes
-                    <ul class="list_sNavi">
-                        <li><a href="./goutal_perfume.html">Bestseller</a></li>
-                        <li><a href="./goutal_perfume.html">Perfumes for Women</a></li>
-                        <li><a href="./goutal_perfume.html">Perfumes for men</a></li>
-                    </ul>
-                </a>
+                <a href="./goutal_perfume.html">Perfumes</a>
             </li>
             <li>
-                <a href="./goutal_bath.html">Bath & Beauty
-                    <ul class="list_sNavi">
-                        <li><a href="./goutal_bath.html">For Body</a></li>
-                        <li><a href="./goutal_bath.html">Oils</a></li>
-                        <li><a href="./goutal_bath.html">Hand Care</a></li>
-                    </ul>
-                </a>
+                <a href="./goutal_bath.html">Bath & Beauty</a>
             </li>
             <li>
-                <a href="./goutal_home.html">For HOME
-                    <ul class="list_sNavi">
-                        <li><a href="./goutal_home.html">Candles</a></li>
-                        <li><a href="./goutal_home.html">Scented Diffusers</a></li>
-                        <li><a href="./goutal_home.html">Acceessories</a></li>
-                    </ul>
-                </a>
+                <a href="./goutal_home.html">For HOME</a>
             </li>
             <li><a href="./goutal_contact.html">Contact</a></li>
         </ul>
@@ -61,12 +43,13 @@
         </div>
     </div>
     <div class="product">
-        <div class="wrap_product">
+        <div class="wrap_product wrap_product02">
             <div class="product_img">
                 <div></div>
             </div>
             <div class="product_txt">
                 <div class="wrap_product_txt">
+                    <span>Eau de Parfum</span>
                     <strong>BOIS D'HADRIEN</strong>
                     <em>139,000 원</em>
                     <p>책상을 이름과 애기 묻힌 어머님, 같이 있습니다.<br>
@@ -89,15 +72,17 @@
                             <span></span>
                             <label for="chk3">100ml</label>
                         </li>
+                        <li>
+                            <select name="" id="">
+                                <option value="0">수량</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </li>
                     </ul>
-                    <select name="" id="">
-                        <option value="0">수량</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
                     <button>구매하기</button>
                 </div>
             </div>
@@ -124,24 +109,14 @@
             }
         });
 
-        $(document).ready(function(){
-            $('.btn_menu').on('click', function(e){
-                
-                $('.menu').removeClass('deactive');
-                $('.menu').addClass('active');
+        $(function(){
+            var $menu = $('.menu');
+
+            $('.btn_menu').on('click', function(){
+                $menu.addClass('active visible');
             });
-    
-            $('.btn_x').on('click', function(e){
-                $('.menu').removeClass('active');
-                $('.menu').addClass('deactive');
-            });
-    
-            $('.list_navi > li').mouseover(function(e){
-                $('.list_sNavi', this).addClass('active');
-            });
-    
-            $('.list_navi > li').mouseleave(function(e){
-                $('.list_sNavi').removeClass('active');
+            $('.btn_x').on('click', function(){
+                $menu.removeClass('active visible');
             });
         });
     </script>
