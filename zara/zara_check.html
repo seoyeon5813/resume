@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZARA HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="zara_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="wrap_header">
+            <ul id="navi" class="navi">
+                <li><a href="./new.html">NEW IN</a></li>
+                <li><a href="./bed.html">BEDROOM</a></li>
+                <li><a href="./bath.html">BATHROOM</a></li>
+                <li><a href="./table.html">TABLEWARE</a></li>
+                <li><a href="./deco.html">DECORATION</a></li>
+            </ul>
+            <h1><a href="./zara.html"><img src="img/zara_logo.png" alt="logo"></a></h1>
+            <div class="navi_sub">
+                <a href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+                <a href="./zara_check"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="check">
+       <div class="wrap_check">
+           <table>
+                <colgroup>
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>상품명</td>
+                        <td>사이즈</td>
+                        <td>수량</td>
+                        <td>가격</td>
+                        <td>상품 취소</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="./img/deco_01.jpg" alt="">
+                        </td>
+                        <td>WALL DECORATIVE ACCESSORY</td>
+                        <td>-</td>
+                        <td>
+                            <input type="number" min="0" max="100" placeholder="1">
+                        </td>
+                        <td>59,000 원</td>
+                        <td>
+                            <a href="#none">X</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/b_01.jpg" alt="">
+                        </td>
+                        <td>STRIPED DUVET COVER</td>
+                        <td>Double</td>
+                        <td>
+                            <input type="number" min="0" max="100" placeholder="1">
+                        </td>
+                        <td>89,000 원</td>
+                        <td>
+                            <a href="#none">X</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+           </table>
+           <div class="check_total">
+                <ul class="list_check">
+                    <li>
+                        <span>총 제품 가격</span>
+                        <span>148,000 원</span>
+                    </li>
+                    <li>
+                        <span>예상 배송비</span>
+                        <span>0 원</span>
+                    </li>
+                    <li>
+                        <span>합계</span>
+                        <span>148,000 원</span>
+                    </li>
+                    <li>
+                        <button>주문하기</button>
+                    </li>
+                </ul>
+           </div>
+       </div>
+    </div>
+
+    <div class="footer">©2015 ZARA. All Rights Reserved.</div>
+
+
+
+    
+</body>
+<script type="text/javascript"> 
+
+$(window).on("scroll", function(){
+        if($(window).scrollTop() > 80){
+            $(".header").addClass("header_active");
+        } else {
+            $(".header").removeClass("header_active");
+        }
+    });
+
+</script>
+</html>

@@ -22,6 +22,8 @@ body{text-align: center;}
 .txt p{font-family: 'Noto Sans KR',sans-serif;margin-bottom:20px}
 .txt a{font-family: 'Noto Sans KR',sans-serif;transition:all .2s ease-in-out}
 .txt a:hover{color:brown}
+button{height:20px;border:none;background-color:#e5c78b;color:#fff;border-radius:1px;cursor:pointer;transition: all .25s ease-in-out}
+button:hover{background-color:brown}
 
 /* sns */
 .sns{position: absolute;margin-top:100px;top:50%;left:120px;transform: rotate(-90deg);transform-origin: 0}
@@ -99,7 +101,7 @@ body{text-align: center;}
 .content_submit{padding:75px 0;width:100%;text-align: center;height: auto;}
 .content_submit p{margin: 50px 0 30px;}
 .content_submit input{display:block;margin:50px auto 0;text-align:center;width:350px;height: 35px;background-color: transparent;border:none;border-bottom: 2px solid #88744d;outline: none}
-.content_submit button{margin:25px 0 100px;width:185px;height: 25px;background-color:#e5c78b;color:#fff;border-radius: 1px;border:none}
+.content_submit button{margin:25px 0 100px;width:185px;height: 25px;}
 .content_submit .list_icon{overflow: hidden;display: inline-block;}
 .content_submit .list_icon li{float: left;margin-right: 50px}
 .content_submit .list_icon li:last-child{margin-right: 0}
@@ -123,8 +125,7 @@ body{text-align: center;}
 .wrap_sub .product .sort i{margin-right: 10px;font-size: 15px}
 .wrap_sub .product .sort .search{overflow: hidden;float: right;width:380px}
 .wrap_sub .product .sort .search input{width:65%;border:none;border-bottom:1px solid #88744d;outline: none;}
-.wrap_sub .product .sort .search button{width:30%;float:right;border:none;background-color:#e5c78b;border-radius: 2px;color:#fff;outline: none;cursor: pointer;transition: all .2s ease-in-out}
-.wrap_sub .product .sort .search button:hover{background-color:brown}
+.wrap_sub .product .sort .search button{width:30%;float:right;}
 
 .wrap_sub .product .list_product{overflow: hidden;margin:25px -10px}
 .wrap_sub .product .list_product li{width:33.3%;margin-bottom:50px;padding:0 10px;height: 350px;background-size: cover;float: left;box-sizing: border-box;transition: all .2s ease-in-out}
@@ -154,8 +155,7 @@ body{text-align: center;}
 .wrap_login .list_login li{height: 50px;}
 .wrap_login .list_login li label i{font-size: 16px}
 .wrap_login .list_login li input{width:325px;padding:10px 30px;border:none;border-bottom: 1px solid #88744d;box-sizing: border-box;outline: none}
-.wrap_login button{display:block;width:345px; height: 20px;margin:20px auto 60px auto;border:none;background-color:#e5c78b;border-radius: 2px;color:#fff;transition: all .25s ease-in-out;cursor: pointer;}
-.wrap_login button:hover{background-color:brown}
+.wrap_login button{display:block;width:345px; margin:20px auto 60px auto;}
 .wrap_login a{display: inline-block;text-decoration: underline}
 .wrap_login a:hover{color:brown}
 .wrap_login .account{margin-right: 35px;}
@@ -163,8 +163,38 @@ body{text-align: center;}
 /* product */
 .product{padding-top:200px;margin-bottom:150px}
 .wrap_product{display:flex;width:1200px;min-width: 1200px;margin:0 auto}
-.wrap_product .product_img{width:50%;}
-.wrap_product .product_img div{margin:0 auto;width:350px;height: 500px;background:url(./img/07_01.jpg) center no-repeat;background-size: contain}
+.wrap_product .product_img{width:50%;overflow: hidden;}
+.wrap_product .product_img .list_product_img{float: left;}
+.wrap_product .product_img .list_product_img li{margin-bottom:5px;width:80px;height:100px;background-size: contain;background-repeat: no-repeat;transition: all .2s ease-in-out}
+.wrap_product .product_img .list_product_img li:hover{filter: opacity(50%)}
+.wrap_product .product_img .list_product_img li:nth-child(1){background-image:url(./img/productN_01.png)}
+.wrap_product .product_img .list_product_img li:nth-child(2){background-image:url(./img/productN_02.png)}
+.wrap_product .product_img .list_product_img li:nth-child(3){background-image:url(./img/productN_03.png)}
+.wrap_product .product_img .list_product_img li a{display: block;width:100%;height: 100%;}
+.wrap_product .product_img .product_detail{margin:0 auto;width:350px;height: 465px;background:url(./img/bed_01.jpg) 0 0 no-repeat;background-size: contain}
+
+.productB .product_img .product_detail{background-image:url(./img/b_01.jpg)}
+.productB .product_img .list_product_img li:nth-child(1){background-image: url(./img/productB_01.jpg)}
+.productB .product_img .list_product_img li:nth-child(2){background-image: url(./img/productB_02.jpg)}
+.productB .product_img .list_product_img li:nth-child(3){background-image: url(./img/productB_03.jpg)}
+
+
+.productB02 .product_img .product_detail{background-image:url(./img/bath_01.jpg)}
+.productB02 .product_img .list_product_img li:nth-child(1){background-image: url(./img/productB02_01.png)}
+.productB02 .product_img .list_product_img li:nth-child(2){background-image: url(./img/productB02_02.jpg)}
+.productB02 .product_img .list_product_img li:nth-child(3){background-image: url(./img/productB02_03.jpg)}
+
+.productT .product_img .product_detail{background-image:url(./img/table_01.jpg)}
+.productT .product_img .list_product_img li:nth-child(1){background-image: url(./img/productT_01.jpg)}
+.productT .product_img .list_product_img li:nth-child(2){background-image: url(./img/productT_02.jpg)}
+.productT .product_img .list_product_img li:nth-child(3){background-image: url(./img/productT_03.jpg)}
+
+.productD .product_img .product_detail{background-image:url(./img/deco_01.jpg)}
+.productD .product_img .list_product_img li:nth-child(1){background-image: url(./img/productD_01.jpg)}
+.productD .product_img .list_product_img li:nth-child(2){background-image: url(./img/productD_02.jpg)}
+.productD .product_img .list_product_img li:nth-child(3){background-image: url(./img/productD_03.jpg)}
+
+
 .wrap_product .product_txt{display: flex;align-items: center;text-align: left}
 .wrap_product .wrap_product_txt strong{font-size: 30px;font-weight: lighter;letter-spacing: -1px}
 .wrap_product .wrap_product_txt em{display:block;margin-top:5px;font-style: normal;font-size: 17px;font-weight: bold}
@@ -176,13 +206,31 @@ body{text-align: center;}
 .list_product li select{width:50%}
 .list_product li input{padding:0 10px;width:65px;height: 23px;}
 .wrap_product .wrap_product_txt .btn_check{position:relative;overflow:hidden;margin-top:45px;}
-.wrap_product .wrap_product_txt button{float:left;width:50%;height:20px;color:#fff;background-color:#e5c78b;border:none;cursor: pointer;transition:all .25s ease-in-out}
-.wrap_product .wrap_product_txt button:hover{background-color:brown}
+.wrap_product .wrap_product_txt button{float:left;width:50%;}
 .wrap_product .wrap_product_txt a{position: absolute;top:0;right:0;text-align: right;transition: all .3s ease-in-out}
 .wrap_product .wrap_product_txt a:hover{color:brown}
 .wrap_product .wrap_product_txt a i{padding-right: 5px}
 
 
+/* check */
+.check{padding-top:275px;}
+.wrap_check{width:1200px;min-width: 1200px;margin:0 auto}
+.wrap_check table{width:100%;border-spacing: 0}
+.wrap_check table thead td{border-bottom:1px solid #dedbd5;padding-bottom: 10px}
+.wrap_check table tbody td{padding:10px 0;}
+.wrap_check table tbody td img{width:100px;}
+.wrap_check table tbody td input{padding-left:10px;width:60px;box-sizing: border-box}
+.wrap_check table tbody td a{display: block}
+.wrap_check table tbody td a:hover{color:brown;font-weight: bold}
+.wrap_check table tfoot td{border-top:1px solid #dedbd5}
+
+.wrap_check .check_total{overflow: hidden;margin:30px 0 85px}
+.wrap_check .check_total .list_check{width:50%;float: right;text-align: right}
+.wrap_check .check_total .list_check li{margin:10px 0}
+.wrap_check .check_total .list_check li:nth-child(3){padding-top:20px;font-weight: bold;font-size: 17px}
+.wrap_check .check_total .list_check li span{display:inline-block;width:200px;}
+.wrap_check .check_total button{width:50%;}
+
 /* footer */
 .footer{margin:0 auto;padding:30px 0;width:1200px;position:relative;font-size:10px;}
-.footer::before{content: '';position: absolute;top:0;left:0;width:100%;height: 1px;background-color: #88744d}
+.footer::before{content: '';position: absolute;top:0;left:0;width:100%;height: 1px;background-color: #dedbd5}
