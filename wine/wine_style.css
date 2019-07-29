@@ -21,6 +21,14 @@ input{outline: none;}
 html{scroll-behavior: smooth}
 .wrapper{width:100%;position: relative;}
 
+
+/* menu */
+.menu{display:none;width:100%;height: 100%;position: relative;z-index: 99999;}
+.wrap_menu{position: fixed;top:0;left:0;right:0;bottom:0;background-color: rgba(198, 213, 211, 1);}
+.wrap_menu .list_menu{position: absolute;top:50%;left:50%;margin-left:-53px;margin-top:-70px}
+.wrap_menu .list_menu li{margin-bottom:20px;font-size: 15px}
+
+
 /* header */
 .header{width:100%;height: 120px;position: fixed;top:0;background-color: transparent;z-index: 9999;transition:all 0.45s ease-in-out}
 .header_active{background-color:rgba(198, 213, 211, 0.65)}
@@ -34,7 +42,7 @@ html{scroll-behavior: smooth}
 .header .navi li:last-child{margin-right:0}
 .header .navi li a{line-height: 25px}
 
-.fa-bars{display:none;}
+.header .fa-bars{display:none;}
 
 /* main */
 .main{position: relative;height: 100vh;overflow: hidden;}
@@ -65,10 +73,10 @@ html{scroll-behavior: smooth}
 .cont_product{width:100%;height: calc(100vh - 100px);}
 .cont_product .slide{float: left;width:33.33%;}
 .cont_product .slide em{display:block;width:300px;height:300px;border-radius:200px;background-color:pink}
-.cont_product .slide span[class^='product_img_0']{display:block;background-size: cover;width:111px;height: 450px;margin:0 auto}
-.cont_product .slide .product_img_01{background:url(./img/Riesling_01.png) 0 0 no-repeat;} 
-.cont_product .slide .product_img_02{background:url(./img/Riesling_02.png) 0 0 no-repeat;} 
-.cont_product .slide .product_img_03{background:url(./img/Riesling_03.png) 0 0 no-repeat;} 
+.cont_product .slide span{display:block;background-size: contain;background-repeat:no-repeat;width:111px;height: 450px;margin:0 auto}
+.cont_product .slide .product_img_01{background-image:url(./img/Riesling_01.png)} 
+.cont_product .slide .product_img_02{background-image:url(./img/Riesling_02.png)} 
+.cont_product .slide .product_img_03{background-image:url(./img/Riesling_03.png)} 
 .cont_product .slide .product_txt{margin-top:35px;color:#476269}
 
 .cont_product .slide .product_txt strong{font-size: 18px;}
@@ -134,16 +142,81 @@ html{scroll-behavior: smooth}
 
 @media only screen and (max-width: 735px) {
 
-.fa-bars{display:block;position:absolute;top:30px;left:30px;font-size: 20px;cursor: pointer}
+.btn_open .fa-bars{display:block;position:absolute;top:30px;left:30px;font-size: 20px;color:#90826c;cursor: pointer}
+.btn_close{display: block;margin:20px;font-size: 25px;color:#fff}
 .header{height: 0;}
 .header .logo{font-size: 22px;top:25px}
 .header .navi{display: none}
 
+.wrap_menu .list_menu li a{display: block}
+.menu_active{display: block}
 
-.mobile{width:100%;height:100%}
+.mobile{width:100%;}
 .mobile .mobile_navi{background-color: black}
 .mobile .mobile_navi li{color:#fff}
 
 
+/* main */
+.main .main_back{width:100%;height: 50%;}
+.main .main_back .main_backImg_left{background:none}
+.main .main_txt{width:100%;height: 50%;}
+.main .main_img{width:250px;height: 350px;margin-left:-100px;top:150px}
+.main .wrap_mainTxt{margin-top:40px;padding:0}
+.main .wrap_mainTxt p{display: none}
+
+
+/* about */
+.cont_horizon .horizon_img{margin-left:-66px;width:150px;height:300px;top:30%;background-size: contain}
+.cont_horizon .horizon_tit{font-size: 25px;line-height: 25px;}
+.cont_horizon .wrap_horizon{padding: 110px 30px;word-break: keep-all}
+.cont_horizon .wrap_horizon dl{display:none;width:100%}
+
+
+/* slide */
+.cont_product .slide span{width:80px;height: 300px;}
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next{display: none;}
+
+
+/* introduce */
+.cont_introduce .introduce_txt .wrap_introTxt{padding:0 50px}
+.cont_introduce .introduce_txt .wrap_introTxt .list_introduce li{font-size: 14px}
+.cont_introduce .introduce_txt .wrap_introTxt .list_introduce span{font-size: 30px;top:-10px;left:50%;margin-left: -19px}
+.cont_introduce .introduce_txt .wrap_introTxt h3{margin-top:0;font-size: 20px}
+
+/* fooer */
+.footer .submit .wrap_contSubmit p{font-size: 20px}
+.footer .submit .wrap_contSubmit input{width:175px;margin-top:35px}
+.footer .wrap_contFooter span{font-size: 20px;letter-spacing: 0}
+
 }
 
+
+
+@media only screen and (max-width: 375px) {
+
+/* main */
+.main .wrap_mainTxt{margin-top:20px}
+.main .main_txt{margin-top:15px;align-items: unset;}
+.main .main_img{height: 240px;margin-left:-70px;}
+
+
+}
+
+@media only screen and (max-width: 325px) {
+
+/* main */
+.main .wrap_mainTxt{margin-top:30px}
+
+/* slide */
+.cont_product .slide span{height: 270px;margin-top:45px}
+
+/* introduce */
+.cont_introduce .introduce_txt .wrap_introTxt em{display: none}
+
+/* footer */
+.footer .submit .wrap_contSubmit form{margin-top:10px}
+
+
+
+}
