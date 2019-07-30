@@ -199,7 +199,6 @@ html{scroll-behavior: smooth}
 /* main */
 .main{overflow:unset;}
 .main .wrap_mainTxt{margin-top:20px}
-.main .main_back{padding-top:30px}
 
 .main .main_img{height: 270px;margin-left:-79px;top:125px}
 
