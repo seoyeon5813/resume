@@ -199,14 +199,16 @@ html{scroll-behavior: smooth}
 /* main */
 .main .wrap_mainTxt{margin-top:20px}
 .main .main_txt{margin-top:15px;align-items: unset;}
-.main .main_img{height: 240px;margin-left:-70px;}
+.main .main_img{height: 270px;margin-left:-79px;top:150px}
 
 .cont_introduce .introduce_txt{padding-top:110px}
+
 }
 
 @media only screen and (max-width: 325px) {
 
 /* main */
+.main .main_img{height: 240px;margin-left:-70px;top:130px}
 .main .wrap_mainTxt{margin-top:30px}
 
 /* slide */
