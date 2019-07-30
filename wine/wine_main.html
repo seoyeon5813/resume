@@ -25,20 +25,8 @@
 </style>
 </head>
 <body>
-    <div class="menu">
-        <div class="wrap_menu">
-            <button class="btn_close">X</button>
-            <ul class="list_menu">
-                <li><a href="#about">About Sancerre</a></li>
-                <li><a href="#product">제품보기</a></li>
-                <li><a href="#progress">제조과정</a></li>
-                <li><a href="#footer">고객지원</a></li>
-            </ul>
-        </div>
-    </div>
     <div class="header">
         <h1 class="logo"  data-menuanchor="1"><a href="#main">Le Glacier<br> des<br> Etoiles</a></h1>
-        <button class="btn_open"><i class="fas fa-bars"></i></button>
         <ul class="navi" id="myMenu">
             <li data-menuanchor="2"><a href="#about">About Sancerre</a></li>
             <li data-menuanchor="3"><a href="#product">제품보기</a></li>
@@ -190,16 +178,14 @@ $(document).ready(function() {
     });
 });
 
-$(function(){
-    $('.btn_open').on('click', function(){
-        $('.menu').addClass('menu_active');
-    });
-    $('.btn_close').on('click', function(){
-        $('.menu').removeClass('menu_active');
-    });  
-
-    
-});  
+// $(function(){
+//     $('.btn_open').on('click', function(){
+//         $('.menu').addClass('menu_active');
+//     });
+//     $('.btn_close').on('click', function(){
+//         $('.menu').removeClass('menu_active');
+//     });  
+// });  
 
 
 </script>
