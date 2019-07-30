@@ -142,6 +142,8 @@ html{scroll-behavior: smooth}
 
 @media only screen and (max-width: 735px) {
 
+.main.section{height: 100%!important}
+
 .btn_open .fa-bars{display:block;position:absolute;top:30px;left:30px;font-size: 20px;color:#90826c;cursor: pointer}
 .btn_close{display: block;margin:20px;font-size: 25px;color:#fff}
 .header{height: auto}
@@ -160,7 +162,7 @@ html{scroll-behavior: smooth}
 .main .main_back{width:100%;height: 50%;}
 .main .main_back .main_backImg_left{width:0;height: 0;position: unset;}
 .main .main_txt .main_backImg_right{height: 0;position: unset}
-.main .main_txt{width:100%;height: 50%;padding:0 0 50px 0;background-color:black}
+.main .main_txt{width:100%;height: 50%;background-color:black}
 .main .main_img{width:250px;height: 350px;margin-left:-100px;top:150px}
 .main .wrap_mainTxt{margin-top:40px;padding:0}
 .main .wrap_mainTxt p{display: none}
@@ -200,7 +202,7 @@ html{scroll-behavior: smooth}
 /* main */
 .main{overflow:unset;}
 .main .wrap_mainTxt{margin-top:20px}
-.main .main_back{padding-top:30px}
+.main .main_back{}
 
 .main .main_img{height: 270px;margin-left:-79px;top:125px}
 
