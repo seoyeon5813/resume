@@ -142,6 +142,8 @@ html{scroll-behavior: smooth}
 
 @media only screen and (max-width: 735px) {
 
+.section{margin-top:-20px}
+
 .btn_open .fa-bars{display:block;position:absolute;top:30px;left:30px;font-size: 20px;color:#90826c;cursor: pointer}
 .btn_close{display: block;margin:20px;font-size: 25px;color:#fff}
 .header{height: 95px;}
@@ -201,7 +203,7 @@ html{scroll-behavior: smooth}
 .main .main_txt{margin-top:15px;align-items: unset;}
 .main .main_img{height: 270px;margin-left:-79px;top:150px}
 
-.cont_introduce .introduce_txt{padding-top:110px}
+.cont_introduce .introduce_txt{padding-top:70px}
 
 }
 
