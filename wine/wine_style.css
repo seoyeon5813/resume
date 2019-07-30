@@ -158,7 +158,8 @@ html{scroll-behavior: smooth}
 
 /* main */
 .main .main_back{width:100%;height: 50%;}
-.main .main_back .main_backImg_left{width:0}
+.main .main_back .main_backImg_left{width:0;height: 0;position: unset;}
+.main .main_txt .main_backImg_right{height: 0;position: unset}
 .main .main_txt{width:100%;height: 50%;padding:0 0 50px 0;background-color:black}
 .main .main_img{width:250px;height: 350px;margin-left:-100px;top:150px}
 .main .wrap_mainTxt{margin-top:40px;padding:0}
@@ -199,8 +200,9 @@ html{scroll-behavior: smooth}
 /* main */
 .main{overflow:unset;}
 .main .wrap_mainTxt{margin-top:20px}
+.main .main_back{padding-top:30px}
 
-.main .main_img{height: 270px;margin-left:-79px;top:100px}
+.main .main_img{height: 270px;margin-left:-79px;top:125px}
 
 .cont_introduce .introduce_txt{padding-top:70px}
 
