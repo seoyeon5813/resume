@@ -199,6 +199,7 @@ html{scroll-behavior: smooth}
 @media only screen and (max-width: 375px) {
 
 /* main */
+.main{overflow:unset;}
 .main .wrap_mainTxt{margin-top:20px}
 .main .main_back{padding-top:30px}
 .main .main_txt{padding-top:50px}
