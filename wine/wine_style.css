@@ -121,7 +121,7 @@ html{scroll-behavior: smooth}
 .header .navi li{margin-right:30px}
 
 .main .main_img{margin-left:-149px;width:300px;background-size: contain}
-.main .main_txt .main_backImg_right{background:none;}
+.main .main_txt .main_backImg_right{width:0}
 .main .wrap_mainTxt h2{font-size: 25px;line-height: 25px}
 .main .wrap_mainTxt p{margin-bottom:30px;width:240px}
 .main .wrap_mainTxt a{width:140px;height: 35px;line-height: 35px;}
@@ -133,7 +133,7 @@ html{scroll-behavior: smooth}
 
 /* introduce */
 .cont_introduce .introduce_txt{width:100%}
-.cont_introduce .introduce_back{background:none}
+.cont_introduce .introduce_back{width:0}
 
 
 
@@ -158,7 +158,7 @@ html{scroll-behavior: smooth}
 
 /* main */
 .main .main_back{width:100%;height: 50%;}
-.main .main_back .main_backImg_left{background:none}
+.main .main_back .main_backImg_left{width:0}
 .main .main_txt{width:100%;height: 50%;}
 .main .main_img{width:250px;height: 350px;margin-left:-100px;top:150px}
 .main .wrap_mainTxt{margin-top:40px;padding:0}
