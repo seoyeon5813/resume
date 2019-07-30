@@ -146,7 +146,7 @@ html{scroll-behavior: smooth}
 
 .btn_open .fa-bars{display:block;position:absolute;top:30px;left:30px;font-size: 20px;color:#90826c;cursor: pointer}
 .btn_close{display: block;margin:20px;font-size: 25px;color:#fff}
-.header{height: 95px;}
+.header{height: 95px;margin-top:0;paddding-top:0}
 .header .logo{font-size: 22px;top:15px}
 .header .navi{display: none}
 
