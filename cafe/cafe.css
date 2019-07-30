@@ -41,9 +41,9 @@ body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#755e5e;l
 
 /* main_section02 */
 .main_section02{display:flex;height: 100vh}
-.main_section02 .sec02_txtW .sec02_illu{position:absolute;top:-10px;left:270px;width:150px;height:130px;background:url(./img/bean02.png) 0 0 no-repeat ;background-size: 140px;opacity: .85;}
-.main_section02 .sec02_txtW .sec02_illu_02{position:absolute;top:-50px;left:-60px;width:100px;height:100px;background:url(./img/leaf_03.png) 0 0 no-repeat ;background-size: 85px;}
-.main_section02 .sec02_txtW .sec02_illu_03{position:absolute;top:45px;left:-10px;width:320px;height:50px;background:url(./img/underline.png) 0 0 no-repeat ;background-size: 320px;opacity: .65;}
+.main_section02 .sec02_txtW .sec02_illu{position:absolute;top:-10px;left:270px;width:150px;height:130px;background:url(./img/bean02.png) center no-repeat ;background-size: contain;opacity: .85;}
+.main_section02 .sec02_txtW .sec02_illu_02{position:absolute;top:-50px;left:-60px;width:100px;height:100px;background:url(./img/leaf_03.png) center no-repeat ;background-size: contain}
+.main_section02 .sec02_txtW .sec02_illu_03{position:absolute;top:45px;left:-10px;width:320px;height:13px;background:url(./img/underline.png) center no-repeat ;background-size: contain;opacity: .65;}
 
 .main_section02 .sec02_img{width:42.5%;height:100%;background:url(./img/3.jpg) 0 0 no-repeat;background-size: cover;}
 .main_section02 .sec02_txtW{display:flex;width: 57.5%;align-items: center;justify-content: center;background-color: #f8f5f1}
@@ -58,13 +58,13 @@ body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#755e5e;l
 .main_section03 .sec03_tit::after{content:'';margin-left:-100px;background:url(./img/underline.png) 0 0 no-repeat;background-size: 200px;position: absolute;bottom:20px;left:50%;width:200px;height: 10px;opacity: .75;}
 .main_section03 .sec03_list{width:100%;height: 70%;position: relative;}
 .main_section03 .sec03_tab{display: flex;height: 100%}
-.main_section03 .sec03_tab li{width:33.33%;position:relative;cursor: pointer;;transition:all .3s ease-in-out}
+.main_section03 .sec03_tab li{width:33.33%;position:relative;cursor: pointer;;transition:all .3s ease-in-out;background-position: center;background-repeat: no-repeat;background-size: cover}
 .main_section03 .sec03_tab li:hover{filter: grayscale(80%);}
 .main_section03 .sec03_tab li:hover span{color:#00ff4e}
 .main_section03 .sec03_tab li span{display:block;width:100%;position:absolute;top:47%;font-size:35px;font-family: 'EB Garamond', serif;color:#fff;text-align: center;transition:all .3s ease-in-out}
-.main_section03 .sec03_tab li:nth-child(1){background:url(./img/coffee.jpg) 0 0 no-repeat;background-size: cover;}
-.main_section03 .sec03_tab li:nth-child(2){background:url(./img/croissant.jpg) 0 -20px no-repeat;background-size: cover}
-.main_section03 .sec03_tab li:nth-child(3){background:url(./img/mousse.jpg) 0 -50px no-repeat;background-size: cover}
+.main_section03 .sec03_tab li:nth-child(1){background-image:url(./img/coffee.jpg)}
+.main_section03 .sec03_tab li:nth-child(2){background-image:url(./img/croissant.jpg)}
+.main_section03 .sec03_tab li:nth-child(3){background-image:url(./img/mousse.jpg)}
 
 
 /* sec03_pane */
@@ -93,3 +93,59 @@ body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;color:#755e5e;l
 
 /* footer */
 .footer{height:35px;font-size:11px;line-height: 35px;background-color: #e3dbd1;text-align: center}
+
+
+@media only screen and (max-width: 850px){
+
+.header .navi{display: none}
+
+.main_section01{background-position: center}
+.main_section01 h2{font-size: 45px}
+
+.main_section02 .sec02_txtW{width:100%}
+.main_section02 .sec02_img{display: none}
+
+.main_section03{height: 400px;}
+.main_section03 .sec03_tit{padding-top:0;height: 100px;}
+.main_section03 .sec03_tab li span{font-size: 25px}
+
+}
+
+@media only screen and (max-width: 600px){
+
+body{font-size: 14px}
+.header h1{font-size: 24px}
+.main_section01 h2{font-size: 25px;}
+
+.main_section02 .sec02_txt h3{font-size: 23px;text-align: center}
+.main_section02 .sec02_txtW .sec02_illu{width:80px;left:245px;top:-15px}
+.main_section02 .sec02_txtW .sec02_illu_02{width:50px;left:5px}
+.main_section02 .sec02_txtW .sec02_illu_03{width:190px;height: 15px;top:30px;left:75px;background-position: center;}
+
+
+.main_section03{height: 280px;}
+.main_section03 .sec03_tit{font-size: 23px}
+.main_section03 .sec03_tab li span{font-size: 18px}
+.sec03_pane{height: auto;padding:20px 0}
+.sec03_pane .coffee ul{width:100%}
+.sec03_pane li{padding:15px 10px}
+
+
+.main_section04{background-position: center}
+.main_section04 .sec04_wrap{width:100%}
+.main_section04 .sec04_tit{font-size: 20px}
+.main_section04 .sec04_tit span{font-size: 14px}
+
+}
+
+@media only screen and (max-width: 485px){
+
+.header{display: block;height:130px;text-align: center}
+.header h1{padding:20px 0 15px;width:100%;line-height: unset}
+.header .sns{width:100%;padding-right: 0;text-align: center}
+.main_section01 .main_slogan{margin:80px 15px}
+
+.main_section02 .sec02_txtW .sec02_illu{width:0}
+.main_section02 .sec02_txtW .sec02_illu_02{width:0}
+.main_section02 .sec02_txt p{margin:65px 15px 0;word-break: keep-all}
+}
