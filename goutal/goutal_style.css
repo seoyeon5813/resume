@@ -214,7 +214,7 @@ body{width:100%;background-color:#efefef;position: relative;}
 .wrap_checkT table tbody td{padding:15px 0;border-bottom:1px solid #b5aeb0;position: relative;}
 .wrap_checkT table tbody td img{width:100px;}
 .wrap_checkT table tbody button{width:50px;height:20px;border:none;background-color:#dacad0;font-size: 11px;color:#fff;outline: none;cursor: pointer;font-family: 'Noto Serif KR', serif;}
-.wrap_checkT table tbody input{position: absolute;width:15px;height: 15px;z-index: 999;opacity:0;cursor: pointer;}
+.wrap_checkT table tbody input{position: absolute;width:15px;height: 15px;z-index: 999;opacity:0;cursor: pointer;left:70px}
 .wrap_checkT table tbody span{position: absolute;top:66px;left:71px;width:12px;height: 12px;border:1px solid #b5aeb0}
 .wrap_checkT table tbody span::after{display:none;content:'';position: absolute;top:2px;left:2px;width:8px;height: 8px;background-color:pink;}
 .wrap_checkT table tbody input:checked ~ span::after{display: block}
@@ -250,7 +250,7 @@ body{width:100%;background-color:#efefef;position: relative;}
 .wrap_product .product_txt .list_product span::after{display: none;content: '';position: absolute;top:2px;left:2px;width:8px;height: 8px;background-color:pink;}
 .wrap_product .product_txt .list_product label{padding-left: 25px;cursor: pointer}
 .wrap_product .product_txt select{width:100px;height: 30px;;border: 1px solid #b5aeb0;background-color:transparent;outline: none}
-.wrap_product .product_txt button{display: block;width:135px;height:25px;border:none;color:#fff;background-color:#5d5353;cursor: pointer;}
+.wrap_product .product_txt a{display: block;width:135px;height:25px;border:none;color:#fff;background-color:#5d5353;text-align: center;line-height: 25px}
 
 .wrap_product02 .product_img div{background-image: url(./img/product02.png)}
 .wrap_product03 .product_img div{background-image: url(./img/product03.png)}

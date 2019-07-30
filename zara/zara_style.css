@@ -25,6 +25,11 @@ body{text-align: center;}
 button{height:20px;border:none;background-color:#e5c78b;color:#fff;border-radius:1px;cursor:pointer;transition: all .25s ease-in-out}
 button:hover{background-color:brown}
 
+/* menu */
+.mobile_menu{display: none;position: fixed;top:0;left:0;right: 0;bottom: 0;background-color:#fff;z-index: 999999;}
+
+
+
 /* sns */
 .sns{position: absolute;margin-top:100px;top:50%;left:120px;transform: rotate(-90deg);transform-origin: 0}
 .sns .list_sns li{position:relative;display: inline-block;margin-right: 20px;}
@@ -42,6 +47,8 @@ button:hover{background-color:brown}
 .wrap_header .navi_sub .fas{font-size: 14px}
 .wrap_header .navi_sub .fa-sign-in-alt{padding-right: 5px}
 .wrap_header .navi_sub .fa-shopping-bag{margin-left:15px}
+
+.btn_open{display: none}
 
 /* navi */
 .navi{width:50%;}
@@ -71,7 +78,7 @@ button:hover{background-color:brown}
 
 
 /* content_third */
-.cont_third{padding:80px 0;position: relative;}
+.cont_third{min-width:1500px;padding:80px 0;position: relative;}
 .cont_third .list_ele{position: relative;}
 .cont_third .list_ele::after{content: 'Autumn/Winter 2019';position: absolute;top:245px;left:120px;transform: rotate(-90deg);transform-origin: 0;font-size: 10px}
 .cont_third .list_ele li{display:inline-block;width:230px; height: 400px;margin: 0 5px;background-size: cover;background-repeat: no-repeat;filter: grayscale(65%);transition: all .3s ease-in-out}
@@ -206,9 +213,10 @@ button:hover{background-color:brown}
 .list_product li select{width:50%}
 .list_product li input{padding:0 10px;width:65px;height: 23px;}
 .wrap_product .wrap_product_txt .btn_check{position:relative;overflow:hidden;margin-top:45px;}
-.wrap_product .wrap_product_txt button{float:left;width:50%;}
-.wrap_product .wrap_product_txt a{position: absolute;top:0;right:0;text-align: right;transition: all .3s ease-in-out}
-.wrap_product .wrap_product_txt a:hover{color:brown}
+.wrap_product .wrap_product_txt .btn_purchase{float:left;width:50%;height: 20px;background-color:#e5c78b;color:#fff;text-align: center;line-height: 20px;border-radius: 1px;transition: all .25s ease-in-out}
+.wrap_product .wrap_product_txt .btn_purchase:hover{background-color:brown}
+.wrap_product .wrap_product_txt .btn_basket{position: absolute;top:0;right:0;text-align: right;transition: all .3s ease-in-out}
+.wrap_product .wrap_product_txt .btn_basket:hover{color:brown}
 .wrap_product .wrap_product_txt a i{padding-right: 5px}
 
 
@@ -234,3 +242,22 @@ button:hover{background-color:brown}
 /* footer */
 .footer{margin:0 auto;padding:30px 0;width:1200px;position:relative;font-size:10px;}
 .footer::before{content: '';position: absolute;top:0;left:0;width:100%;height: 1px;background-color: #dedbd5}
+
+/* 
+@media only screen and (max-width: 650px) {
+
+.mobile_menu{display: block}
+    
+.wrap_header{display:block;width:100%;height:110px;position: relative}
+.navi{position: absolute;top:75px;left:50%;width:auto;margin-left:-225px}
+.navi li:last-child{margin-right: 0}
+.wrap_header h1{width:80px;margin:0 auto;padding-top:25px;}
+.wrap_header .navi_sub{position: absolute;top:40px;right: 20px;}
+.sns{display: none}
+
+.main{height: auto;min-height: auto}
+.main .main_div{display: none}
+.main .list_main{width:auto}
+.main .list_main li{width:340px;height: 475px;}
+.txt{right:15px}
+} */
