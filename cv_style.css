@@ -98,7 +98,7 @@ h1 a{display:inline-block;padding-left:3px;color:#6d6e70; font-size: 11px;width:
 }
 
 .admin_wraper .btn_top{display: inline-block;width:55px;height: 55px;border-radius: 30px;background-color:burlywood;color:#fff;position: fixed;bottom:80px;right: 85px;transition: all .35s ease-in-out}
-.admin_wraper .admin_top{line-height: 55px;position: initial;transition:all .35s ease-in-out}
+.admin_wraper .admin_top{line-height: 55px;position: relative;transition:all .35s ease-in-out}
 .admin_wraper .admin_top::after{content: '^';position: absolute;top:35px;left:18px;font-size: 35px}
 .admin_wraper .btn_top:hover{background-color:plum}
 .admin_wraper .btn_top:hover .admin_top{transform: translateY(-35px)}

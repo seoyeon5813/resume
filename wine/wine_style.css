@@ -102,6 +102,7 @@ html{scroll-behavior: smooth}
 .footer .submit{width:100%;height: 50%;display: flex;align-items: center;justify-content: center}
 .footer .submit .wrap_contSubmit p{font-size: 30px;letter-spacing: -2px;}
 .footer .submit .wrap_contSubmit form{margin-top:30px;}
+.footer .submit .wrap_contSubmit legend{margin:0 auto;color:#90826c}
 .footer .submit .wrap_contSubmit input{margin:70px 0 20px 0;padding: 5px 20px;width:300px;border:none;border-bottom:1px solid #90826c;text-align: center}
 .footer .submit .wrap_contSubmit button{display:block;margin:0 auto;position:relative;width:170px;height: 35px;color:#40a798; border:2px solid #40a798;;border-radius: 2px;transition: all .3s ease-in-out}
 .footer .submit .wrap_contSubmit button::after{content:'';position: absolute;bottom:0;right:100%;width:0;height: 2px;background-color: #40a798}
@@ -112,7 +113,7 @@ html{scroll-behavior: smooth}
 .footer .wrap_contFooter .list_fab{display:inline-block;overflow: hidden;}
 .footer .wrap_contFooter .list_fab li{float: left;margin-right: 50px;cursor: pointer;}
 .footer .wrap_contFooter .list_fab li:last-child{margin-right: 0}
-.footer .wrap_contFooter p{margin-top:120px;font-size:11px;letter-spacing: 1px}
+.footer .wrap_contFooter p{margin-top:120px;padding:0 10px;font-size:11px;letter-spacing: 1px;box-sizing: border-box}
 
 
 @media only screen and (max-width: 1024px) {
@@ -162,7 +163,7 @@ html{scroll-behavior: smooth}
 .main .main_back{width:100%;height: 50%;}
 .main .main_back .main_backImg_left{width:0;height: 0;position: unset;}
 .main .main_txt .main_backImg_right{height: 0;position: unset}
-.main .main_txt{width:100%;height: 50%;background-color:black}
+.main .main_txt{width:100%;height: 50%;}
 .main .main_img{width:250px;height: 350px;margin-left:-100px;top:150px}
 .main .wrap_mainTxt{margin-top:40px;padding:0}
 .main .wrap_mainTxt p{display: none}
@@ -183,7 +184,7 @@ html{scroll-behavior: smooth}
 
 /* introduce */
 .cont_introduce .introduce_txt{padding-top:30px;}
-.cont_introduce .introduce_txt .wrap_introTxt{padding:0 50px}
+.cont_introduce .introduce_txt .wrap_introTxt{width:100%;padding:0 50px;box-sizing: border-box}
 .cont_introduce .introduce_txt .wrap_introTxt .list_introduce li{font-size: 14px}
 .cont_introduce .introduce_txt .wrap_introTxt .list_introduce span{font-size: 30px;top:-10px;left:50%;margin-left: -19px}
 .cont_introduce .introduce_txt .wrap_introTxt h3{margin-top:0;font-size: 20px}
@@ -191,6 +192,7 @@ html{scroll-behavior: smooth}
 /* fooer */
 .footer .submit .wrap_contSubmit p{font-size: 20px}
 .footer .submit .wrap_contSubmit input{width:175px;margin-top:35px}
+.footer .wrap_contFooter .cont_footer{width:100%}
 .footer .wrap_contFooter span{font-size: 20px;letter-spacing: 0}
 
 }

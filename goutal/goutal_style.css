@@ -63,7 +63,7 @@ body{width:100%;background-color:#efefef;position: relative;}
 .active{display: block!important}
 .header .logo{margin:0 auto;padding-top:35px;width:210px;}
 .header .logo a{display: block;width:100%;height: 100%;}
-.header .logo img{width:100%}
+.header .logo img{width:100%;border: none}
 .header .mypage{position: absolute;top:0;right: 55px;}
 .header .mypage a{display: inline-block}
 .header .mypage i{margin-left:25px;font-size: 18px;line-height: 90px}
@@ -96,7 +96,7 @@ body{width:100%;background-color:#efefef;position: relative;}
 .wrap_brand .brand_annick .annick_story{display:flex;width:90%;align-items: center}
 .wrap_brand .brand_annick .annick_story strong{display: block;font-size:32px;}
 .wrap_brand .brand_annick .annick_story em{display: block;margin-bottom:15px;font-style: inherit;font-size: 17px;}
-.wrap_brand .brand_annick .annick_story p{font-family: 'Noto Serif KR', serif;}
+.wrap_brand .brand_annick .annick_story p{width:500px;font-family: 'Noto Serif KR', serif;}
 
 .wrap_brand .brand_perfume{width:700px;margin:0 auto;padding-bottom:150px;}
 .wrap_brand .brand_perfume .perfume_img{margin:0 auto;width:100%;height: 250px; background:url(./img/perfumes.png) 0 0 no-repeat;background-size: contain}
@@ -164,7 +164,7 @@ body{width:100%;background-color:#efefef;position: relative;}
 .list_contact li{margin-bottom:20px}
 .contact_form label{display:inline-block;width:65px}
 .contact_form input{width:85%;height:30px;padding:0 15px;border:none;background-color:transparent;border-bottom: 1px solid #b5aeb0;outline: none;box-sizing: border-box}
-.contact_form select{width:85%;height:30px;padding:0 10px;margin:15px 0;background-color: transparent;cursor: pointer;outline:none;border:1px solid #b5aeb0;}
+.contact_form select{width:85%;height:30px;padding-left:10px;margin:15px 0;background-color: transparent;cursor: pointer;outline:none;border:1px solid #b5aeb0;}
 .contact_form textarea{display:inline-block;width:85%;height: 120px;padding:15px;background-color:transparent;border:1px solid #b5aeb0;resize: none;box-sizing: border-box;outline: none}
 .contact_form button{float: right;margin: 25px 5px 0 0;width:135px;height: 25px;border:none;color:#fff;cursor:pointer;outline: none;background-color:#5d5353}
 
