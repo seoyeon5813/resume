@@ -7,11 +7,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="goutal_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
 </head>
 <body>
+
+    <!-- menu navigation -->
     <div class="menu">
         <button class="btn_x">Close</button>
         <ul class="list_navi">
@@ -28,6 +28,8 @@
             <li><a href="./goutal_contact.html">Contact</a></li>
         </ul>
     </div>
+
+    <!-- header section -->
     <div class="header">
         <button class="btn_menu"><i class="fas fa-asterisk"></i>menu</button>
         <div class="logo">
@@ -42,6 +44,8 @@
             </a>
         </div>
     </div>
+
+    <!-- brand story section -->
     <div class="brand">
         <div class="wrap_brand">
             <div class="brand_annick">
@@ -75,6 +79,8 @@
             </div>
         </div>
     </div>
+
+    <!-- footer section -->
     <div class="footer">
         <ul class="footer_sns">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -84,28 +90,6 @@
         </ul>
         <span>© 2018 All rights reserved to Goutal</span>
     </div>
-
-
-    <script>
-        
-        $(window).on("scroll", function(){
-            if($(window).scrollTop() > 80){
-                $(".header").addClass("header_active");
-            } else {
-                $(".header").removeClass("header_active");
-            }
-        });
-
-        $(function(){
-            var $menu = $('.menu');
-
-            $('.btn_menu').on('click', function(){
-                $menu.addClass('active visible');
-            });
-            $('.btn_x').on('click', function(){
-                $menu.removeClass('active visible');
-            });
-        });
-    </script>
+    <script type="text/javascript" src="./goutal.js"></script>
 </body>
 </html>

@@ -9,18 +9,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 </head>
 <body>
-    <div class="mobile_menu">
-        <ul class="list_menu">
-            <li><a href="./new.html">NEW IN</a></li>
-            <li><a href="./bed.html">BEDROOM</a></li>
-            <li><a href="./bath.html">BATHROOM</a></li>
-            <li><a href="./table.html">TABLEWARE</a></li>
-            <li><a href="./deco.html">DECORATION</a></li>
-        </ul>
-    </div>
+
+    <!-- sns link -->
     <div class="sns">
         <ul class="list_sns">
             <li><a href="#">Facebook</a></li>
@@ -28,6 +20,8 @@
             <li><a href="#">Twitter</a></li>
         </ul>
     </div>
+
+    <!-- header section -->
     <div class="header">
         <div class="wrap_header">
             <button class="btn_open"><i class="fas fa-bars"></i></button>
@@ -45,6 +39,8 @@
             </div>
         </div>
     </div>
+
+    <!-- main section -->
     <div class="main">
         <div class="main_div"></div>
         <ul class="list_main">
@@ -62,6 +58,8 @@
             </li>
         </ul>
     </div>
+
+    <!-- content second section -->
     <div class="cont_sec">
         <div class="cont_sec_wrapper">
             <div class="txt">
@@ -75,6 +73,8 @@
             <div class="cont_img_F"></div>
         </div>  
     </div>
+
+    <!-- content third section -->
     <div class="cont_third">
         <ul class="list_ele">
             <li><a href="./zara_productT.html"></a></li>
@@ -85,6 +85,8 @@
         </ul>
         <a href="./zara_productT.html" class="third_link">더 알아보기<i class="fa fa-chevron-circle-right"></i></a>
     </div>
+
+    <!-- content fourth section -->
     <div class="cont_fourth">
         <div class="cont_img_B"></div>
         <div class="txt">
@@ -100,6 +102,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- submit section -->
     <div class="content_submit">
         <span><i class="fas fa-certificate"></i></span>
         <p>구독을 하시면 더 많은 정보를 이메일로 받아 보실 수 있습니다.</p>
@@ -113,51 +117,9 @@
             <li><a href="./zara_productT.html"><i class="fab fa-facebook fa-2x"></i></a></li>
         </ul>
     </div>
+
+    <!-- footer section -->
     <div class="footer">©2015 ZARA. All Rights Reserved.</div>
-
-
-
-    
+    <script type="text/javascript" src="./zara.js"></script>
 </body>
-<script type="text/javascript"> 
-
-$(window).on("scroll", function(){
-        if($(window).scrollTop() > 80){
-            $(".header").addClass("header_active");
-        } else {
-            $(".header").removeClass("header_active");
-        }
-    });
-
-
-
-// function displayItem(evt,cancleEvt){
-//     document.getElementById("navi").style.display=evt;
-//     document.getElementById("menu_cancle").style.display=cancleEvt;
-// }
-
-// var flag = true;
-// document.getElementsByClassName('btn_menu')[0].addEventListener('click', function(){
-//     if(flag){
-//         displayItem('block', 'inline-block');
-//         flag=false;
-//     }else{
-//         displayItem('none', 'none');
-//         flag=true;
-//     }
-// });
-
-
-
-
-// $(document).ready(function(){
-//     $("#menu").mouseenter(function(){
-//         $("#navi").show();
-//     });
-//     $("#navi, #menu").mouseleave(function(){
-//         $("#navi").hide();
-//     });
-// });
-
-</script>
 </html>

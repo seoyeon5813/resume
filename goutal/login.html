@@ -12,6 +12,8 @@
     
 </head>
 <body>
+
+    <!-- menu navigation -->
     <div class="menu">
         <button class="btn_x">Close</button>
         <ul class="list_navi">
@@ -22,6 +24,8 @@
             <li><a href="./goutal_contact.html">Contact</a></li>
         </ul>
     </div>
+
+    <!-- header section -->
     <div class="header">
         <button class="btn_menu">
             <i class="fas fa-asterisk"></i>
@@ -38,6 +42,8 @@
             </a>
         </div>
     </div>
+
+    <!-- login section -->
     <div class="login">
         <div class="contact_form">
             <div class="contact_tit">
@@ -63,25 +69,10 @@
             <ul class="list_create">
                 <li><a href="#">Forgot your password?</a></li>
                 <li><a href="#">Do not have an account? <span> Create an account</span></a></li>
-
             </ul>
             <div class="main_flower"></div>
         </div>
     </div>
-
-    <script>
-    
-    $(function(){
-        var $menu = $('.menu');
-
-        $('.btn_menu').on('click', function(){
-            $menu.addClass('active visible');
-        });
-        $('.btn_x').on('click', function(){
-            $menu.removeClass('active visible');
-        });
-    });
-
-    </script>
+    <script type="text/javascript" src="./goutal.js"></script>
 </body>
 </html>

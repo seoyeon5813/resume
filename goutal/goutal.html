@@ -16,6 +16,8 @@
 <body>
 <div class="wrapper">
     <div class="main_flower"></div>
+
+    <!-- menu navigation -->
     <div class="menu">
         <button class="btn_x">Close</button>
         <ul class="list_navi">
@@ -32,22 +34,26 @@
             <li><a href="./goutal_contact.html">Contact</a></li>
         </ul>
     </div>
+
+    <!-- header section -->
+    <div class="header">
+        <div class="btn_menu"><i class="fas fa-asterisk"></i>menu</div>
+        <div class="logo">
+            <a href="./goutal.html">
+                <img src="./img/goutal_logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="mypage">
+            <a href="./login.html"><i class="fas fa-user"></i></a>
+            <a href="./goutal_check.html">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- main page -->
     <div class="main">
         <div class="wrap_main">
-            <div class="header">
-                <div class="btn_menu"><i class="fas fa-asterisk"></i>menu</div>
-                <div class="logo">
-                    <a href="./goutal.html">
-                        <img src="./img/goutal_logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="mypage">
-                    <a href="./login.html"><i class="fas fa-user"></i></a>
-                    <a href="./goutal_check.html">
-                        <i class="fas fa-shopping-bag"></i>
-                    </a>
-                </div>
-            </div>
             <div class="cont_main">
                 <div class="cont_img owl-carousel owl-theme owl-loaded">
                     <div class="owl-stage-outer">
@@ -104,18 +110,8 @@
 </div>
     <script src="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
     <script src="./OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./goutal.js"></script>
     <script>
-    
-    $(function(){
-        var $menu = $('.menu');
-
-        $('.btn_menu').on('click', function(){
-            $menu.addClass('active visible');
-        });
-        $('.btn_x').on('click', function(){
-            $menu.removeClass('active visible');
-        });
-    });
 
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
