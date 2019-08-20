@@ -22,11 +22,3 @@ $(document).mousemove(function(e){
     cursor.css('left', mouseX).css('top', mouseY);
     follower.css('left', positionX).css('top', positionY);
 });
-
-$(window).on("scroll", function(){
-    if($(window).scrollTop() > 80){
-        $(".header").addClass("header_active");
-    } else {
-        $(".header").removeClass("header_active");
-    }
-});
