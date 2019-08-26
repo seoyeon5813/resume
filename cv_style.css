@@ -95,14 +95,20 @@ h1 a{display:inline-block;width:100%;height: 100%;;color:#6d6e70;font-size: 11px
 .list_cv_sec li em{display: block;margin-bottom:5px;font-style: normal;font-weight:bold}
 
 
+.cont_cv,
+.project,
+.work{opacity: 0;transform: translateY(-45px);transition: all 1.2s ease-in-out}
+.cv_appear{opacity: 1;transform: translateY(0)}
+
+
 /* project */
 .project{width:900px;margin:0 auto;}
 .cont_project{overflow: hidden;}
 .cont_project > li{margin-bottom:60px;background-repeat: no-repeat;background-size: cover;background-position: center;border:1px solid #e4e4e4;box-sizing: border-box;filter:grayscale(100%);transition:all .45s ease-in-out}
 .cont_project > li:hover{filter: none}
 .cont_project > li a{display:block;width:100%;height: 100%;}
-.cont_project > li:nth-child(1){width:100%;height:500px;background-image: url(./img/port.jpg)}
-.cont_project > li:nth-child(2){width:100%;height:500px;background-image: url(./img/MV_login.png)}
+.cont_project > li:nth-child(1){width:100%;height:500px;background-image: url(./img/MV_login.png)}
+.cont_project > li:nth-child(2){width:100%;height:500px;background-image: url(./img/MV.png)}
 .cont_project > li:nth-child(3){float:left;width:440px;height:450px;background-image: url(./img/bitpi.png)}
 .cont_project > li:nth-child(4){display:inline-block;margin-left:20px;width:440px;height:450px;background-image: url(./img/bitchain.png)}
 

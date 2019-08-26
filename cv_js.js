@@ -20,5 +20,20 @@ $(document).mousemove(function(e){
 
     /* cursor movement */ 
     cursor.css('left', mouseX).css('top', mouseY);
-    follower.css('left', positionX).css('top', positionY);
+
 });
+
+
+/* visual effect */ 
+
+function scrollAppear(){
+    var cv = document.querySelector('.cont_cv, .project, .work');
+    var cvPosition = cv.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight;
+
+    if(cvPosition < screenPosition){
+        cv.classList.add('cv_appear');
+    }
+};
+
+window.addEventListener('scroll', scrollAppear);
