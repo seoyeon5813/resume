@@ -29,7 +29,7 @@ $(document).mousemove(function(e){
 function scrollAppear(){
     var cv = document.querySelector('.cont_cv, .project, .work');
     var cvPosition = cv.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight;
+    var screenPosition = window.innerHeight / 2;
 
     if(cvPosition < screenPosition){
         cv.classList.add('cv_appear');
