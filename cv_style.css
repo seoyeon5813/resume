@@ -231,13 +231,13 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 /* weather */
 
 .mise.sketch strong{color:#539192}
-.mise .wrapper_logo{background-color:#f1fdfd}
+.mise .wrapper_logo{background:radial-gradient(circle, rgba(234,241,241,1) 50%, rgba(190,222,220,1) 100%)}
 .mise .wrapper_logo .logo_img{margin-top:-150px;height:200px;background-image: url(./img/mise_logo.png);top:50%;}
 .mise .wrapper_logo .wrap_title{margin:0 0 0 -85px;bottom:-95px;left:50%;text-align: center;}
 .mise .wrapper_logo .wrap_title em{color:#8f9e9e}
 
 .mise .wrapper_typo{color:#6c7575}
-.mise .typo{background-color:#e4ecec;}
+.mise .typo{background-color:#f4fbfb}
 
 .mise .wrapper_color .list_color{width:690px;height: auto;}
 .mise .wrapper_color .list_color li{position:relative;margin-bottom:15px;width:240px;height:auto;float: none;border:none;box-shadow: none;border-radius: 50px;background-color:transparent}
@@ -254,10 +254,10 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 .mise .mockUp_img{background-image: url(./img/mise_mock.png);}
 
-.mise .proto{background-color:#e4ecec;}
+.mise .proto{background:linear-gradient(0deg, rgb(128, 197, 193) 0%, rgba(255,255,255,1) 100%)}
 .mise .proto_img{margin-top:70px;width:800px;height:550px;background-image: url(./img/mise_proto_01.png);}
 
-.mise .proto_extra{background-color:#fff}
+.mise .proto_extra{background-color:#fff;background:none}
 .mise .proto_extra .proto_img{height:1000px;background-image: url(./img/mise_proto_02.png);}
 
 
@@ -325,7 +325,7 @@ body{width:100%;text-align: center;background-color:#f1edec;}
   body{font-size:13px}
   .cont_cv{padding:0 25px;}
 
-  .list_cv_first li,
+  .list_cv_first li
   .list_cv_sec li{line-height: 1.5}
 
   .header .scroll{display: none}
