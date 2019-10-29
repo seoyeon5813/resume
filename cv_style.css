@@ -191,13 +191,11 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 .sketch{width:100%;font-family: 'Roboto', sans-serif;background-color:#fff;box-sizing: border-box;}
 .sketch strong{color:#E83C38;font-weight: lighter;font-size: 20px;}
 
-.wrapper_logo{position: relative;width:100%;height: 680px;background-color:#e8dedd}
-.wrapper_logo .logo_part{width:50%;height:100%;background-color:#F8F8F8;} 
-.wrapper_logo{position:relative;}
-.wrapper_logo .wrap_title{position:absolute;bottom:50%;left:-240px;margin-bottom:-10px;text-align: left}
-.wrapper_logo strong{display:block;font-size: 35px;} 
-.wrapper_logo em{font-style:normal;color:#606060} 
-.wrapper_logo .logo_img{position:absolute;top:120px;left:50%;margin-left:-125px;width:250px;height:500px;background:url(./img/cos_logo.png) center no-repeat;background-size: contain}
+.wrapper_logo_cos{position: relative;width:100%;height: 680px;background-color:#e8dedd;background-image: radial-gradient(#FFf 37%, transparent 20%), radial-gradient(#fff 37%, transparent 20%);background-size: 450px 450px;background-position: 0 0, 225px 225px;;}
+.wrapper_logo_cos .wrap_title{position:absolute;top:60px;left:-325px;}
+.wrapper_logo_cos strong{display:block;margin-bottom:20px;height: 230px;font-size: 190px;font-weight: normal;color:#f56e5c} 
+.wrapper_logo_cos em{font-style:normal;color:#f56d5c} 
+.wrapper_logo_cos .logo_img{position:absolute;top:120px;left:50%;margin-left:-125px;width:250px;height:500px;background:url(./img/cos_logo.png) center no-repeat;background-size: contain}
 
 .color{width:100%}
 .wrapper_color{padding:100px 0;height: auto;margin:0 auto;overflow: hidden;}
@@ -224,7 +222,8 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 .mockUp strong{display: block;margin-bottom:50px}
 .mockUp_img{margin:0 auto;width:700px;height:1510px;background:url(./img/cos_mock.png) 0 0 no-repeat;background-size: contain}
 
-.proto{padding:50px 0;background-color:#f8f8f8}
+.proto{padding:50px 0;}
+.proto.cos{background-color: #fbf7f7;background-image: radial-gradient(#FFf 37%, transparent 20%), radial-gradient(#fff 37%, transparent 20%);background-position: 0 0, 225px 225px;background-size: 450px 450px;}
 .proto_img{margin:0 auto;width:700px;height:2121px;background:url(./img/proto.png) 0 0 no-repeat;background-size: contain}
 
 
