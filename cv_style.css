@@ -228,13 +228,15 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 .proto_img{margin:0 auto;width:700px;height:2121px;background:url(./img/proto.png) 0 0 no-repeat;background-size: contain}
 
 
-/* weather */
+/* misemise */
 
 .mise.sketch strong{color:#539192}
-.mise .wrapper_logo{background:radial-gradient(circle, rgba(234,241,241,1) 50%, rgba(190,222,220,1) 100%)}
+.mise .wrapper_logo{background:radial-gradient(circle at 0% 100%, rgba(96, 16, 48, 0) 9px, #c6e6e4 5px, rgba(96, 16, 48, 0) 11px) 0px 5px,
+  radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #d9eceb 10px, rgba(96, 16, 48, 0) 10px), #f4fbfb;background-size: 20px 20px;}
 .mise .wrapper_logo .logo_img{margin-top:-150px;height:200px;background-image: url(./img/mise_logo.png);top:50%;}
-.mise .wrapper_logo .wrap_title{margin:0 0 0 -85px;bottom:-95px;left:50%;text-align: center;}
-.mise .wrapper_logo .wrap_title em{color:#8f9e9e}
+.mise .wrapper_logo .wrap_title{width:500px;margin:0 0 0 -250px;bottom:-120px;left:50%;text-align: center;}
+.mise .wrapper_logo .wrap_title > strong{font-size: 60px;letter-spacing: 35px;}
+.mise .wrapper_logo .wrap_title em{color:#869e9e}
 
 .mise .wrapper_typo{color:#6c7575}
 .mise .typo{background-color:#f4fbfb}
@@ -254,7 +256,8 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 .mise .mockUp_img{background-image: url(./img/mise_mock.png);}
 
-.mise .proto{background:linear-gradient(0deg, rgb(128, 197, 193) 0%, rgba(255,255,255,1) 100%)}
+.mise .proto{background:radial-gradient(circle at 0% 100%, rgba(96, 16, 48, 0) 9px, #c9dedd 5px, rgba(96, 16, 48, 0) 11px) 0px 5px,
+  radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #b7dedd 10px, rgba(96, 16, 48, 0) 10px), #e5eaea;background-size: 20px 20px;}
 .mise .proto_img{margin-top:70px;width:800px;height:550px;background-image: url(./img/mise_proto_01.png);}
 
 .mise .proto_extra{background-color:#fff;background:none}
