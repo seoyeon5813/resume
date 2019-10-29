@@ -229,7 +229,7 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 /* misemise */
 
-.mise.sketch strong{color:#539192}
+.mise.sketch strong{color:#73bcbd}
 .mise .wrapper_logo_mise{position:relative;width:100%;height: 680px;background:radial-gradient(circle at 0% 100%, rgba(96, 16, 48, 0) 9px, #c6e6e4 5px, rgba(96, 16, 48, 0) 11px) 0px 5px,
   radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #d9eceb 10px, rgba(96, 16, 48, 0) 10px), #f4fbfb;background-size: 20px 20px;}
 .mise .wrapper_logo_mise .logo_img{position:absolute;top:50%;left:50%;margin:-150px 0 0 -125px;width:250px;height:200px;background: url(./img/mise_logo.png) 0 0 no-repeat;background-size: contain;}
