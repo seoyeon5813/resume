@@ -357,6 +357,9 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
   .add_exp{text-align: center}
   .add_exp::after{content: none}
+
+  /* mise */
+  .mise .proto_img{width:400px}
 }
 
 
