@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["f224"],{E54o:function(n,e,t){"use strict";t.r(e);var u=t("mXGw"),a=t.n(u),o=t("w7Mc");e.default=function(){return a.a.createElement(o.a,null)}},bGPK:function(n,e,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/ResumeDetail",function(){var n=t("E54o");return{page:n.default||n}}])}},[["bGPK","5d41","9da1"]]]);
