@@ -7,16 +7,20 @@
         <title>SY's Portfolio</title>
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
         <link rel="stylesheet" type="text/css" media="screen" href="cv_style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
         
     </head>
     <body>
-    <div class="wraper">
+
+    <div class="wraper" id="top">
+
+        <!-- top button -->
+        <a class="top" href="#top">Top</a>
 
         <!-- cursor -->
         <!-- <div class="cursor"></div> -->
-        
 
         <!-- background stars animation -->
         <div class="stars">
@@ -24,15 +28,27 @@
             <div id="star"></div>
         </div>
 
+        <!-- theme -->
+        <!-- <div class="wraper_theme">
+            <ul class="theme">
+                <li class="on"><a href="#"><i class="far fa-sun"></i>Light</a></li>
+                <li><a href="#"><i class="far fa-moon"></i>Dark</a></li>
+            </ul>
+        </div> -->
+
         <!-- header section -->
         <div class="header">
-            <h1><a href="./index.html">Designed<br> by S Y<br> HWANG</a></h1>
             <ul class="list_navi">
                 <li class="on"><a href="./index.html">Curriculum Vitae</a></li>
-                <li><a href="./project.html">Projects</a></li>
+                <li><a href="#project">Projects</a></li>
                 <li><a href="./works.html">Personal Works</a></li>
             </ul>
-            <span class="scroll">scroll down</span>
+            <div class="profile_pic">
+                <div></div>
+            </div>
+            <h1><a href="./index.html">Hello, I am <span>Seoyeon Hwang -</span><br>UI/UX Designer</a></h1>
+            
+            <!-- <span class="scroll">scroll down</span> -->
             <span class="swipe">swipe down</span>
         </div>
         
@@ -40,58 +56,119 @@
         <div class="cont_cv">
             <ul class="list_cv_first">
                 <li>
-                    <span>Contact</span><br><br>
-                    P : 010 . 5718 . 5813<br>
+                    <span></span>
+                    <strong>CONTACT</strong><br><br>
+                    황서연<br>
+                    Phone : 010 . 5718 . 5813<br>
                     E-mail : seoyeon5813@naver.com<br>
-                    Github : seoyeon5813.github.io/resume
+                    Github : seoyeon5813.github.io/resume<br>
                 </li>
                 <li>
-                    <span>Career</span><br><br>
-                    * Bitpi<br>
-                    Department : Research & Development<br>
-                    Position : Web Designer, Publisher <br>
-                    2018.10 ~ 2019.09
-                </li> 
+                    <span></span>
+                    <strong>BRIEF HISTORY IN TIME</strong><br><br>
+                    2019.11 ~ 2020.05<br>
+                    Deus Adventures<br>
+                    <em>Role : UI/UX App, Web Designer, Planning</em>
+                </li>
+                <li>
+                    2018.12 ~ 2019.09<br>
+                    HB 투자그룹<br>
+                    <em>Role : Web Designer, Publisher</em>
+                </li>
                 <li></li>
             </ul>
             <ul class="list_cv_sec">
-                <li>
-                    <span>About Portfolio</span><br><br>
-                    모든 작업물은 Photoshop, Illustrator, Sketch, Figma, Visual Studio 를 사용하여 만들어졌으며,<br>
-                    Projects 카테고리에는 실무에서 진행하였던 프로젝트 사이트를,<br>
+                <!-- <li>
+                    <span></span>
+                    <strong>ABOUT PORTFOLIO</strong><br><br>
+                    모든 작업물은 Adobe XD, Photoshop, Illustrator, Sketch, Figma, VS를 사용하여 만들어졌으며,<br>
+                    Projects 카테고리에는 실무에서 진행하였던 프로젝트를,<br>
                     Personal Works 카테고리에는 개인이 디자인/퍼블리싱한 사이트을 보여줍니다.
-                </li>
-                <li><span>Program / Skill</span><br><br>
-                    <em>* Adobe Photoshop</em>
+                </li> -->
+                <li>
+                    <span></span>
+                    <strong>SKILLS</strong><br><br>
+
+                    <em>Adobe XD / Sketch / Figma</em>
+                    - 다양한 플러그인을 활용한 작업을 합니다.<br>
+                    - 작업속도의 효율성을 위하여 심볼/에셋 등을 사용합니다.<br><br>
+
+                    <em>Adobe Photoshop</em>
                     - 그리드를 활용한 정확한 배치와 픽셀사용을 추구합니다.<br>
-                    - 신속한 작업 속도를 위하여 실무에 적합한 툴과 테크닉을 사용합니다.<br>
                     - 퍼플리싱을 고려한 디자인과 사용자를 위한 친화적인 인터페이스 구성을 지향합니다.<br><br>
 
-                    <em>* Adobe illustrator</em>
+                    <em>Adobe Illustrator</em>
                     - 스캔된 드로잉을 펜툴을 사용하여 이미지화 할 수 있습니다.<br>
                     - 포토샵과의 연동작업으로 보다 효율적인 작업을 합니다.<br><br>
 
-                    <em>* Sketch / Figma / Adobe XD / Zeplin</em>
-                    - 다양한 플러그인을 활용한 작업을 합니다.<br>
-                    - 여러가지 인터렉션을 결합하여 프로토타입을 도출합니다.<br>
-                    - 작업속도의 효율성을 위하여 심볼/에셋을 사용합니다.<br>
-                    - Zeplin으로 작업물을 연동하여 가이드와 에셋을 만들어냅니다.<br><br>
+                    <em>Adobe Premiere Pro</em>
+                    - 영상에 효과를 입히고 사운드 제어 등 완성도 있는 영상 편집이 가능합니다.<br><br>
 
-                    <em>* HTML / CSS</em>
+                    <em>Adobe After Effects</em>
+                    - 
+
+                    <em>Zeplin</em>
+                    - 작업물을 Zeplin으로 연동하여 팀원들과 작업을 공유합니다.<br><br>
+
+                    <em>HTML / CSS</em>
                     - 웹표준, 웹접근성을 준수합니다.<br>
                     - 반응형 웹에 대한 이해와 실무경험이 있습니다.<br>
                     - 페이지 로딩 속도의 효율성을 위하여 CSS 클래스 재사용성을 고려합니다.<br>
-                    - 직관적인 클래스 네이밍을 사용하며 태그의 쓰임새를 정확하게 파악하고 있습니다.<br>
-                    - IE 8 부터의 대응이 가능하고 크로스브라우징을 고려한 마크업을 추구합니다.<br><br>
+                    - 직관적인 클래스 네이밍을 사용하며 태그의 쓰임새를 정확하게 파악하고 있습니다.<br><br>
+                    <!-- - IE 8 부터의 대응이 가능하고 크로스브라우징을 고려한 마크업을 추구합니다.<br><br> -->
 
-                    <em>* Javascript / j-Query</em>
-                    - j-Query 플러그인 적용에 대한 이해와 경험이 있습니다.<br>
+                    <!-- <em>* Javascript / j-Query</em>
+                    - j-Query 플러그인 적용에 대한 이해와 경험이 있습니다.<br> -->
 
                 </li>
-                <li><span>IDE</span><br><br>
-                    - Git/Git Hub으로 버전 관리, Git Command가 익숙합니다.<br>
+                <!-- <li><span>IDE</span><br><br>
+                    - Git/Git Hub으로 버전 관리, Git Command가 익숙합니다.<br> -->
                     <!-- - Markup 개발에 간편한 세팅을 위해 Gulp를 사용합니다.<br><br> -->
                     
+                </li>
+            </ul>
+        </div>
+
+        <!-- Project Section -->
+        <div class="project" id="project">
+            <ul class="cont_project">
+                <li>
+                    <a href="#" target="blank"></a>
+                    <ul class="list_port">
+                        <li>Deus Adventures (2019.12 ~ 2020.05)</li>
+                        <li>Contribution : Design 100% </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="blank"></a>
+                    <ul class="list_port">
+                        <li>Deus Adventures (2019.12 ~ 2020.05)</li>
+                        <li>Contribution : Design 100% </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./moving.html" target="blank"></a>  
+                    <ul class="list_port">
+                        <li>Movingwalk Admin (2019.07)</li>
+                        <li>Contribution : Design 100% / Publishing 100%</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://mw-ruplay.com" target="blank"></a>
+                    <ul class="list_port">
+                        <li>Movingwalk (2019.06) / Responsive</li>
+                        <li>Contribution : Publishing 100%</li>
+                    </ul>
+                </li> 
+                <li>
+                    <a href="http://13.125.133.162/" target="blank"></a>
+                    <p class="add_exp">Bitchain ( 2019.04~2019.05 )<br>
+                            Contribution : Design 100% / Publishing 100%</p>
+                </li>
+                <li>
+                    <a href="http://bit314.com" target="blank"></a>
+                    <p class="add_exp">Bitpi (2018.12~2019.03) / Responsive<br>
+                        Contribution : Design 95% / Publishing 50%</p>
                 </li>
             </ul>
         </div>

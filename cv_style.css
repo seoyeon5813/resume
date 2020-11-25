@@ -1,24 +1,26 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap');
 
 /* reset area */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
 li{list-style: none;}
 a{text-decoration: none;color: inherit;}
 
-body, button{font-family: 'Noto Serif KR', serif;font-size: 12px;line-height:1.6;color:#5f5f5f;}
+body, button{font-family: 'Noto Sans KR', sans-serif;font-size: 12px;line-height:1.6;color:#495183}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 
 /* design area */
 html{scroll-behavior: smooth;}
 body{width:100%;text-align: center;background-color:#f1edec;}
-.wraper{min-width:950px;width:95%;margin: 0 auto;background-color:#fff}
+.wraper{min-width:850px;width:95%;margin: 0 auto;background-color:#fff}
 ::selection{background-color: rgb(212, 200, 212);color:#fff}
 
 /* cursor */
 .cursor{position: absolute;background: #85d7c8;width:10px;height:10px;border-radius: 50%;z-index: 100;cursor: none}
+
 
 /* star */
 .stars{width:95%;height: 500px;position: absolute;overflow: hidden;z-index: 0;}
@@ -49,10 +51,25 @@ body{width:100%;text-align: center;background-color:#f1edec;}
   }
 
 
+/* theme */
+.wraper_theme{width:100%;position: relative;}
+.theme{position: absolute;top:190px;right:0;transform:rotate(90deg)}
+.theme li{display:inline-block;width:80px;height:26px;line-height: 25px;border-radius: 12px;}
+.theme li:hover{background-color:#85d7c8;opacity:.6;color:#fff;transition:all .5s ease-in-out}
+.theme li a{display:block;width:100%;height:100%}
+.theme li i{margin-right: 6px;}
+.theme .on{background-color:#85d7c8;color:white}
+
+/* top button */
+.wraper{position: relative;}
+.top{padding:15px;position: fixed;right: 40px; bottom: 50px;border-radius: 50%;color:#fff;background-color: grey;}
+
 /* header */
-.header{padding-top:150px;margin-bottom:100px}
-.header h1{margin:0 auto;line-height: 20px;letter-spacing: 5px;}
-.header h1 a{display:inline-block;width:100%;height: 100%;;color:#6d6e70;font-size: 11px;animation-name: title;animation-duration: 3s;animation-iteration-count: infinite;}
+.header{margin:0 auto;width:850px}
+.header .profile_pic{margin: 0 auto 35px;width:140px; height: 140px;border-radius: 50%; background-color: #b1c9b6;}
+.header .profile_pic div{width: 130px;height:130px; border-radius: 50%; background:url(./profile.JPG) 30px -70px no-repeat;background-size: cover;}
+.header h1{margin:0 auto 100px;letter-spacing: 5px;font-weight: lighter;}
+.header h1 a{font-family: 'Nanum Myeongjo', serif;display:inline-block;width:100%;height: 100%;;color:#6d6e70;font-size: 13px;line-height: 25px;animation-name: title;animation-duration: 3s;animation-iteration-count: infinite;}
 @keyframes title{
     0%{color:plum;}
     40%{color:#6d6e70}
@@ -67,61 +84,65 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 
 /* navi */
-.list_navi{overflow: hidden;display: inline-block;margin:85px 0 100px}
-.list_navi li{float: left;margin-right:70px;letter-spacing: -1px;font-weight: 300;}
+.list_navi{overflow:hidden;display:inline-block;margin:85px auto}
+.list_navi li{margin-right:70px;letter-spacing: -1px;font-weight: 300;float:left}
 .list_navi li:last-child{margin-right:0}
-.list_navi li a{position:relative;display:inline-block;font-size: 23px;transition: all .5s ease-in-out}
-.list_navi li:nth-child(1) a::after{content: 'Curriculun Vitae'}
+.list_navi li a{display:inline-block;width:100%;height:100%;position:relative;font-size: 18px;}
+.list_navi li a::after{position: absolute;top:0;left:0;;transform:translateY(35px);transition: all .5s ease-in-out;}
+.list_navi li:nth-child(1) a::after{content: 'Curriculum Vitae'}
 .list_navi li:nth-child(2) a::after{content: 'Projects'}
 .list_navi li:nth-child(3) a::after{content: 'Personal Works'}
-.list_navi li a::after{position: absolute;top:35px;left:0;}
-.list_navi li:hover a{color:burlywood;transform: translateY(-35px)}
-.on{color:burlywood}
+.list_navi li a:hover{transform:translateY(-35px);transition:all .5s ease-in-out}
+.list_navi li a:hover::after{color:#b1c9b6}
+.list_navi .on{color:#fa3118}
+.list_navi li.on{font-weight: normal;}
 
 
 /* CV */
-.cont_cv{width:900px;margin:0 auto;overflow: hidden}
-.cont_cv ul{margin-bottom: 60px;}
-.cont_cv li span{position: relative;padding-left: 15px}
-.cont_cv li span::before{content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
-.cont_cv .list_cv_first{width:27%;float: left;}
-.list_cv_first li{margin-bottom: 45px;text-align: left;font-weight: 300;}
-.list_cv_first li:last-child{width:100%;height:425px;background:url(./img/port.jpg) -110px 0 no-repeat;background-size: cover}
-.list_cv_first li span,
-.list_cv_sec li span{font-weight: bold}
-.list_cv_sec{width:63%;float: right}
+.cont_cv{width:850px;margin:0 auto;overflow: hidden}
+.cont_cv li span::before{content:'';position: absolute;left:0;top:30%;;width:3px;height:60%;background-color: #fa3118;}
+.cont_cv li span{position:relative;padding-right:15px}
+.cont_cv .list_cv_first{width:37%;float: left;padding-left:60px}
+.list_cv_first li{margin-bottom: 25px;text-align: left;font-weight: 300;}
+.list_cv_first li:first-child{margin-bottom:45px}
+/* .list_cv_first li:last-child{width:100%;height:300px;background:url(./img/port.jpg) -110px 0 no-repeat;background-size: cover} */
+.list_cv_first li strong,
+.list_cv_sec li strong{font-weight: 500;}
+.list_cv_first li em{font-style: normal;font-weight: 500;}
+.list_cv_sec{width:53%;float:right;}
 .list_cv_sec li{margin-bottom:45px;text-align: left;font-weight: lighter}
-.list_cv_sec li em{display: block;margin-bottom:5px;font-style: normal;font-weight:bold}
+.list_cv_sec li em{display: block;margin-bottom:5px;font-style: normal;font-weight:500}
 
-.cont_cv,
 .project,
-.work{opacity: 0;transform: translateY(-45px);transition: all 1.35s ease-in-out}
+.work{opacity: 100;transform: translateY(-45px);transition: all 1.35s ease-in-out}
 .cv_appear{opacity: 1;transform: translateY(0)}
 
 
 /* project */
-.project{width:900px;margin:0 auto;}
+.project{width:850px;margin:0 auto;padding-top: 100px;}
 .cont_project{overflow: hidden;}
 .cont_project > li{margin-bottom:60px;background-repeat: no-repeat;background-size: cover;background-position: center;border:1px solid #e4e4e4;box-sizing: border-box;filter:grayscale(100%);transition:all .45s ease-in-out}
 .cont_project > li:hover{filter: none}
 .cont_project > li a{display:block;width:100%;height: 100%;}
-.cont_project > li:nth-child(1){width:100%;height:500px;background-image: url(./img/MV_login.png)}
-.cont_project > li:nth-child(2){width:100%;height:500px;background-image: url(./img/MV.png)}
-.cont_project > li:nth-child(3){float:left;width:440px;height:450px;background-image: url(./img/bitchain.png)}
-.cont_project > li:nth-child(4){display:inline-block;margin-left:20px;width:440px;height:450px;background-image: url(./img/bitpi.png)}
+.cont_project > li:nth-child(1){float:left;width:415px;height: 500px;background-color:beige}
+.cont_project > li:nth-child(2){display: inline-block;margin-left:20px;width:415px;height:500px;}
+.cont_project > li:nth-child(3){width:100%;height:500px;background-image: url(./img/MV_login.png)}
+.cont_project > li:nth-child(4){width:100%;height:500px;background-image: url(./img/MV.png)}
+.cont_project > li:nth-child(5){float:left;width:415px;height:450px;background-image: url(./img/bitchain.png)}
+.cont_project > li:nth-child(6){display:inline-block;margin-left:20px;width:415px;height:450px;background-image: url(./img/bitpi.png)}
 
 .list_port{overflow: hidden;position: relative;margin-bottom:60px}
 .list_port li{float: left;text-align: left}
 .list_port li:first-child{position: relative;padding-left:15px}
-.list_port li:first-child::after{filter:none;content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:plum}
+.list_port li:first-child::after{filter:none;content: '';position: absolute;top:30%; left:0;width:3px;height: 60%;background-color:#fa3118}
 .list_port li:last-child{position: absolute;top:0;right: 0;}
 
 .add_exp{padding-left:10px;text-align: left;position: relative;}
-.add_exp::after{content: '';position: absolute;top:5px;left:0;width:3px;height: 80%;background-color: plum}
+.add_exp::after{content: '';position: absolute;top:5px;left:0;width:3px;height: 80%;background-color: #fa3118}
 
 
 /* works */
-.work{width:900px;margin:0 auto}
+.work{width:850px;margin:0 auto}
 .list_work{overflow: hidden;}
 .list_work > li{margin-bottom:60px;width:100%; height:350px;background-repeat: no-repeat;background-size: cover;border:1px solid #e4e4e4;filter:grayscale(70%);box-sizing: border-box;transition:all .4s ease-in-out}
 .list_work > li:hover{filter:none}
@@ -132,7 +153,7 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 .list_work > li a{display:block;width:100%;height:100%;}
 
 .list_work.sketch{overflow: hidden;}
-.list_work.sketch li{float:left;width:440px;height:450px;background-position:center}
+.list_work.sketch li{float:left;width:415px;height:450px;background-position:center}
 .list_work.sketch li:nth-child(1){background-image: url(./img/cos.png)}
 .list_work.sketch li:nth-child(2){background-image: url(./img/mise.png);}
 .list_work.sketch li:nth-child(even){float: right}
@@ -140,7 +161,7 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 /* footer */
 .footer{position: relative;width:55%;margin:100px auto 0;padding:50px 0;font-size: 10px;letter-spacing: 3px}
-.footer::before{content:'';position: absolute;top:0;left:0;width:100%;height: 1px;background-color: #aaa}
+.footer::before{content:'';position: absolute;top:0;left:0;width:100%;height: 1px;background-color: #495183}
 
 
 /* admin */
@@ -263,7 +284,7 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 .mise .proto_extra .proto_img{height:1000px;background-image: url(./img/mise_proto_02.png);}
 
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 900px){
  /* cos */
  .wrapper_logo_cos .wrap_title{margin-top:-90px;top:50%;left:-200px;}
  .wrapper_logo_cos strong{margin-bottom:10px;height: 115px;font-size: 95px;}
