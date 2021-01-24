@@ -66,8 +66,8 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 /* header */
 .header{margin:0 auto;width:850px}
-.header .profile_pic{margin: 0 auto 35px;width:140px; height: 140px;border-radius: 50%; background-color: #b1c9b6;}
-.header .profile_pic div{width: 130px;height:130px; border-radius: 50%; background:url(./profile.JPG) 30px -70px no-repeat;background-size: cover;}
+.header .profile_pic{margin: 0 auto 35px;width:160px; height: 160px;border-radius: 50%; background-color: #b1c9b6;}
+.header .profile_pic div{margin:0 auto;width: 150px;height:150px; border-radius: 50%; background:url(./profile_pic.png) 10px 20px no-repeat;background-size: contain;}
 .header h1{margin:0 auto 100px;letter-spacing: 5px;font-weight: lighter;}
 .header h1 a{font-family: 'Nanum Myeongjo', serif;display:inline-block;width:100%;height: 100%;;color:#6d6e70;font-size: 13px;line-height: 25px;animation-name: title;animation-duration: 3s;animation-iteration-count: infinite;}
 @keyframes title{
@@ -124,12 +124,12 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 .cont_project > li{margin-bottom:60px;background-repeat: no-repeat;background-size: cover;background-position: center;border:1px solid #e4e4e4;box-sizing: border-box;filter:grayscale(100%);transition:all .45s ease-in-out}
 .cont_project > li:hover{filter: none}
 .cont_project > li a{display:block;width:100%;height: 100%;}
-.cont_project > li:nth-child(1){float:left;width:415px;height: 500px;background-color:beige}
-.cont_project > li:nth-child(2){display: inline-block;margin-left:20px;width:415px;height:500px;}
-.cont_project > li:nth-child(3){width:100%;height:500px;background-image: url(./img/MV_login.png)}
-.cont_project > li:nth-child(4){width:100%;height:500px;background-image: url(./img/MV.png)}
-.cont_project > li:nth-child(5){float:left;width:415px;height:450px;background-image: url(./img/bitchain.png)}
-.cont_project > li:nth-child(6){display:inline-block;margin-left:20px;width:415px;height:450px;background-image: url(./img/bitpi.png)}
+.cont_project > li:nth-child(1){float:left;width:415px;height: 500px;background-image: url(./img/deus_index.png);background-position: -355px 0;}
+.cont_project > li:nth-child(2){display: inline-block;margin-left:20px;width:415px;height:500px;background-image:url(./img/deus_admin_index.png);background-position: -355px 0;}
+.cont_project > li:nth-child(3){width:100%;height:480px;background-image: url(./img/moving_admin.png);background-position-y: 0px;}
+.cont_project > li:nth-child(4){width:100%;height:480px;background-image: url(./img/MV.png)}
+.cont_project > li:nth-child(5){float:left;width:415px;height:450px;background-image: url(./img/bitchain_index.png);background-position: -323px 0;}
+.cont_project > li:nth-child(6){display:inline-block;margin-left:20px;width:415px;height:450px;background-image: url(./img/bitpi_index.png);background-position: -242px 0;}
 
 .list_port{overflow: hidden;position: relative;margin-bottom:60px}
 .list_port li{float: left;text-align: left}
@@ -282,6 +282,33 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 .mise .proto_extra{background-color:#fff;background:none}
 .mise .proto_extra .proto_img{height:1000px;background-image: url(./img/mise_proto_02.png);}
+
+
+
+/* deus */
+.deus_cont{background-color: #fff;}
+.deus_cont .deus{margin:0 auto; width:900px; height:3750px;background: url(./img/deus.png) 0 0 no-repeat;background-size: cover;}
+
+
+/* deus_admin */
+.deus_cont .deus_admin{height:3090px;background-image: url(./img/deus_admin.png);}
+
+
+
+/* moving */
+.deus_cont .moving{height:2188px;background-image: url(./img/moving_admin.png);}
+
+
+/* bitchain */
+.deus_cont .bitchain{height: 2750px; background-image: url(./img/bitchain.png);}
+
+
+/* bitpi */
+.deus_cont .bitpi{height: 4330px; background-image: url(./img/bitpi.png);}
+
+
+
+
 
 
 @media only screen and (max-width: 900px){
