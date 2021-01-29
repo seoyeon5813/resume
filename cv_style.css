@@ -287,7 +287,7 @@ body{width:100%;text-align: center;background-color:#f1edec;}
 
 /* deus */
 .deus_cont{background-color: #fff;}
-.deus_cont .deus{margin:0 auto; width:1024px; height:4266spx;background: url(./img/deus.png) 0 0 no-repeat;background-size: cover;}
+.deus_cont .deus{margin:0 auto; width:1024px; height:4266px;background: url(./img/deus.png) 0 0 no-repeat;background-size: cover;}
 
 
 /* deus_admin */
